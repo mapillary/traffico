@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>tri-r-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="tri-r-bg" sketch:type="MSArtboardGroup" fill="#000000">
+            <polygon id="Star-1" sketch:type="MSShapeGroup" transform="translate(256.500000, 260.625000) rotate(-180.000000) translate(-256.500000, -260.625000) " points="256.5 461.25 24.8382045 461.25 140.669102 260.625 256.5 60 372.330898 260.625 488.161796 461.25 "></polygon>
+        </g>
+    </g>
+</svg>

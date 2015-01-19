@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>circle-line-r</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="circle-line-r" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="cross" sketch:type="MSLayerGroup" transform="translate(255.292893, 256.000000) rotate(45.000000) translate(-255.292893, -256.000000) translate(224.792893, 17.500000)">
+                <path d="M61,474.127352 C51.1738841,475.363207 41.1613075,476 31,476 C20.8386925,476 10.8261159,475.363207 1,474.127352 L1,1.87264804 C10.8261159,0.63679261 20.8386925,8.52651283e-14 31,8.52651283e-14 C41.1613075,8.52651283e-14 51.1738841,0.63679261 61,1.87264804 L61,474.127352 L61,474.127352 Z" id="line-2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

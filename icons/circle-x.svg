@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>circle-x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="circle-x" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="cross" sketch:type="MSLayerGroup" transform="translate(256.000000, 256.000000) rotate(45.000000) translate(-256.000000, -256.000000) translate(18.000000, 18.000000)">
+                <path d="M268,474.127352 C258.173884,475.363207 248.161307,476 238,476 C227.838693,476 217.826116,475.363207 208,474.127352 L208,1.87264804 C217.826116,0.63679261 227.838693,0 238,0 C248.161307,0 258.173884,0.63679261 268,1.87264804 L268,474.127352 L268,474.127352 Z" id="line" sketch:type="MSShapeGroup"></path>
+                <path d="M268,474.127352 C258.173884,475.363207 248.161307,476 238,476 C227.838693,476 217.826116,475.363207 208,474.127352 L208,1.87264804 C217.826116,0.63679261 227.838693,0 238,0 C248.161307,0 258.173884,0.63679261 268,1.87264804 L268,474.127352 L268,474.127352 Z" id="line" sketch:type="MSShapeGroup" transform="translate(238.000000, 238.000000) rotate(-90.000000) translate(-238.000000, -238.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

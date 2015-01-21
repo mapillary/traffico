@@ -1,26 +1,26 @@
 .t {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 traffico;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.t-stack {
-  position: relative;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1em;
-  vertical-align: middle;
-}
-
-.t-stacked {
+.t i {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
+}
+.t-fit {
+  font-size: 75%;
+  padding-top: 3%;
 }
 
 .t-r-no {
@@ -47,16 +47,39 @@
   font-family: sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 50%;
+  font-size: 45%;
   line-height: inherit;
+  letter-spacing: -1px;
 }
 
 .t-content-3 {
   font-family: sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 40%;
+  font-size: 35%;
   line-height: inherit;
+  letter-spacing: -1px;
+}
+
+.t-content-4 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25%;
+  line-height: inherit;
+  letter-spacing: -1px;
+}
+
+.t-stoplights-r {
+  color: red;
+}
+
+.t-stoplights-y {
+  color: yellow;
+}
+
+.t-stoplights-g {
+  color: green;
 }
 
 .t-c-white {
@@ -77,4 +100,8 @@
 
 .t-c-yellow {
   color: yellow;
+}
+
+.t-c-grey {
+  color: grey;
 }

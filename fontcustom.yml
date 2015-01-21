@@ -16,7 +16,7 @@ font_name: traffico
 css_selector: .t-{{glyph}}
 
 # Generate fonts without asset-busting hashes.
-#no_hash: true
+no_hash: true
 
 # Encode WOFF fonts into the generated CSS.
 #base64: true
@@ -50,7 +50,7 @@ input:
   #templates: templates
 
 output:
-  fonts: build/font
+  fonts: build/fonts
   css: build/stylesheets
   #preview: app/views/styleguide
  # my-custom-template.yml: path/to/template/output

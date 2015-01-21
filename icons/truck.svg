@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>truck</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="truck" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="TruckSymbol" sketch:type="MSLayerGroup" transform="translate(113.544645, 201.403849)">
+                <path d="M82.1915689,23.4006488 L82.1915689,101.051206 L204.776991,101.151474 C197.583307,107.028731 193.092166,115.129598 193.15087,125.761958 L71.461965,125.689564 C70.296279,84.4401878 11.7735609,84.5805349 10.5019039,125.451128 C1.71211304,125.385546 0.492870377,123.389225 0.40812696,115.292399 L0.408126334,84.3279589 C0.297763752,70.4902446 -1.43036634,79.6246856 8.81298448,53.3839365 C19.3527935,25.4116231 16.4471555,27.9971429 25.9803538,27.2752288 L82.1915689,23.4006488 L82.1915689,23.4006488 Z M57.8436541,69.1850872 L58.3288137,36.1941339 L27.0359253,38.1347786 C21.3310681,38.5169611 21.2835893,38.5527735 19.2733466,45.1696148 L11.2681887,66.5167 C8.57889894,73.0643498 9.00693948,74.9937315 16.3623802,74.0366989 L57.8436541,69.1850872 L57.8436541,69.1850872 Z M292.014982,101.210163 L292.07459,118.65571 L271.867165,125.80878 L254.12466,125.797436 C254.196879,115.681594 249.992928,107.173592 242.539083,101.197086 L292.014982,101.210163 L292.014982,101.210163 Z" id="path9" sketch:type="MSShapeGroup"></path>
+                <rect id="rect11" sketch:type="MSShapeGroup" x="94.7158999" y="0.0496316187" width="197.46056" height="94.3638311"></rect>
+                <circle id="circle13" sketch:type="MSShapeGroup" cx="40.9731481" cy="125.108849" r="24.0834534"></circle>
+                <circle id="circle15" sketch:type="MSShapeGroup" cx="223.632068" cy="125.108849" r="24.0834534"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

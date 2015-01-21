@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-r</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="arrow-r" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M223.508307,118.765625 L277.362147,172.619465 L221.593671,172.901029 C152.750274,175.850224 135.66496,235.918429 133.032355,253.40961 L133.032355,393.234375 L171.062288,393.234375 L171.062288,259.17229 C171.062282,252.68728 176.81233,217.281939 219.58518,209.917331 L278.338236,210.067499 L223.470765,264.93497 L270.717233,264.93497 L343.717436,191.915996 L343.905145,191.915996 L343.81129,191.822141 L343.867573,191.765858 L343.754947,191.765858 L270.735974,118.765655 L223.508277,118.765655 L223.508307,118.765625 Z" id="path1885" sketch:type="MSShapeGroup" transform="translate(238.468750, 256.000000) scale(-1, 1) translate(-238.468750, -256.000000) "></path>
+        </g>
+    </g>
+</svg>

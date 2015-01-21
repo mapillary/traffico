@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>circle-bar</title>
+    <title>tri-bg-in</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="circles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="circle-bar" sketch:type="MSArtboardGroup" fill="#000000">
-            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="124" y="265" width="352" height="71"></rect>
+    <g id="triangles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="tri-bg-in" sketch:type="MSArtboardGroup" fill="#000000">
+            <polygon id="Star-6" sketch:type="MSShapeGroup" points="300 497.758754 56.2376622 497.758754 178.118831 286.654377 300 75.5500002 421.881169 286.654377 543.762338 497.758754 "></polygon>
         </g>
     </g>
 </svg>

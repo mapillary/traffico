@@ -4,9 +4,9 @@
     <title>octagon</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="other-shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="octagon" sketch:type="MSArtboardGroup" fill="#000000">
-            <polygon id="Polygon-1" sketch:type="MSShapeGroup" transform="translate(254.500000, 254.500000) rotate(-23.000000) translate(-254.500000, -254.500000) " points="254.5 28 414.659686 94.3403141 481 254.5 414.659686 414.659686 254.5 481 94.3403141 414.659686 28 254.5 94.3403141 94.3403141 "></polygon>
+            <path d="M165.999399,46.0056507 L339.348393,44.4928569 L462.994349,165.999399 L464.507143,339.348393 L343.000601,462.994349 L169.651607,464.507143 L46.0056507,343.000601 L44.4928569,169.651607 L165.999399,46.0056507 L165.999399,46.0056507 Z" id="Polygon-1" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

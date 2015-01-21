@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>turnaround</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="turnaround" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M305.871154,385.186293 L305.871154,223.232325 C295.597015,161.65685 217.660196,162.197287 206.36857,222.480528 L206.36857,347.033214 L181.168887,385.230978 L155.605068,346.357628 L155.605068,217.583886 C166.448523,104.743844 334.966146,88.5222974 356.394932,217.583886 L356.394932,385.230978 L331.403269,347.150204 L305.871154,385.186293 L305.871154,385.186293 Z" id="path1881" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

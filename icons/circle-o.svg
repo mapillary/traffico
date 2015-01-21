@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>circle-o</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="circles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="circle-o" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M256,494 C387.44377,494 494,387.44377 494,256 C494,124.55623 387.44377,18 256,18 C124.55623,18 18,124.55623 18,256 C18,387.44377 124.55623,494 256,494 Z M256,433 C353.754401,433 433,353.754401 433,256 C433,158.245599 353.754401,79 256,79 C158.245599,79 79,158.245599 79,256 C79,353.754401 158.245599,433 256,433 Z" id="shape" sketch:type="MSShapeGroup"></path>
+            <path d="M300,550 C438.071187,550 550,438.071187 550,300 C550,161.928813 438.071187,50 300,50 C161.928813,50 50,161.928813 50,300 C50,438.071187 161.928813,550 300,550 Z M300,520 C421.502645,520 520,421.502645 520,300 C520,178.497355 421.502645,80 300,80 C178.497355,80 80,178.497355 80,300 C80,421.502645 178.497355,520 300,520 Z" id="outline" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

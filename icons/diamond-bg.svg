@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>diamond-bg</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="squares" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="diamond-bg" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M94,110.205828 C94,101.255596 101.259949,94 110.205828,94 L401.794172,94 C410.744404,94 418,101.259949 418,110.205828 L418,401.794172 C418,410.744404 410.740051,418 401.794172,418 L110.205828,418 C101.255596,418 94,410.740051 94,401.794172 L94,110.205828 L94,110.205828 Z" id="Rectangle-2" sketch:type="MSShapeGroup" transform="translate(256.000000, 256.000000) rotate(-45.000000) translate(-256.000000, -256.000000) "></path>
+            <path d="M7.20897819,316.265858 C-1.32846212,307.728418 -1.32430993,293.88234 7.20897819,285.349052 L285.349052,7.20897819 C293.886492,-1.32846212 307.73257,-1.32430993 316.265858,7.20897819 L594.405932,285.349052 C602.943372,293.886492 602.93922,307.73257 594.405932,316.265858 L316.265858,594.405932 C307.728418,602.943372 293.88234,602.93922 285.349052,594.405932 L7.20897819,316.265858 L7.20897819,316.265858 Z" id="Rectangle-2" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

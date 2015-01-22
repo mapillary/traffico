@@ -1,0 +1,26 @@
+{
+  information_pedestrian_crossing:
+    category: 'other'
+    name: 'pedestrian crossing'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'pedestrian', value: 'black' }
+    ]
+
+  mandatory_keep_right:
+    category: 'mandatory'
+    name: 'keep right'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'arrow-45-r', value: 'white' }
+    ]
+
+  mandatory_keep_left:
+      category: 'mandatory'
+      name: 'keep left'
+      elements: [
+        { type: 'circle-bg', value: 'blue' }
+        { type: 'arrow-45-l', value: 'white' }
+      ]
+}

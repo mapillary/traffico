@@ -1,7 +1,7 @@
 # traffico
 An Open Source Traffic Sign Font
 
-## Build process
+## Build process (OsX)
 To build traffico you need homebrew and ruby installed (fontcustom dependencies). Then run:
 
 ```

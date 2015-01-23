@@ -193,7 +193,7 @@
     name: 'go left or right'
     elements: [
       { type: 'circle-bg', value: 'blue' }
-      { type: 'highway-both', value: 'blue' }
+      { type: 'highway-both', value: 'white' }
     ]
 
   prohibitory_no_u_turn:

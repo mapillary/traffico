@@ -7,3 +7,6 @@ node_modules/
 # Build folder, font and css output
 build/
 .fontcustom-manifest.json
+
+# Editors
+.idea/

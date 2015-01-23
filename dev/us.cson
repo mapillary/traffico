@@ -328,7 +328,7 @@ warning_intersection_circular:
     { type: 'roundabout', value: 'black' }
   ]
 
-warning_turn_reverse_right
+warning_turn_reverse_right:
   category: 'warning'
   name: 'turn reverse right'
   elements: [
@@ -336,7 +336,7 @@ warning_turn_reverse_right
     { type: 'turn-reverse-right', value: 'black' }
   ]
 
-warning_turn_reverse_left
+warning_turn_reverse_left:
   category: 'warning'
   name: 'turn reverse left'
   elements: [
@@ -344,7 +344,7 @@ warning_turn_reverse_left
     { type: 'turn-reverse-left', value: 'black' }
   ]
 
-warning_side_road_acute_angle_right
+warning_side_road_acute_angle_right:
   category: 'warning'
   name: 'side road acute angle right'
   elements: [
@@ -352,7 +352,7 @@ warning_side_road_acute_angle_right
     { type: 'side-road-a-a-r', value: 'black' }
   ]
 
-warning_side_road_acute_angle_left
+warning_side_road_acute_angle_left:
   category: 'warning'
   name: 'side road acute angle left'
   elements: [
@@ -360,7 +360,7 @@ warning_side_road_acute_angle_left
     { type: 'side-road-a-a-l', value: 'black' }
   ]
 
-warning_t_roads
+warning_t_roads:
   category: 'warning'
   name: 't roads'
   elements: [
@@ -378,7 +378,7 @@ regulatory_no_hitch_hiking:
     { type: 'circle-line-l', value: 'red' }
   ]
 
-warning_pass_left_or_right
+warning_pass_left_or_right:
   category: 'warning'
   name: 'pass left or right'
   elements: [
@@ -386,7 +386,7 @@ warning_pass_left_or_right
     { type: 'pass-l-r', value: 'black' }
   ]
 
-warning_share_roads
+warning_share_roads:
   category: 'warning'
   name: 'share roads'
   elements: [
@@ -412,7 +412,7 @@ regulatory_no_pedestrian_crossing:
     { type: 'circle-line-l', value: 'red' }
   ]
 
-warning_workers_in_road_ahead
+warning_workers_in_road_ahead:
   category: 'warning'
   name: 'workers_in_road_ahead'
   elements: [
@@ -420,7 +420,7 @@ warning_workers_in_road_ahead
     { type: 'roadworks', value: 'black' }
   ]
 
-warning_play_ground
+warning_play_ground:
   category: 'warning'
   name: 'play ground'
   elements: [
@@ -428,7 +428,7 @@ warning_play_ground
     { type: 'play-ground', value: 'black' }
   ]
 
-warning_falling_rocks
+warning_falling_rocks:
   category: 'warning'
   name: 'falling rocks'
   elements: [
@@ -436,7 +436,7 @@ warning_falling_rocks
     { type: 'falling-rocks', value: 'black' }
   ]
 
-warning_hairpin_curve
+warning_hairpin_curve:
   category: 'warning'
   name: 'hairpin curve'
   elements: [
@@ -444,7 +444,7 @@ warning_hairpin_curve
     { type: 'hairpin-curve', value: 'black' }
   ]
 
-warning_end
+warning_end:
   category: 'warning'
   name: 'end'
   elements: [
@@ -460,7 +460,7 @@ warning_loop_270_degree:
     { type: 'loop-270', value: 'black' }
   ]
 
-warning_y_roads
+warning_y_roads:
   category: 'warning'
   name: 'y roads'
   elements: [
@@ -478,7 +478,7 @@ regulatory_no_straight_through:
     { type: 'circle-line-l', value: 'red' }
   ]
 
-warning_trucks_rollover
+warning_trucks_rollover:
   category: 'warning'
   name: 'trucks rollover'
   elements: [
@@ -494,7 +494,7 @@ warning_added_lane_from_entering_roadway:
     { type: 'added-lane-entering-roadway', value: 'black' }
   ]
 
-warning_flaggers_in_road_ahead
+warning_flaggers_in_road_ahead:
   category: 'warning'
   name: 'flaggers in road ahead'
   elements: [
@@ -502,7 +502,7 @@ warning_flaggers_in_road_ahead
     { type: 'flaggers', value: 'black' }
   ]
 
-warning_skewed_railroads_crossing
+warning_skewed_railroads_crossing:
   category: 'warning'
   name: 'skewed railroads crossing'
   elements: [
@@ -510,7 +510,7 @@ warning_skewed_railroads_crossing
     { type: 'skewed-railroads', value: 'black' }
   ]
 
-warning_trucks_rollover
+warning_trucks_rollover:
   category: 'warning'
   name: 'trucks rollover'
   elements: [
@@ -526,7 +526,7 @@ warning_lightground_railroad_crossing:
     { type: 'lightground-rail-crossing', value: 'black' }
   ]
 
-regulatory_national_network_lane
+regulatory_national_network_lane:
   category: 'regulatory'
   name: 'national_network_lane'
   elements: [
@@ -543,7 +543,7 @@ warning_motorcycle_crossing:
     { type: 'motorcycle', value: 'black' }
   ]
 
-warning_railroad
+warning_railroad:
   category: 'warning'
   name: 'railroad'
   elements: [
@@ -581,7 +581,7 @@ regulatory_no_rollerblading:
     { type: 'circle-line-l', value: 'red' }
   ]
 
-warning_triple_2_traverse_curve
+warning_triple_2_traverse_curve:
   category: 'warning'
   name: 'triple 2 traverse curve'
   elements: [
@@ -589,7 +589,7 @@ warning_triple_2_traverse_curve
     { type: 't-2-traverse-curve', value: 'black' }
   ]
 
-warning_double_reverse_curve
+warning_double_reverse_curve:
   category: 'warning'
   name: 'double reverse curve'
   elements: [
@@ -597,7 +597,7 @@ warning_double_reverse_curve
     { type: 'double-reverse-curve', value: 'black' }
   ]
 
-warning_triple_2_traverse_curve
+warning_triple_2_traverse_curve:
   category: 'warning'
   name: 'triple 2 traverse curve'
   elements: [
@@ -605,7 +605,7 @@ warning_triple_2_traverse_curve
     { type: 't-2-traverse-curve', value: 'black' }
   ]
 
-warning_single_2_reverse_curve
+warning_single_2_reverse_curve:
   category: 'warning'
   name: 'single 2 reverse curve'
   elements: [

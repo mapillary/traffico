@@ -37,8 +37,8 @@ warning_traffic_light:
     { type: 'diamond-bg', value: 'yellow' }
     { type: 'traffic-l-bg', valued: 'black' }
     { type: 'traffic-l-g', valued: 'green' }
-    { type: 'traffic-l-r', valued: 'red' }
     { type: 'traffic-l-y', valued: 'yellow' }
+    { type: 'traffic-l-r', valued: 'red' }
   ]
 
 regulatory_no_parking:
@@ -160,7 +160,7 @@ warning_side_road_perpendicular_right:
   name: 'side road perpendicular right'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'side-road-p-r', value: 'yellow' }
+    { type: 'side-road-p-r', value: 'black' }
   ]
 
 regulatory_no_trucks:
@@ -177,7 +177,7 @@ warning_turn_right:
   category: 'warning'
   name: 'turn right'
   elements: [
-    { type: 'diamong-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'yellow' }
     { type: 'turn-90-r', value: 'black' }
   ]
 
@@ -185,15 +185,15 @@ warning_turn_left:
   category: 'warning'
   name: 'turn left'
   elements: [
-    { type: 'diamong-bg', value: 'yellow' }
-    { type: 'turn-90-u', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'turn-90-l', value: 'black' }
   ]
 
 warning_fire_station:
   category: 'warning'
   name: 'fire station'
   elements: [
-    { type: 'diamong-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'yellow' }
     { type: 'fire-station', value: 'black' }
   ]
 
@@ -201,7 +201,7 @@ warning_bicycles:
   category: 'warning'
   name: 'bicycles'
   elements: [
-    { type: 'diamong-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'yellow' }
     { type: 'bicycle fit', value: 'black' }
   ]
 
@@ -288,7 +288,7 @@ warning_offset_roads:
 
 warning_slippery:
   category: 'warning'
-  name: 'slipper'
+  name: 'slippery'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
     { type: 'slippery', value: 'black' }
@@ -414,7 +414,7 @@ regulatory_no_pedestrian_crossing:
 
 warning_workers_in_road_ahead:
   category: 'warning'
-  name: 'workers_in_road_ahead'
+  name: 'workers in road ahead'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
     { type: 'roadworks', value: 'black' }
@@ -474,16 +474,8 @@ regulatory_no_straight_through:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'arrow-up', value: 'black' }
+    { type: 'arrow-straight', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
-  ]
-
-warning_trucks_rollover:
-  category: 'warning'
-  name: 'trucks rollover'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'trucks-rollover', value: 'black' }
   ]
 
 warning_added_lane_from_entering_roadway:
@@ -515,15 +507,15 @@ warning_trucks_rollover:
   name: 'trucks rollover'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'truck-rollover', value: 'black' }
+    { type: 'trucks-rollover', value: 'black' }
   ]
 
 warning_lightground_railroad_crossing:
   category: 'warning'
-  name: 'light rail crossing'
+  name: 'lightground railroad crossing'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'lightground-rail-crossing', value: 'black' }
+    { type: 'lightground-railroad-crossing', value: 'black' }
   ]
 
 regulatory_national_network_lane:
@@ -540,7 +532,7 @@ warning_motorcycle_crossing:
   name: 'motorcycle crossing'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'motorcycle', value: 'black' }
+    { type: 'motorbike', value: 'black' }
   ]
 
 warning_railroad:
@@ -567,7 +559,6 @@ warning_truck_rollover_with_speed:
   name: 'truck rollover with speed'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'truck-rollover', value: 'black' }
     { type: 'truck-rollover-speed', value: 'black' }
   ]
 
@@ -610,5 +601,5 @@ warning_single_2_reverse_curve:
   name: 'single 2 reverse curve'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 's-2-reverse-curve', value: 'black' }
+    { type: 'single-2-reverse-curve', value: 'black' }
   ]

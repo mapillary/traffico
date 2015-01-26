@@ -1,20 +1,6 @@
-# traffico
-An Open Source Traffic Sign Font
+# traffico gh-pages
+An Open Source Traffic Sign Font - Landing page
 
-## Build process (OsX)
-To build traffico you need homebrew and ruby installed (fontcustom dependencies). Then run:
+This site will be updated whenever a new traffico version is released.
 
-```
-brew install fontforge --with-python
-brew install eot-utils
-gem install fontcustom
-```
-
-The build process is (still) a simple gulp task, therefore you need node and npm installed:
-<code>brew install node</code>
-
-First get the gulp dependencies: <code>npm install</code>.
-
-To finally build the font run: <code>gulp</code>.
-
-To remove all the generated files run <code>gulp clean</code>.
+To learn more about traffico, check out the master branch.

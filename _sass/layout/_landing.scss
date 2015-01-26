@@ -36,8 +36,13 @@ a.splash__source {
     color: $color--grey;
     margin: 2em auto;
   }
+
+  &__install {
+    color: $color--black;
+  }
 }
 
-.content__install {
-  color: $color--black;
+.sample-set {
+  font-size: 4em;
+  margin: 1em auto;
 }

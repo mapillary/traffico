@@ -1,0 +1,37 @@
+.splash-container {
+  text-align: center;
+  background-color: $color--main;
+  padding: 1em;
+  color: $color--white;
+  min-height: 20em;
+  position: relative;
+}
+
+.splash {
+  top: 5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  &__button {
+    margin-top: 2em;
+    font-size: 1.5em;
+    background-color: $color--white;
+  }
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+
+  &__lead {
+    max-width: 30em;
+    font-size: 1.25em;
+    color: $color--grey;
+    margin: 2em auto;
+  }
+}
+
+.content__install {
+  color: $color--black;
+}

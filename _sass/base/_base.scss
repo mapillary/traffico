@@ -1,0 +1,26 @@
+a {
+  &,
+  &:hover,
+  &:visited,
+  &:active {
+    color: $color--main;
+    text-decoration: none;
+  }
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.example {
+  font-size: 2em;
+}
+
+footer {
+  text-align: center;
+}
+
+
+.letters {
+  display: none;
+}

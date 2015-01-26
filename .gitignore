@@ -1,12 +1,6 @@
 # System specific
 .DS_Store
 
-# npm & gulp
-node_modules/
-
-# Build folder, font and css output
-build/
-.fontcustom-manifest.json
-
-# Editors
-.idea/
+# Jekyll
+_site/
+.sass-cache/

@@ -1,11 +1,83 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>Traffico - Open Traffic Sign Web Font</title>
-</head>
-<body>
-  <h1>Traffico</h1>
-  <h2>Open Traffic Sign Web Font</h2>
-</body>
-</html>
+---
+layout: default
+title: Traffico
+subtitle: Open Traffic Sign Web Font
+---
+
+<div class="splash-container">
+  <div class="splash">
+    <h1 class="splash__title">{{ page.title }}</h1>
+    <h2 class="">{{ page.subtitle }}</h2>
+    <div class="pure-button splash__button">Download v0.0.3</div>
+  </div>
+</div>
+
+<div class="content">
+  <p class="content__lead">Traffico provides a set of layers that can be composed into traffic signs icons in a form of a web font. Accompanying .json files allow to generate templates on the fly. Check out
+    <a href="/shapes">Shapes</a> page for available shapes or <a href="/examples">Examples</a> for what is available in the .json files.</p>
+  <p class="content__lead">Install from command line:
+    <code class="content__install">
+      $ bower install traffico
+    </code>
+  </p>
+  <div class="pure-g">
+    <div class="l-box pure-u-1 pure-u-md-1-2">
+      <h3 class="content__subhead">A collection of layers</h3>
+      <p>Traffico is a collection of vector shapes, that are meant to be stacked on one another</p>
+
+      <p>Fox example, to build a &lsquo;Warning of danger ahead&rsquo; sign, after attaching stylesheets and the font files:</p>
+{% highlight css %}
+<span class="t">
+  <i class="t-tri-bg t-c-yellow"></i>
+  <i class="t-tri-o t-c-red"></i>
+  <i class="t-exclamation t-c-black fit"></i>
+</span>
+{% endhighlight %}
+
+        <p>
+          This will result in:
+          <span class="t example">
+            <i class="t-tri-bg t-c-yellow"></i>
+            <i class="t-tri-o t-c-red"></i>
+            <i class="t-exclamation t-c-black fit"></i>
+          </span>
+        </p>
+      </div>
+
+
+      <div class="l-box pure-u-1 pure-u-md-1-2">
+        <h3 class="content__subhead">Generative templates</h3>
+        <p>With every Traffico release, there is a set of .json files attached, which provide for a good foundation for generating templates in a framework of your choice.</p>
+{% highlight json %}
+"information_pedestrian_crossing": {
+  "category":"other",
+  "name":"pedestrian crossing",
+  "elements":[
+    {
+      "type":"square-bg",
+      "value":"blue"
+    },
+    {
+      "type":"tri-bg-in",
+      "value":"white"
+    },
+    {
+      "type":"pedestrian-crossing",
+      "value":"black"
+    }
+  ]
+}
+{% endhighlight %}
+    </div>
+
+    <div class="l-box pure-u-1">
+      <h3 class="content__subhead">Status</h3>
+      <p>Traffico is under development, suggestions and contributions are welcome. Fork the source on <a href="https://github.com/mapillary/traffico">GitHub</a>.</p>
+    </div>
+
+    <div class="l-box pure-u-1">
+      <h3 class="content__subhead">License</h3>
+      <p>MIT</p>
+    </div>
+  </div>
+</div>

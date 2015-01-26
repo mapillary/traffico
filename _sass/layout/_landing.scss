@@ -45,4 +45,12 @@ a.splash__source {
 .sample-set {
   font-size: 4em;
   margin: 1em auto;
+  max-width: 650px;
+
+  &__more {
+    margin: 10px;
+    font-size: 16px;
+    display: block;
+    text-align: right;
+  }
 }

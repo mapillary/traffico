@@ -15,8 +15,12 @@
 
   &__button {
     margin-top: 2em;
-    font-size: 1.5em;
+    font-size: 1em;
     background-color: $color--white;
+
+    @media screen and (min-width: 567px) {
+      font-size: 1.5em;
+    }
   }
 }
 

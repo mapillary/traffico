@@ -1,7 +1,12 @@
+.examples-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .examples {
   font-size: 3em;
 
-  span {
-    padding: 0.4em;
+  .t {
+    padding: 0.2em;
   }
 }

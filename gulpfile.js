@@ -9,6 +9,10 @@ gulp.task('clean', shell.task(['rm -f .fontcustom-manifest.json', 'rm -rf ./buil
 gulp.task('compile', shell.task('fontcustom compile'));
 
 gulp.task('cson', function() {
+  gulp.src('dev/*.cson')
+    .pipe(cson())
+    .pipe(gulp.dest('build/'))
+
   watch('dev/*.cson')
     .pipe(cson())
     .pipe(gulp.dest('build/'))

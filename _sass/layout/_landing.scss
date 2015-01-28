@@ -44,6 +44,13 @@ a.splash__source {
   &__install {
     color: $color--black;
   }
+
+  &__love {
+    font-size: 0.5em;
+    font-weight: 200;
+    text-align: center;
+    color: $color--grey;
+  }
 }
 
 .sample-set {

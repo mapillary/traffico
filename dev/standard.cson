@@ -100,6 +100,15 @@
       { type: 'roadworks fit', value: 'black' }
     ]
 
+  danger_construction:
+      category: 'danger'
+      name: 'road works'
+      elements: [
+        { type: 'tri-bg', value: 'white' }
+        { type: 'tri-o', value: 'red' }
+        { type: 'roadworks fit', value: 'black' }
+      ]
+
   mandatory_roundabout:
     category: 'mandatory'
     name: 'roundabout'
@@ -122,6 +131,18 @@
     elements: [
       { type: 'circle-bg', value: 'blue' }
       { type: 'shared-path', value: 'white' }
+    ]
+
+  danger_traffic_signal:
+    category: 'danger'
+    name: 'traffic signal'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'traffic-l-bg', value: 'black' }
+      { type: 'traffic-l-r', value: 'red' }
+      { type: 'traffic-l-y', value: 'yellow' }
+      { type: 'traffic-l-g', value: 'green' }
     ]
 
   mandatory_cycle_track:
@@ -230,6 +251,22 @@
       { type: 'arrow-r', value: 'white' }
     ]
 
+  mandatory_go_right_or_straight:
+      category: 'mandatory'
+      name: 'go right'
+      elements: [
+        { type: 'circle-bg', value: 'blue' }
+        { type: 'arrow-s-r', value: 'white' }
+      ]
+
+  mandatory_go_right_or_straight:
+        category: 'mandatory'
+        name: 'go right'
+        elements: [
+          { type: 'circle-bg', value: 'blue' }
+          { type: 'arrow-s-l', value: 'white' }
+        ]
+
   priority_stop:
     category: 'priority'
     name: 'stop'
@@ -276,6 +313,25 @@
       { type: 'd-curve-l fit', value: 'black' }
     ]
 
+
+  danger_bend_right:
+      category: 'danger'
+      name: 'bend first right'
+      elements: [
+        { type: 'tri-bg', value: 'white' }
+        { type: 'tri-o', value: 'red' }
+        { type: 'd-curve-r fit', value: 'black' }
+      ]
+
+    danger_bend_left:
+      category: 'danger'
+      name: 'bend first left'
+      elements: [
+        { type: 'tri-bg', value: 'white' }
+        { type: 'tri-o', value: 'red' }
+        { type: 'd-curve-l fit', value: 'black' }
+      ]
+
   information_disable_persons:
     category: 'information'
     name: 'disable persons'
@@ -310,18 +366,18 @@
       { type: 'width', value: 'black' }
     ]
 
-  danger_bend_right:
+  danger_bend_first_right:
     category: 'danger'
-    name: 'bend right'
+    name: 'bend first right'
     elements: [
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
       { type: 'turn-l fit', value: 'black' }
     ]
 
-    danger_bend_left:
+    danger_bend_first_left:
       category: 'danger'
-      name: 'bend left'
+      name: 'bend first left'
       elements: [
         { type: 'tri-bg', value: 'white' }
         { type: 'tri-o', value: 'red' }
@@ -346,6 +402,24 @@
       { type: 'tri-o', value: 'red' }
       { type: 'narrow-road-both fit', value: 'black' }
     ]
+
+  danger_road_narrows_left:
+      category: 'danger'
+      name: 'road narrows left'
+      elements: [
+        { type: 'tri-bg', value: 'white' }
+        { type: 'tri-o', value: 'red' }
+        { type: 'narrow-road-left fit', value: 'black' }
+      ]
+
+  danger_road_narrows_right:
+        category: 'danger'
+        name: 'road narrows right'
+        elements: [
+          { type: 'tri-bg', value: 'white' }
+          { type: 'tri-o', value: 'red' }
+          { type: 'narrow-road-right fit', value: 'black' }
+        ]
 
   danger_cycle_crossing:
     category: 'danger'
@@ -402,4 +476,22 @@
       { type: 'motor-vehicles fit', value: 'black' }
     ]
 
+  prohibitory_no_motorcycles:
+      category: 'prohibitory'
+      name: 'no motor vehicles'
+      elements: [
+        { type: 'tri-bg', value: 'white' }
+        { type: 'tri-o', value: 'red' }
+        { type: 'motor-vehicles fit', value: 'black' }
+      ]
+
+  prohibitory_no_trucks:
+    category: 'prohibitory'
+    name: 'no trucks'
+    elements: [
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'truck fit', value: 'black' }
+      { type: 'circle-line-l', value: 'red' }
+    ]
 }

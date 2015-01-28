@@ -75,7 +75,7 @@ warning_road_narrows_both:
     { type: 'narrow-road-both fit', value: 'black' }
   ]
 
-warning_curve_turn_left:
+warning_turn_curve_left:
   category: 'warning'
   name: 'curve turn left'
   elements: [
@@ -83,7 +83,7 @@ warning_curve_turn_left:
     { type: 'turn-l', value: 'black' }
   ]
 
-warning_curve_turn_right:
+warning_turn_curve_right:
   category: 'warning'
   name: 'curve turn right'
   elements: [
@@ -91,13 +91,6 @@ warning_curve_turn_right:
     { type: 'turn-r', value: 'black' }
   ]
 
-warning_curve_turn_left:
-  category: 'warning'
-  name: 'curve turn left'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'turn-l', value: 'black' }
-  ]
 
 regulatory_no_bicycles:
   category: 'regulatory'
@@ -161,6 +154,14 @@ warning_side_road_perpendicular_right:
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
     { type: 'side-road-p-r', value: 'black' }
+  ]
+
+warning_side_road_perpendicular_left:
+  category: 'warning'
+  name: 'side road perpendicular left'
+  elements: [
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'side-road-p-l', value: 'black' }
   ]
 
 regulatory_no_trucks:
@@ -304,7 +305,26 @@ regulatory_no_left_or_u_turn:
     { type: 'circle-line-l', value: 'red' }
   ]
 
+
+
+
 warning_winding_road:
+  category: 'warning'
+  name: 'winding road'
+  elements: [
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'winding-road', value: 'black' }
+  ]
+
+warning_winding_road_left:
+  category: 'warning'
+  name: 'winding road'
+  elements: [
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'winding-road', value: 'black' }
+  ]
+
+warning_winding_road_right:
   category: 'warning'
   name: 'winding road'
   elements: [
@@ -527,6 +547,16 @@ regulatory_national_network_lane:
     { type: 'lorry', value: 'black' }
   ]
 
+regulatory_national_network_prohibited:
+  category: 'regulatory'
+  name: 'national_network_lane'
+  elements: [
+    { type: 'circle-bg', value: 'white' }
+    { type: 'circle-o', value: 'red' }
+    { type: 'lorry', value: 'black' }
+    { type: 'circle-line-l', value: 'red' }
+  ]
+
 warning_motorcycle_crossing:
   category: 'warning'
   name: 'motorcycle crossing'
@@ -560,6 +590,14 @@ warning_truck_rollover_with_speed:
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
     { type: 'truck-rollover-speed', value: 'black' }
+  ]
+
+warning_turn_curve_with_speed:
+  category: 'warning'
+  name: 'turn curve with speed'
+  elements: [
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'turn-curve-w-speed', value: 'black' }
   ]
 
 regulatory_no_rollerblading:
@@ -602,4 +640,27 @@ warning_single_2_reverse_curve:
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
     { type: 'single-2-reverse-curve', value: 'black' }
+  ]
+
+warning_curve_turn_left:
+  category: 'warning'
+  name: 'curve turn left'
+  elements: [
+    { type: 'diamong-bg', value: 'yellow' }
+    { type: 'curve-r-l', value: 'black' }
+  ]
+
+warning_curve_turn_right:
+  category: 'warning'
+  name: 'curve turn right'
+  elements: [
+    { type: 'diamong-bg', value: 'yellow' }
+    { type: 'curve-r-r', value: 'black' }
+  ]
+
+warning_side_road_perpendicular:
+  category: 'warning'
+  name: 'side road perpendicular'
+  elements: [
+    { type: 'diamond-bg', value: 'yellow' }
   ]

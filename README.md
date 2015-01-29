@@ -1,5 +1,5 @@
 # traffico
-An Open Source Traffic Sign Font
+An Open Source Traffic Sign Font read more on [traffico.io](http://traffico.io/)
 
 ## Getting the dependncies (OS X)
 To build traffico you need homebrew and ruby installed. These are dependencies of fontcustom gem.

@@ -196,8 +196,8 @@
       elements: [
         { type: 'circle-bg', value: 'white' }
         { type: 'circle-o', value: 'red' }
-        { type: 'lorry-left', value: 'black' }
-        { type: 'car-right', value: 'red' }
+        { type: 'lorry-left', value: 'red' }
+        { type: 'car-right', value: 'black' }
       ]
 
   danger_priority_next_intersection:

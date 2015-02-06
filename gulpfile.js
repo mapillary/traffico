@@ -11,11 +11,11 @@ gulp.task('compile', shell.task('fontcustom compile'));
 gulp.task('cson', function() {
   gulp.src('dev/*.cson')
     .pipe(cson())
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('build/json'))
 
   watch('dev/*.cson')
     .pipe(cson())
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('build/json'))
 });
 
 gulp.task('concat', ['compile'], function () {

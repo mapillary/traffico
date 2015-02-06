@@ -35,10 +35,10 @@ warning_traffic_light:
   name: 'traffic light'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'traffic-l-bg', valued: 'black' }
-    { type: 'traffic-l-g', valued: 'green' }
-    { type: 'traffic-l-y', valued: 'yellow' }
-    { type: 'traffic-l-r', valued: 'red' }
+    { type: 'traffic-l-bg', value: 'black' }
+    { type: 'traffic-l-g', value: 'green' }
+    { type: 'traffic-l-y', value: 'yellow' }
+    { type: 'traffic-l-r', value: 'red' }
   ]
 
 regulatory_no_parking:

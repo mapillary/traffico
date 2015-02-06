@@ -102,7 +102,7 @@
 
   danger_construction:
       category: 'danger'
-      name: 'road works'
+      name: 'construction'
       elements: [
         { type: 'tri-bg', value: 'white' }
         { type: 'tri-o', value: 'red' }
@@ -186,8 +186,8 @@
     elements: [
       { type: 'circle-bg', value: 'white' }
       { type: 'circle-o', value: 'red' }
-      { type: 'car-left', value: 'black' }
-      { type: 'car-right', value: 'red' }
+      { type: 'car-left', value: 'red' }
+      { type: 'car-right', value: 'black' }
     ]
 
   prohibitory_on_overtaking_trucks:
@@ -253,15 +253,15 @@
 
   mandatory_go_right_or_straight:
       category: 'mandatory'
-      name: 'go right'
+      name: 'go right or straight'
       elements: [
         { type: 'circle-bg', value: 'blue' }
         { type: 'arrow-s-r', value: 'white' }
       ]
 
-  mandatory_go_right_or_straight:
+  mandatory_go_left_or_straight:
         category: 'mandatory'
-        name: 'go right'
+        name: 'go left or straight'
         elements: [
           { type: 'circle-bg', value: 'blue' }
           { type: 'arrow-s-l', value: 'white' }
@@ -409,7 +409,7 @@
       elements: [
         { type: 'tri-bg', value: 'white' }
         { type: 'tri-o', value: 'red' }
-        { type: 'narrow-road-left fit', value: 'black' }
+        { type: 'narrow-road-l fit', value: 'black' }
       ]
 
   danger_road_narrows_right:
@@ -418,7 +418,7 @@
         elements: [
           { type: 'tri-bg', value: 'white' }
           { type: 'tri-o', value: 'red' }
-          { type: 'narrow-road-right fit', value: 'black' }
+          { type: 'narrow-road-r fit', value: 'black' }
         ]
 
   danger_cycle_crossing:

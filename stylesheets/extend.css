@@ -44,7 +44,7 @@
 }
 
 .t-content {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 45%;
@@ -53,7 +53,7 @@
 }
 
 .t-content-3 {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 35%;
@@ -62,7 +62,7 @@
 }
 
 .t-content-4 {
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 25%;

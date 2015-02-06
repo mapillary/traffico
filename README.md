@@ -1,7 +1,10 @@
 # traffico
-An Open Source Traffic Sign Font read more on [traffico.io](http://traffico.io/)
+An Open Source Traffic Sign Font. Read more on [traffico.io](http://traffico.io/)
 
-## Getting the dependncies (OS X)
+## Getting the dependencies
+
+### OS X
+
 To build traffico you need homebrew and ruby installed. These are dependencies of fontcustom gem.
 
 Then run:
@@ -9,21 +12,21 @@ Then run:
 ```
 brew install fontforge --with-python
 brew install eot-utils
+brew install node
 gem install fontcustom
 ```
 
-## Getting the dependencies (Linux)
+### Linux
 
 ```
-sudo apt-get install fontforge
+sudo apt-get install fontforge node
 wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
 unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/
 gem install fontcustom
 ```
 
 ## Build
-The build process is a simple gulp task, therefore you need node and npm installed:
-<code>brew install node</code>
+The build process is a simple gulp task.
 
 First get the gulp dependencies: <code>npm install</code>.
 

@@ -9,37 +9,30 @@ const VAR_VALUES = {
   weight: ['3.5t', '10t']
 };
 const OUTPUT_FILES = [{
-  path: 'build/signs.html',
+  path: 'build/sign-overview.html',
   prefix: '<!DOCTYPE html>' +
     '<meta charset=utf8>' +
     '<link rel=stylesheet href="stylesheets/traffico.css?'+Date.now()+'">' +
+    '<link rel=stylesheet href="stylesheets/examples.css?'+Date.now()+'">' +
     '<style>' +
     '*{font-family:Helvetica,​Arial,​sans-serif}' +
     'body{margin:0;padding:0 0 2em}' +
-    '.t {font-size:50px}' +
-    '.t i:first-child{text-shadow:0 0 3px rgba(0,0,0,.3);transition:1s ease text-shadow}' +
-    '.signContainer:hover .t i:first-child{text-shadow:none}' +
-    '.signContainer {display:inline-block;padding:.5em .75em 1em}' +
-    '.categoryContainer {padding:0 10px}' +
-    '.label{position:absolute;display:none}' +
-    '.signContainer:hover .label{display:block}' +
-    'h2,h3 {clear:both;padding:10px;margin:0}' +
-    'h2 {padding-top:2em;border-bottom:2px solid #ccc}' +
+    'h3{margin:0;padding:0 1em}' +
     '</style>' +
-    '<title>traffico sign overview</title>',
-  suffix: ''
+    '<title>traffico sign overview</title><div class=examples>',
+  suffix: '</div>'
 }, {
-  path: 'build/gh-pages/example.html',
+  path: 'build/gh-pages/examples.html',
   prefix: '---\n' +
     'layout: default\n' +
     'title: Traffico - Examples\n' +
     '---\n' +
     '<div class="examples-container l-box">' +
     '<div class="pure-u-1">' +
-    '<h1>Examples</h1>' +
+    '<h1>Examples</h1><p>Traffico comes with the following set of pre-built signs that is fully customizable and extendable:</p>' +
     '</div>' +
     '<div class="pure-u-1 examples">',
-  suffix: '</div></div>'
+  suffix: '</div></div>\n'
 }];
 /** Config END */
 
@@ -50,7 +43,12 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
   // Iterate over all *.json files in JSON_DIR
   for (var f in files) {
     if (files[f].indexOf('.json', files[f].length - 5) !== -1) {
-      output += '<h2>Signs from ' + files[f] + '</h2>';
+      output += '<h2>' +
+        (files[f].length == 7 ?
+          files[f].charAt(0).toUpperCase()+files[f].charAt(1).toUpperCase() :
+          files[f].charAt(0).toUpperCase() + files[f].slice(1)
+        ).substring(0, files[f].length - 5) +
+        '</h2>';
       var fileContent = fs.readFileSync(JSON_DIR + files[f], 'utf8');
 
       // This variable is an associative array with the category-name as key. The value for each key is an array of signContainer-<div>s (as string) for this category.

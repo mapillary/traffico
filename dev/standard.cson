@@ -88,7 +88,16 @@
     elements: [
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
-      { type: 'animal', value: 'black'}
+      { type: 'animal fit', value: 'black'}
+    ]
+
+  danger_snow:
+    category: 'danger'
+    name: 'danger snow'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'snowflake fit', value: 'black'}
     ]
 
   danger_intersection:

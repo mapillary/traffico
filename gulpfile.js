@@ -24,7 +24,7 @@ gulp.task('concat', ['compile'], function () {
     .pipe(gulp.dest('build/stylesheets'))
 });
 
-gulp.task('generate-overview', shell.task('node ./scripts/generate-overview.js'));
+gulp.task('generate-overview', shell.task('mkdir build/gh-pages | node ./scripts/generate-overview.js'));
 
 gulp.task('default', ['compile', 'concat', 'cson'], function() {
     gulp.start('generate-overview');

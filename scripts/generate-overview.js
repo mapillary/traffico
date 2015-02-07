@@ -3,15 +3,14 @@ var fs = require('fs');
 /** Config */
 const JSON_DIR = './build/json/';
 const VAR_VALUES = {
-  content: [20, 30, 35, 50, 70, 75, 90, 100, 120],
+  content: [10, 20, 25, 30, 35, 50, 70, 75, 90, 100, 110, 120, 130],
   height: ['2m', '3.5m', '10ft'],
-  width: ['2m', '3.5m', '10ft']
+  width: ['2m', '3.5m', '10ft'],
+  weight: ['3.5t', '10t']
 };
-/** Config END */
-
-var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
-
-  var output = '<!DOCTYPE html>' +
+const OUTPUT_FILES = [{
+  path: 'build/signs.html',
+  prefix: '<!DOCTYPE html>' +
     '<meta charset=utf8>' +
     '<link rel=stylesheet href="stylesheets/traffico.css">' +
     '<style>' +
@@ -20,13 +19,33 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
     '.t {font-size:50px}' +
     '.t i:first-child{text-shadow:0 0 3px rgba(0,0,0,.3);transition:1s ease text-shadow}' +
     'div:hover .t i:first-child{text-shadow:none}' +
-    '.signContainer {height:55px;float:left;min-width:300px;border:1px solid #eee;margin:0 -1px -1px 0;padding:.5em}' +
+    '.signContainer {display:inline-block;padding:.5em .75em 1em}' +
     '.categoryContainer {padding:0 10px}' +
-    '.label{padding:.5em}' +
+    '.label{position:absolute;display:none}' +
+    '.signContainer:hover .label{display:block}' +
     'h2,h3 {clear:both;padding:10px;margin:0}' +
     'h2 {padding-top:2em;border-bottom:2px solid #ccc}' +
     '</style>' +
-    '<title>traffico sign overview</title>';
+    '<title>traffico sign overview</title>',
+  suffix: ''
+}, {
+  path: 'build/gh-pages/example.html',
+  prefix: '---\n' +
+    'layout: default\n' +
+    'title: Traffico - Examples\n' +
+    '---\n' +
+    '<div class="examples-container l-box">' +
+    '<div class="pure-u-1">' +
+    '<h1>Examples</h1>' +
+    '</div>' +
+    '<div class="pure-u-1 examples">',
+  suffix: '</div></div>'
+}];
+/** Config END */
+
+var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
+
+  var output = '';
 
   // Iterate over all *.json files in JSON_DIR
   for (var f in files) {
@@ -90,17 +109,21 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
         // Insert sign-container into correct category
         signCategories[data[key]['category']][signCategories[data[key]['category']].length] = currentSignContainer;
       }
+      var numSigns = 0;
       // Output all the sign categories one after another
       for (var category in signCategories) {
         output += '<h3>' + category + '</h3><div class="categoryContainer">' + signCategories[category].join('') + '</div>';
+        numSigns += signCategories[category].length;
       }
-      console.log("Added signs from " + files[f]) + " to overview.";
+      console.log("Added "+numSigns+" signs from " + files[f]) + " to overview.";
     }
   }
 
-  // Write the complete HTML-file
-  fs.writeFile('./build/signs.html', output, function(err) {
-    if (err) throw err;
-    console.log("Successfully wrote signs to signs.html.");
-  });
+  for (i in OUTPUT_FILES) {
+    // Write the complete HTML-file
+    fs.writeFile(OUTPUT_FILES[i]['path'], OUTPUT_FILES[i]['prefix'] + output + OUTPUT_FILES[i]['suffix'], function(err) {
+      if (err) throw err;
+    });
+    console.log('Successfully wrote signs to '+OUTPUT_FILES[i]['path']);
+  }
 });

@@ -149,9 +149,9 @@
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
       { type: 'traffic-l-bg', value: 'black' }
-      { type: 'traffic-l-r', value: 'red' }
-      { type: 'traffic-l-y', value: 'yellow' }
-      { type: 'traffic-l-g', value: 'green' }
+      { type: 'traffic-l-top', value: 'red' }
+      { type: 'traffic-l-middle', value: 'yellow' }
+      { type: 'traffic-l-bottom', value: 'green' }
     ]
 
   mandatory_cycle_track:

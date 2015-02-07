@@ -87,19 +87,23 @@
 }
 
 .t-c-red {
-  color: red;
+  color: #c1121c;
 }
 
 .t-c-blue {
-  color: mediumblue;
+  color: #154889;
 }
 
 .t-c-black {
   color: black;
 }
 
+.t-c-yellow-dark {
+  color: #f0ca00;
+}
+
 .t-c-yellow {
-  color: yellow;
+  color: #fecf33;
 }
 
 .t-c-grey {
@@ -107,5 +111,5 @@
 }
 
 .t-c-green {
-  color: darkgreen;
+  color: #008754;
 }

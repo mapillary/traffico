@@ -61,7 +61,7 @@
     category: 'other'
     name: 'priority_road'
     elements: [
-      { type: 'diamond-bg', value: 'yellow' }
+      { type: 'diamond-bg', value: 'yellow-dark' }
       { type: 'diamond-o', value: 'white' }
     ]
 
@@ -141,7 +141,7 @@
       { type: 'tri-o', value: 'red' }
       { type: 'traffic-l-bg', value: 'black' }
       { type: 'traffic-l-r', value: 'red' }
-      { type: 'traffic-l-y', value: 'yellow' }
+      { type: 'traffic-l-y', value: 'yellow-dark' }
       { type: 'traffic-l-g', value: 'green' }
     ]
 

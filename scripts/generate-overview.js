@@ -12,13 +12,13 @@ const OUTPUT_FILES = [{
   path: 'build/signs.html',
   prefix: '<!DOCTYPE html>' +
     '<meta charset=utf8>' +
-    '<link rel=stylesheet href="stylesheets/traffico.css">' +
+    '<link rel=stylesheet href="stylesheets/traffico.css?'+Date.now()+'">' +
     '<style>' +
     '*{font-family:Helvetica,​Arial,​sans-serif}' +
     'body{margin:0;padding:0 0 2em}' +
     '.t {font-size:50px}' +
     '.t i:first-child{text-shadow:0 0 3px rgba(0,0,0,.3);transition:1s ease text-shadow}' +
-    'div:hover .t i:first-child{text-shadow:none}' +
+    '.signContainer:hover .t i:first-child{text-shadow:none}' +
     '.signContainer {display:inline-block;padding:.5em .75em 1em}' +
     '.categoryContainer {padding:0 10px}' +
     '.label{position:absolute;display:none}' +

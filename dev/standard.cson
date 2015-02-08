@@ -71,7 +71,7 @@
     elements: [
       { type: 'circle-bg', value: 'white' }
       { type: 'circle-o', value: 'red' }
-      { type: 'content', value: 'undefined' }
+      { type: 'content', value: 'black' }
     ]
 
   mandatory_pedestrian_cycle_dual_track:

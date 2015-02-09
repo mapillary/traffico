@@ -82,6 +82,24 @@
       { type: 'shared-path-lines', value: 'white' }
     ]
 
+  danger_animals:
+    category: 'danger'
+    name: 'danger animals'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'animal fit', value: 'black'}
+    ]
+
+  danger_snow:
+    category: 'danger'
+    name: 'danger snow'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'snowflake fit', value: 'black'}
+    ]
+
   danger_intersection:
     category: 'danger'
     name: 'intersection'
@@ -102,7 +120,7 @@
 
   danger_construction:
       category: 'danger'
-      name: 'road works'
+      name: 'construction'
       elements: [
         { type: 'tri-bg', value: 'white' }
         { type: 'tri-o', value: 'red' }
@@ -140,9 +158,9 @@
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
       { type: 'traffic-l-bg', value: 'black' }
-      { type: 'traffic-l-r', value: 'red' }
-      { type: 'traffic-l-y', value: 'yellow' }
-      { type: 'traffic-l-g', value: 'green' }
+      { type: 'traffic-l-top', value: 'red' }
+      { type: 'traffic-l-middle', value: 'yellow' }
+      { type: 'traffic-l-bottom', value: 'green' }
     ]
 
   mandatory_cycle_track:
@@ -186,8 +204,8 @@
     elements: [
       { type: 'circle-bg', value: 'white' }
       { type: 'circle-o', value: 'red' }
-      { type: 'car-left', value: 'black' }
-      { type: 'car-right', value: 'red' }
+      { type: 'car-left', value: 'red' }
+      { type: 'car-right', value: 'black' }
     ]
 
   prohibitory_on_overtaking_trucks:
@@ -196,8 +214,8 @@
       elements: [
         { type: 'circle-bg', value: 'white' }
         { type: 'circle-o', value: 'red' }
-        { type: 'lorry-left', value: 'black' }
-        { type: 'car-right', value: 'red' }
+        { type: 'lorry-left', value: 'red' }
+        { type: 'car-right', value: 'black' }
       ]
 
   danger_priority_next_intersection:
@@ -253,15 +271,15 @@
 
   mandatory_go_right_or_straight:
       category: 'mandatory'
-      name: 'go right'
+      name: 'go right or straight'
       elements: [
         { type: 'circle-bg', value: 'blue' }
         { type: 'arrow-s-r', value: 'white' }
       ]
 
-  mandatory_go_right_or_straight:
+  mandatory_go_left_or_straight:
         category: 'mandatory'
-        name: 'go right'
+        name: 'go left or straight'
         elements: [
           { type: 'circle-bg', value: 'blue' }
           { type: 'arrow-s-l', value: 'white' }
@@ -323,18 +341,18 @@
         { type: 'd-curve-r fit', value: 'black' }
       ]
 
-    danger_bend_left:
-      category: 'danger'
-      name: 'bend first left'
-      elements: [
-        { type: 'tri-bg', value: 'white' }
-        { type: 'tri-o', value: 'red' }
-        { type: 'd-curve-l fit', value: 'black' }
-      ]
+  danger_bend_left:
+    category: 'danger'
+    name: 'bend first left'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'd-curve-l fit', value: 'black' }
+    ]
 
-  information_disable_persons:
+  information_disabled_persons:
     category: 'information'
-    name: 'disable persons'
+    name: 'disabled parking'
     elements: [
       { type: 'square-bg', value: 'blue' }
       { type: 'disabled-p', value: 'white' }
@@ -366,23 +384,32 @@
       { type: 'width', value: 'black' }
     ]
 
+  prohibitory_vehicle_weight_limit:
+    category: 'prohibitory'
+    name: 'vehicle weight limit'
+    elements: [
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'weight', value: 'black' }
+    ]
+
   danger_bend_first_right:
     category: 'danger'
     name: 'bend first right'
     elements: [
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
-      { type: 'turn-l fit', value: 'black' }
+      { type: 'turn-r fit', value: 'black' }
     ]
 
-    danger_bend_first_left:
-      category: 'danger'
-      name: 'bend first left'
-      elements: [
-        { type: 'tri-bg', value: 'white' }
-        { type: 'tri-o', value: 'red' }
-        { type: 'turn-l fit', value: 'black' }
-      ]
+  danger_bend_first_left:
+    category: 'danger'
+    name: 'bend first left'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'turn-l fit', value: 'black' }
+    ]
 
   prohibitory_no_vehicle_with_dangerous_goods:
     category: 'prohibitory'
@@ -409,7 +436,7 @@
       elements: [
         { type: 'tri-bg', value: 'white' }
         { type: 'tri-o', value: 'red' }
-        { type: 'narrow-road-left fit', value: 'black' }
+        { type: 'narrow-road-l fit', value: 'black' }
       ]
 
   danger_road_narrows_right:
@@ -418,7 +445,7 @@
         elements: [
           { type: 'tri-bg', value: 'white' }
           { type: 'tri-o', value: 'red' }
-          { type: 'narrow-road-right fit', value: 'black' }
+          { type: 'narrow-road-r fit', value: 'black' }
         ]
 
   danger_cycle_crossing:
@@ -469,21 +496,30 @@
 
   prohibitory_no_motor_vehicles:
     category: 'prohibitory'
-    name: 'no motor vehicles'
+    name: 'motor vehicles prohibited'
     elements: [
-      { type: 'tri-bg', value: 'white' }
-      { type: 'tri-o', value: 'red' }
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
       { type: 'motor-vehicles fit', value: 'black' }
     ]
 
   prohibitory_no_motorcycles:
-      category: 'prohibitory'
-      name: 'no motor vehicles'
-      elements: [
-        { type: 'tri-bg', value: 'white' }
-        { type: 'tri-o', value: 'red' }
-        { type: 'motor-vehicles fit', value: 'black' }
-      ]
+    category: 'prohibitory'
+    name: 'motorcycles prohibited'
+    elements: [
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'motorbike fit', value: 'black' }
+    ]
+
+  prohibitory_no_pedestrians_and_bicycles:
+    category: 'prohibitory'
+    name: 'pedestrians and bicycles prohibited'
+    elements: [
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'shared-path fit', value: 'black' }
+    ]
 
   prohibitory_no_trucks:
     category: 'prohibitory'

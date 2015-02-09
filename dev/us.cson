@@ -35,10 +35,10 @@ warning_traffic_light:
   name: 'traffic light'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'traffic-l-bg', valued: 'black' }
-    { type: 'traffic-l-g', valued: 'green' }
-    { type: 'traffic-l-y', valued: 'yellow' }
-    { type: 'traffic-l-r', valued: 'red' }
+    { type: 'traffic-l-bg', value: 'black' }
+    { type: 'traffic-l-bottom', value: 'green' }
+    { type: 'traffic-l-middle', value: 'yellow' }
+    { type: 'traffic-l-top', value: 'red' }
   ]
 
 regulatory_no_parking:
@@ -47,7 +47,7 @@ regulatory_no_parking:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'parking', value: 'black' }
+    { type: 'parking fit', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
@@ -98,7 +98,7 @@ regulatory_no_bicycles:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'bicycle', value: 'black' }
+    { type: 'bicycle fit', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
@@ -108,17 +108,17 @@ regulatory_no_left_turn:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'turn-90-l', value: 'black' }
+    { type: 'turn-90-l fit', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
 regulatory_no_turn_right:
   category: 'regulatory'
-  name: 'no turn right'
+  name: 'no right turn'
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'turn-90-r', value: 'black' }
+    { type: 'turn-90-r fit', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
@@ -128,7 +128,7 @@ regulatory_no_u_turn:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'u-turn', value: 'black' }
+    { type: 'u-turn fit', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
@@ -305,23 +305,12 @@ regulatory_no_left_or_u_turn:
     { type: 'circle-line-l', value: 'red' }
   ]
 
-
-
-
-warning_winding_road:
-  category: 'warning'
-  name: 'winding road'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'winding-road', value: 'black' }
-  ]
-
 warning_winding_road_left:
   category: 'warning'
   name: 'winding road'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'winding-road', value: 'black' }
+    { type: 'winding-road-left', value: 'black' }
   ]
 
 warning_winding_road_right:
@@ -329,7 +318,7 @@ warning_winding_road_right:
   name: 'winding road'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'winding-road', value: 'black' }
+    { type: 'winding-road-right', value: 'black' }
   ]
 
 warning_metric_clearance:
@@ -337,7 +326,7 @@ warning_metric_clearance:
   name: 'metric clearance'
   elements: [
     { type: 'diamond-bg', value: 'yellow' }
-    { type: 'winding-road', value: 'black' }
+    { type: 'metric-clearance', value: 'black' }
   ]
 
 warning_intersection_circular:
@@ -394,7 +383,7 @@ regulatory_no_hitch_hiking:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'hitchhike', value: 'black' }
+    { type: 'hitch-hiking', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
@@ -580,7 +569,7 @@ regulatory_hazardous_material_prohibited:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'hazardous-material', value: 'black' }
+    { type: 'hazardous-material fit', value: 'black' }
     { type: 'circle-o', value: 'red' }
   ]
 
@@ -606,7 +595,7 @@ regulatory_no_rollerblading:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'rollerblading', value: 'black' }
+    { type: 'rollerblading fit', value: 'black' }
     { type: 'circle-line-l', value: 'red' }
   ]
 
@@ -646,16 +635,16 @@ warning_curve_turn_left:
   category: 'warning'
   name: 'curve turn left'
   elements: [
-    { type: 'diamong-bg', value: 'yellow' }
-    { type: 'curve-r-l', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'curve-r-l fit', value: 'black' }
   ]
 
 warning_curve_turn_right:
   category: 'warning'
   name: 'curve turn right'
   elements: [
-    { type: 'diamong-bg', value: 'yellow' }
-    { type: 'curve-r-r', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'curve-r-r fit', value: 'black' }
   ]
 
 warning_side_road_perpendicular:

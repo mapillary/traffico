@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512px"
+   height="512px"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="winding-road-right (Kopie).svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="1052"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-x="1558"
+     inkscape:window-y="402"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">winding-road</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <g
+     id="us-symbols"
+     sketch:type="MSPage"
+     transform="matrix(-1,0,0,1,512,0)"
+     style="fill:none;stroke:none">
+    <g
+       id="winding-road"
+       sketch:type="MSArtboardGroup"
+       style="fill:#000000">
+      <path
+         d="m 263.76064,367.84487 -0.01,18.09157 -34.28184,-0.034 c -0.15113,-5.83552 -0.0536,-12.36331 -0.0536,-18.19395 0,-17.49192 11.87091,-33.96007 28.08556,-40.48786 2.76419,-1.4869 4.45098,-4.38273 4.45098,-7.47843 0,-3.59783 -2.29619,-6.85928 -5.66001,-8.07319 -14.50836,-6.27916 -29.83086,-8.78983 -43.07655,-19.75399 -9.35535,-7.74656 -14.4596,-20.01234 -14.4596,-32.29278 0,-23.70769 19.63209,-42.29652 43.05705,-43.05215 4.71423,-0.14626 8.60458,-3.90011 8.60458,-8.63872 l -0.01,-12.63143 -18.97396,5.66001 c -2.62768,0.73615 -4.57286,1.03841 -6.59116,-0.33637 -2.89582,-1.96956 -3.65634,-5.9379 -1.68191,-8.83372 l 44.4562,-65.72631 44.52932,65.72631 c 1.97443,2.89582 1.20903,6.86416 -1.68191,8.83372 -1.93542,1.31628 -3.93422,1.07739 -6.32303,0.47288 l -19.29084,-5.79652 0.01,12.64118 c 0,24.02459 -19.65161,43.07167 -43.04729,43.07167 -4.7435,0 -8.61921,3.87084 -8.61921,8.60945 0,3.23221 1.75991,6.43029 4.71424,7.67345 9.81848,4.12435 19.90023,7.61492 29.72847,11.74903 17.19453,7.24443 28.75344,22.53767 28.75344,40.69748 0,16.48278 -13.04581,33.38968 -28.02218,40.2831 -3.51502,1.61354 -4.60706,4.28023 -4.60706,7.81956 z"
+         id="path3557"
+         sketch:type="MSShapeGroup"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

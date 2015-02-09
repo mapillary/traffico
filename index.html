@@ -4,11 +4,13 @@ title: Traffico
 subtitle: An Open Source Traffic Sign Font
 ---
 
+<a href="https://github.com/mapillary/traffico" class="github-ribbon"><img style="z-index:5;position: fixed; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
 <div class="splash-container">
   <div class="splash">
     <h1 class="splash__title">{{ page.title }}</h1>
     <h2 class="">{{ page.subtitle }}</h2>
-    <a class="pure-button splash__button" href="https://github.com/mapillary/traffico-release">Download v0.0.7 (fonts, stylesheets & json)</a>
+    <a class="pure-button splash__button" href="https://github.com/mapillary/traffico-release/releases/tag/v{{ site.version }}"><strong>Download v{{ site.version }}</strong><br>fonts, stylesheets &amp; json</a>
     <a class="splash__source" href="https://github.com/mapillary/traffico">Check out the source code</a>
   </div>
 </div>
@@ -18,7 +20,7 @@ subtitle: An Open Source Traffic Sign Font
     the <a href="{{ site.baseurl }}/shapes">Shapes</a> page for available shapes or <a href="{{ site.baseurl }}/examples">Examples</a> for what is available in the .json files.</p>
   <p class="content__lead">Install from command line:
     <code class="content__install">
-      $ bower install traffico
+      $ bower install <span>traffico</span>
     </code>
   </p>
 
@@ -77,9 +79,10 @@ subtitle: An Open Source Traffic Sign Font
 
       <a class="sample-set__more" href="{{baseurl}}/examples.html">More examples</a>
 
-      <p class="content__love">
-        Made with &hearts; at <a href="https://mapillary.com">Mapillary</a>
-      </p>
+      <div class="content__love">
+        <hr />
+        <p>Made with &hearts; at <a href="https://mapillary.com">Mapillary</a></p>
+      </div>
 
     </div>
   </div>
@@ -88,7 +91,7 @@ subtitle: An Open Source Traffic Sign Font
       <h3 class="content__subhead">A collection of layers</h3>
       <p>Traffico is a collection of vector shapes, that are meant to be stacked on one another</p>
 
-      <p>Fox example, to build a &lsquo;Warning of danger ahead&rsquo; sign, after attaching stylesheets and the font files:</p>
+      <p>For example, to build a &lsquo;Warning of danger ahead&rsquo; sign, after attaching stylesheets and the font files:</p>
 {% highlight css %}
 <span class="t">
   <i class="t-tri-bg t-c-yellow"></i>
@@ -112,23 +115,25 @@ subtitle: An Open Source Traffic Sign Font
         <h3 class="content__subhead">Generative templates</h3>
         <p>With every Traffico release, there is a set of .json files attached, which provide for a good foundation for generating templates in a framework of your choice.</p>
 {% highlight json %}
-"information_pedestrian_crossing": {
-  "category":"other",
-  "name":"pedestrian crossing",
-  "elements":[
-    {
-      "type":"square-bg",
-      "value":"blue"
-    },
-    {
-      "type":"tri-bg-in",
-      "value":"white"
-    },
-    {
-      "type":"pedestrian-crossing",
-      "value":"black"
-    }
-  ]
+{
+  "information_pedestrian_crossing": {
+    "category":"other",
+    "name":"pedestrian crossing",
+    "elements":[
+      {
+        "type":"square-bg",
+        "value":"blue"
+      },
+      {
+        "type":"tri-bg-in",
+        "value":"white"
+      },
+      {
+        "type":"pedestrian-crossing",
+        "value":"black"
+      }
+    ]
+  }
 }
 {% endhighlight %}
     </div>

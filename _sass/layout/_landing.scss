@@ -3,8 +3,9 @@
   background-color: $color--main;
   padding: 1em;
   color: $color--white;
-  min-height: 20em;
+  min-height: 21em;
   position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,.3) inset;
 }
 
 .splash {
@@ -13,11 +14,20 @@
   left: 0;
   right: 0;
 
-  &__button {
-    margin-top: 2em;
-    font-size: 1em;
-    background-color: $color--white;
+  h1, h2 {
+    text-shadow: 4px 4px 8px rgba(0,0,0,.25);
+  }
 
+  a.splash__button {
+    margin-top: 1em;
+    font-size: 1em;
+    color:$color--black;
+    background-color: $color--white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.25);
+
+    &:hover {
+      box-shadow: 2.5px 2.5px 5px rgba(0,0,0,.25);
+    }
     @media screen and (min-width: 567px) {
       font-size: 1.5em;
     }
@@ -42,21 +52,49 @@ a.splash__source {
   }
 
   &__install {
-    color: $color--black;
+    color: $color--white;
+    padding: .1em .4em;
+    border-radius:.25em;
+    background: $color--black;
+    span {
+      font-weight:bold;
+      color: $color--main;
+    }
   }
 
   &__love {
-    font-size: 0.5em;
     font-weight: 200;
     text-align: center;
     color: $color--grey;
+    display:block;
+    position:relative;
+    margin:1em 0 0;
+    p {
+      font-size: 0.5em;
+      background:white;
+      display:inline-block;
+      padding:0 1em;
+    }
+    hr {
+      margin-bottom:-.9em;
+      background: $color--grey;
+      height:1px;
+      border:none;
+    }
+  }
+}
+
+.github-ribbon {
+  display:none;
+  @media screen and (min-width: 567px) {
+    display:block;
   }
 }
 
 .sample-set {
   font-size: 4em;
   margin: 1em auto;
-  max-width: 650px;
+  text-align:center;
 
   &__more {
     margin: 10px;

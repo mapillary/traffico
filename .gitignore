@@ -4,6 +4,9 @@
 # npm & gulp
 node_modules/
 
+# Sass
+.sass-cache/
+
 # Build folder, font and css output
 build/
 .fontcustom-manifest.json

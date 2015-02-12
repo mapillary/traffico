@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="us-symbols" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="traffic-l-middle" sketch:type="MSArtboardGroup" fill="#000000">
-            <circle id="Oval-2" sketch:type="MSShapeGroup" cx="256.5" cy="261.5" r="36.5"></circle>
+            <path d="M 256,223 a 36 36 0 1 0 0.00001 0 z"></path>
         </g>
     </g>
 </svg>

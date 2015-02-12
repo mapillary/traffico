@@ -39,9 +39,9 @@ warning_traffic_light:
     { type: 'diamond-bg', value: 'black' }
     { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'traffic-l-bg', value: 'black' }
-    { type: 'traffic-l-bottom', value: 'green' }
+    { type: 'traffic-l-middle', value: 'green', transform: 'translate(0,16%)' }
     { type: 'traffic-l-middle', value: 'yellow' }
-    { type: 'traffic-l-top', value: 'red' }
+    { type: 'traffic-l-middle', value: 'red', transform: 'translate(0,-16%)' }
   ]
 
 regulatory_no_parking:

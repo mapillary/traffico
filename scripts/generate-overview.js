@@ -92,7 +92,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
             elements[i]['transform'] = 'style="-webkit-transform:'+elements[i]['transform']+';-moz-transform:'+elements[i]['transform']+';transform:'+elements[i]['transform']+'"';
           }
           // add the sign element itself
-          currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['value'] + '"'+elements[i]['transform']+'>'+content+'</i>';
+          currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['color'] + '"'+elements[i]['transform']+'>'+content+'</i>';
         }
         currentSign += '</span>';
 

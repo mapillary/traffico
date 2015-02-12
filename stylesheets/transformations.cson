@@ -1,0 +1,7 @@
+fit_triangle: 'scale(.8) translate(0,5%)'
+fit_border_circle: 'scale(.8)'
+fit_diamond: 'scale(.9)'
+top_half: 'scale(.6) translate(0,-35%)'
+bottom_half: 'scale(.6) translate(0,35%)'
+left_half: 'scale(.6) translate(-40%,0)'
+right_half: 'scale(.6) translate(40%,0)'

@@ -18,7 +18,8 @@ warning_merge:
   category: 'warning'
   name: 'merge'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'merge', value: 'black' }
   ]
 
@@ -26,7 +27,8 @@ warning_pedestrian_crossing:
   category: 'warning'
   name: 'pedestrian crossing'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'pedestrian', value: 'black' }
   ]
 
@@ -34,7 +36,8 @@ warning_traffic_light:
   category: 'warning'
   name: 'traffic light'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'traffic-l-bg', value: 'black' }
     { type: 'traffic-l-bottom', value: 'green' }
     { type: 'traffic-l-middle', value: 'yellow' }
@@ -47,50 +50,36 @@ regulatory_no_parking:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'parking fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'parking', value: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_road_narrows_right:
   category: 'warning'
   name: 'road narrows right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'narrow-road-r fit', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'narrow-road-l', value: 'black', transform: '{fit_diamond} scale(-1,1)' }
   ]
 
 warning_road_narrows_left:
   category: 'warning'
   name: 'road narrows left'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'narrow-road-l fit', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'narrow-road-l', value: 'black', transform: '{fit_diamond}' }
   ]
 
 warning_road_narrows_both:
   category: 'warning'
   name: 'road narrows both'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'narrow-road-both fit', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'narrow-road-both', value: 'black', transform: '{fit_diamond}' }
   ]
-
-warning_turn_curve_left:
-  category: 'warning'
-  name: 'curve turn left'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'turn-l', value: 'black' }
-  ]
-
-warning_turn_curve_right:
-  category: 'warning'
-  name: 'curve turn right'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'turn-r', value: 'black' }
-  ]
-
 
 regulatory_no_bicycles:
   category: 'regulatory'
@@ -98,8 +87,8 @@ regulatory_no_bicycles:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'bicycle fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'bicycle', value: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 regulatory_no_left_turn:
@@ -108,8 +97,8 @@ regulatory_no_left_turn:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'turn-90-l fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'turn-90-l', value: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 regulatory_no_turn_right:
@@ -118,8 +107,8 @@ regulatory_no_turn_right:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'turn-90-r fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'turn-90-l', value: 'black', transform: '{fit_border_circle} scale(-1,1)' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 regulatory_no_u_turn:
@@ -128,15 +117,16 @@ regulatory_no_u_turn:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'u-turn fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'u-turn', value: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_added_lanes:
   category: 'warning'
   name: 'added lanes'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'added-lanes', value: 'black' }
   ]
 
@@ -144,7 +134,8 @@ warning_cross_roads:
   category: 'warning'
   name: 'cross roads'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'cross-roads', value: 'black' }
   ]
 
@@ -152,7 +143,8 @@ warning_side_road_perpendicular_right:
   category: 'warning'
   name: 'side road perpendicular right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'side-road-p-r', value: 'black' }
   ]
 
@@ -160,7 +152,8 @@ warning_side_road_perpendicular_left:
   category: 'warning'
   name: 'side road perpendicular left'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'side-road-p-l', value: 'black' }
   ]
 
@@ -170,23 +163,25 @@ regulatory_no_trucks:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'truck fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'truck', value: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_turn_right:
   category: 'warning'
   name: 'turn right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'turn-90-r', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'turn-90-l', value: 'black', transform: 'scale(-1,1)' }
   ]
 
 warning_turn_left:
   category: 'warning'
   name: 'turn left'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'turn-90-l', value: 'black' }
   ]
 
@@ -194,7 +189,8 @@ warning_fire_station:
   category: 'warning'
   name: 'fire station'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'fire-station', value: 'black' }
   ]
 
@@ -202,15 +198,17 @@ warning_bicycles:
   category: 'warning'
   name: 'bicycles'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'bicycle fit', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'bicycle', value: 'black', transform: '{fit_diamond}' }
   ]
 
 warning_dead_end:
   category: 'warning'
   name: 'dead end'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'dead-end', value: 'black' }
   ]
 
@@ -218,32 +216,17 @@ warning_light_rail_crossing:
   category: 'warning'
   name: 'light rail crossing'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'light-rail', value: 'black' }
-  ]
-
-
-warning_curve_reverse_right:
-  category: 'warning'
-  name: 'curve reverse right'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'curve-r-r', value: 'black' }
-  ]
-
-warning_curve_reverse_left:
-  category: 'warning'
-  name: 'curve reverse left'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'curve-r-l', value: 'black' }
   ]
 
 warning_horizontal_alignment_left:
   category: 'warning'
   name: 'horizontal alignment left'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'h-align-l', value: 'black' }
   ]
 
@@ -251,15 +234,17 @@ warning_horizontal_alignment_right:
   category: 'warning'
   name: 'horizontal alignment right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'h-align-r', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'h-align-l', value: 'black', transform: 'scale(-1,1)' }
   ]
 
 warning_highway_divided:
   category: 'warning'
   name: 'highway divided'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'highway-divided', value: 'black' }
   ]
 
@@ -267,7 +252,8 @@ warning_steep_hill:
   category: 'warning'
   name: 'steep hill'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'steep-hill', value: 'black' }
   ]
 
@@ -275,7 +261,8 @@ warning_low_clearance:
   category: 'warning'
   name: 'low clearance'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'low-clearance', value: 'black' }
   ]
 
@@ -283,7 +270,8 @@ warning_offset_roads:
   category: 'warning'
   name: 'offset roads'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'offset-roads', value: 'black' }
   ]
 
@@ -291,7 +279,8 @@ warning_slippery:
   category: 'warning'
   name: 'slippery'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'slippery', value: 'black' }
   ]
 
@@ -302,14 +291,15 @@ regulatory_no_left_or_u_turn:
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
     { type: 'no-l-or-u-turn', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_winding_road_left:
   category: 'warning'
   name: 'winding road'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'winding-road-left', value: 'black' }
   ]
 
@@ -317,15 +307,17 @@ warning_winding_road_right:
   category: 'warning'
   name: 'winding road'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'winding-road-right', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'winding-road-left', value: 'black', transform: 'scale(-1,1)' }
   ]
 
 warning_metric_clearance:
   category: 'warning'
   name: 'metric clearance'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'metric-clearance', value: 'black' }
   ]
 
@@ -333,7 +325,8 @@ warning_intersection_circular:
   category: 'warning'
   name: 'intersection circular'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'roundabout', value: 'black' }
   ]
 
@@ -341,15 +334,17 @@ warning_turn_reverse_right:
   category: 'warning'
   name: 'turn reverse right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'turn-reverse-right', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'turn-reverse-left', value: 'black', transform: 'scale(-1,1)' }
   ]
 
 warning_turn_reverse_left:
   category: 'warning'
   name: 'turn reverse left'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'turn-reverse-left', value: 'black' }
   ]
 
@@ -357,7 +352,8 @@ warning_side_road_acute_angle_right:
   category: 'warning'
   name: 'side road acute angle right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'side-road-a-a-r', value: 'black' }
   ]
 
@@ -365,7 +361,8 @@ warning_side_road_acute_angle_left:
   category: 'warning'
   name: 'side road acute angle left'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'side-road-a-a-l', value: 'black' }
   ]
 
@@ -373,7 +370,8 @@ warning_t_roads:
   category: 'warning'
   name: 't roads'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 't-roads', value: 'black' }
   ]
 
@@ -384,14 +382,15 @@ regulatory_no_hitch_hiking:
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
     { type: 'hitch-hiking', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_pass_left_or_right:
   category: 'warning'
   name: 'pass left or right'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'pass-l-r', value: 'black' }
   ]
 
@@ -399,7 +398,8 @@ warning_share_roads:
   category: 'warning'
   name: 'share roads'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'share-roads', value: 'black' }
   ]
 
@@ -407,7 +407,8 @@ warning_bickcle_slippery:
   category: 'warning'
   name: 'bicycle slippery'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'bicycle-slippery', value: 'black' }
   ]
 
@@ -418,14 +419,15 @@ regulatory_no_pedestrian_crossing:
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
     { type: 'pedestrian', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_workers_in_road_ahead:
   category: 'warning'
   name: 'workers in road ahead'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'roadworks', value: 'black' }
   ]
 
@@ -433,7 +435,8 @@ warning_play_ground:
   category: 'warning'
   name: 'play ground'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'play-ground', value: 'black' }
   ]
 
@@ -441,7 +444,8 @@ warning_falling_rocks:
   category: 'warning'
   name: 'falling rocks'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'falling-rocks', value: 'black' }
   ]
 
@@ -449,7 +453,8 @@ warning_hairpin_curve:
   category: 'warning'
   name: 'hairpin curve'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'hairpin-curve', value: 'black' }
   ]
 
@@ -457,7 +462,8 @@ warning_end:
   category: 'warning'
   name: 'end'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'end', value: 'black' }
   ]
 
@@ -465,7 +471,8 @@ warning_loop_270_degree:
   category: 'warning'
   name: 'loop 270 degree'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'loop-270', value: 'black' }
   ]
 
@@ -473,7 +480,8 @@ warning_y_roads:
   category: 'warning'
   name: 'y roads'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'y-roads', value: 'black' }
   ]
 
@@ -483,15 +491,16 @@ regulatory_no_straight_through:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'arrow-straight', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'US-arrow-up', value: 'black' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_added_lane_from_entering_roadway:
   category: 'warning'
   name: 'added lane from entering roadway'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'added-lane-entering-roadway', value: 'black' }
   ]
 
@@ -499,7 +508,8 @@ warning_flaggers_in_road_ahead:
   category: 'warning'
   name: 'flaggers in road ahead'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'flaggers', value: 'black' }
   ]
 
@@ -507,7 +517,8 @@ warning_skewed_railroads_crossing:
   category: 'warning'
   name: 'skewed railroads crossing'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'skewed-railroads', value: 'black' }
   ]
 
@@ -515,7 +526,8 @@ warning_trucks_rollover:
   category: 'warning'
   name: 'trucks rollover'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'trucks-rollover', value: 'black' }
   ]
 
@@ -523,7 +535,8 @@ warning_lightground_railroad_crossing:
   category: 'warning'
   name: 'lightground railroad crossing'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'lightground-railroad-crossing', value: 'black' }
   ]
 
@@ -543,14 +556,15 @@ regulatory_national_network_prohibited:
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
     { type: 'lorry', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_motorcycle_crossing:
   category: 'warning'
   name: 'motorcycle crossing'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'motorbike', value: 'black' }
   ]
 
@@ -559,7 +573,8 @@ warning_railroad:
   name: 'railroad'
   elements: [
     { type: 'circle-bg', value: 'yellow' }
-    { type: 'circle-x', value: 'black' }
+    { type: 'circle-bar-rounded', value: 'black', transform: 'rotate(-45deg)' }
+    { type: 'circle-bar-rounded', value: 'black', transform: 'rotate(45deg)' }
     { type: 'railroad', value: 'black' }
   ]
 
@@ -569,7 +584,7 @@ regulatory_hazardous_material_prohibited:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'hazardous-material fit', value: 'black' }
+    { type: 'hazardous-material', value: 'black', transform: '{fit_border_circle}' }
     { type: 'circle-o', value: 'red' }
   ]
 
@@ -577,16 +592,9 @@ warning_truck_rollover_with_speed:
   category: 'warning'
   name: 'truck rollover with speed'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'truck-rollover-speed', value: 'black' }
-  ]
-
-warning_turn_curve_with_speed:
-  category: 'warning'
-  name: 'turn curve with speed'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'turn-curve-w-speed', value: 'black' }
   ]
 
 regulatory_no_rollerblading:
@@ -595,15 +603,16 @@ regulatory_no_rollerblading:
   elements: [
     { type: 'circle-bg', value: 'white' }
     { type: 'circle-o', value: 'red' }
-    { type: 'rollerblading fit', value: 'black' }
-    { type: 'circle-line-l', value: 'red' }
+    { type: 'rollerblading', value: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
 warning_triple_2_traverse_curve:
   category: 'warning'
   name: 'triple 2 traverse curve'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 't-2-traverse-curve', value: 'black' }
   ]
 
@@ -611,45 +620,36 @@ warning_double_reverse_curve:
   category: 'warning'
   name: 'double reverse curve'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'double-reverse-curve', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(-9%)' }
+    { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(9%)' }
   ]
 
 warning_triple_2_traverse_curve:
   category: 'warning'
   name: 'triple 2 traverse curve'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 't-2-traverse-curve', value: 'black' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(-18%)' }
+    { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond}' }
+    { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(18%)' }
   ]
 
 warning_single_2_reverse_curve:
   category: 'warning'
   name: 'single 2 reverse curve'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
     { type: 'single-2-reverse-curve', value: 'black' }
-  ]
-
-warning_curve_turn_left:
-  category: 'warning'
-  name: 'curve turn left'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'curve-r-l fit', value: 'black' }
-  ]
-
-warning_curve_turn_right:
-  category: 'warning'
-  name: 'curve turn right'
-  elements: [
-    { type: 'diamond-bg', value: 'yellow' }
-    { type: 'curve-r-r fit', value: 'black' }
   ]
 
 warning_side_road_perpendicular:
   category: 'warning'
   name: 'side road perpendicular'
   elements: [
-    { type: 'diamond-bg', value: 'yellow' }
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
   ]

@@ -332,7 +332,7 @@
     elements: [
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
-      { type: 'right-of-way-l fit', value: 'black' }
+      { type: 'right-of-way-l fit', value: 'black', transform: '{fit_triangle}' }
       ]
 
   priority_priority_intersection_right:
@@ -341,7 +341,7 @@
     elements: [
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
-      { type: 'right-of-way-l fit', value: 'black', transform: 'scale(-1,1)' }
+      { type: 'right-of-way-l fit', value: 'black', transform: '{fit_triangle} scale(-1,1)' }
       ]
 
   mandatory_turn_left_or_right:
@@ -651,5 +651,6 @@
     elements: [
       { type: 'circle-bg', value: 'yellow' }
       { type: 'circle-o', value: 'green'}
+      { type: 'h', value: 'green', transform: '{fit_border_circle}'}
     ]
 }

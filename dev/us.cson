@@ -23,6 +23,15 @@ warning_merge:
     { type: 'merge', value: 'black' }
   ]
 
+warning_merging_traffic:
+  category: 'warning'
+  name: 'merging traffic'
+  elements: [
+    { type: 'diamond-bg', value: 'black' }
+    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'merge', value: 'black', transform: 'rotate(45deg)' }
+  ]
+
 warning_pedestrian_crossing:
   category: 'warning'
   name: 'pedestrian crossing'
@@ -121,13 +130,13 @@ regulatory_no_u_turn:
     { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
-warning_added_lanes:
+warning_added_lane:
   category: 'warning'
-  name: 'added lanes'
+  name: 'added lane'
   elements: [
     { type: 'diamond-bg', value: 'black' }
     { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
-    { type: 'added-lanes', value: 'black' }
+    { type: 'added-lane', value: 'black' }
   ]
 
 warning_cross_roads:
@@ -497,11 +506,11 @@ regulatory_no_straight_through:
 
 warning_added_lane_from_entering_roadway:
   category: 'warning'
-  name: 'added lane from entering roadway'
+  name: 'added lane (from entering roadway)'
   elements: [
     { type: 'diamond-bg', value: 'black' }
     { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
-    { type: 'added-lane-entering-roadway', value: 'black' }
+    { type: 'added-lane', value: 'black', transform: 'rotate(45deg) scale(.95)' }
   ]
 
 warning_flaggers_in_road_ahead:
@@ -513,9 +522,9 @@ warning_flaggers_in_road_ahead:
     { type: 'flaggers', value: 'black' }
   ]
 
-warning_skewed_railroads_crossing:
+warning_skewed_railroad_crossing:
   category: 'warning'
-  name: 'skewed railroads crossing'
+  name: 'skewed railroad crossing'
   elements: [
     { type: 'diamond-bg', value: 'black' }
     { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
@@ -607,21 +616,21 @@ regulatory_no_rollerblading:
     { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
   ]
 
-warning_triple_2_traverse_curve:
+warning_single_2_reverse_curve:
   category: 'warning'
-  name: 'triple 2 traverse curve'
+  name: 'single 2 reverse curve'
   elements: [
     { type: 'diamond-bg', value: 'black' }
-    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
-    { type: 't-2-traverse-curve', value: 'black' }
+    { type: 'diamond-bg', value: 'orange', transform: 'scale(.95)' }
+    { type: 'single-2-reverse-curve', value: 'black' }
   ]
 
-warning_double_reverse_curve:
+warning_double_2_reverse_curve:
   category: 'warning'
-  name: 'double reverse curve'
+  name: 'double 2 reverse curve'
   elements: [
     { type: 'diamond-bg', value: 'black' }
-    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'diamond-bg', value: 'orange', transform: 'scale(.95)' }
     { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(-9%)' }
     { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(9%)' }
   ]
@@ -631,19 +640,10 @@ warning_triple_2_traverse_curve:
   name: 'triple 2 traverse curve'
   elements: [
     { type: 'diamond-bg', value: 'black' }
-    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
+    { type: 'diamond-bg', value: 'orange', transform: 'scale(.95)' }
     { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(-18%)' }
     { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond}' }
     { type: 'single-2-reverse-curve', value: 'black', transform: '{fit_diamond} translate(18%)' }
-  ]
-
-warning_single_2_reverse_curve:
-  category: 'warning'
-  name: 'single 2 reverse curve'
-  elements: [
-    { type: 'diamond-bg', value: 'black' }
-    { type: 'diamond-bg', value: 'yellow', transform: 'scale(.95)' }
-    { type: 'single-2-reverse-curve', value: 'black' }
   ]
 
 warning_side_road_perpendicular:

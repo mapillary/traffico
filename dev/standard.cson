@@ -24,6 +24,39 @@
       { type: 'DE-arrow-up', value: 'white', transform: 'rotate(-135deg)' }
     ]
 
+  mandatory_go_left:
+    category: 'mandatory'
+    name: 'go left'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'rotate(-90deg)' }
+    ]
+
+  mandatory_go_right:
+    category: 'mandatory'
+    name: 'go right'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'rotate(90deg)' }
+    ]
+
+  mandatory_minimum_speed:
+    category: 'mandatory'
+    name: 'minimum speed'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'speed_value', value: 'white'}
+    ]
+
+  mandatory_minimum_speed_end:
+    category: 'mandatory'
+    name: 'end of minimum speed limit'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'speed_value', value: 'white'}
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(45deg)'}
+    ]
+
   other_give_way:
     category: 'priority'
     name: 'give way'
@@ -38,6 +71,25 @@
     elements: [
       { type: 'square-bg', value: 'blue' }
       { type: 'parking', value: 'white' }
+    ]
+
+  priority_narrow:
+    category: 'priority'
+    name: 'priority at narrow location'
+    elements: [
+      { type: 'square-bg', value: 'blue' }
+      { type: 'DE-arrow-up', value: 'red', transform: 'scale(.7) translate(-25%,5%) rotate(180deg)' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'scale(.7) translate(25%,-5%)' }
+    ]
+
+  priority_narrow2:
+    category: 'priority'
+    name: 'no priority at narrow location'
+    elements: [
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'DE-arrow-up', value: 'black', transform: '{fit_border_circle} scale(.7) translate(-25%,5%) rotate(180deg)' }
+      { type: 'DE-arrow-up', value: 'red', transform: '{fit_border_circle} scale(.7) translate(25%,-5%)' }
     ]
 
   other_no_entry:
@@ -55,6 +107,26 @@
       { type: 'circle-bg', value: 'blue' }
       { type: 'circle-o', value: 'red' }
       { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
+    ]
+
+  prohibitory_no_parking_left:
+    category: 'prohibitory'
+    name: 'no_parking'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'rotate(90deg) scale(.3) translate(95%)' }
+    ]
+
+  prohibitory_no_parking_right:
+    category: 'prohibitory'
+    name: 'no_parking'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'rotate(-90deg) scale(.3) translate(95%)' }
     ]
 
   priority_priority_road:
@@ -137,6 +209,15 @@
       { type: 'roundabout', value: 'white' }
     ]
 
+  danger_roundabout:
+    category: 'danger'
+    name: 'roundabout'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'roundabout', value: 'black', transform: '{fit_triangle}' }
+    ]
+
   prohibitory_no_traffic_both_ways:
     category: 'prohibitory'
     name: 'no traffic both ways'
@@ -203,6 +284,28 @@
       { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(45deg)' }
     ]
 
+  prohibitory_no_parking_or_stopping_left:
+    category: 'prohibitory'
+    name: 'no parking or stopping'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(45deg)' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'rotate(-90deg) scale(.3) translate(95%)' }
+    ]
+
+  prohibitory_no_parking_or_stopping_right:
+    category: 'prohibitory'
+    name: 'no parking or stopping'
+    elements: [
+      { type: 'circle-bg', value: 'blue' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(-45deg)' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(45deg)' }
+      { type: 'DE-arrow-up', value: 'white', transform: 'rotate(90deg) scale(.3) translate(95%)' }
+    ]
+
   prohibitory_overtaking:
     category: 'prohibitory'
     name: 'no overtaking'
@@ -230,6 +333,15 @@
       { type: 'tri-bg', value: 'white' }
       { type: 'tri-o', value: 'red' }
       { type: 'right-of-way-l fit', value: 'black' }
+      ]
+
+  priority_priority_intersection_right:
+    category: 'priority'
+    name: 'priority at next intersection on the right'
+    elements: [
+      { type: 'tri-bg', value: 'white' }
+      { type: 'tri-o', value: 'red' }
+      { type: 'right-of-way-l fit', value: 'black', transform: 'scale(-1,1)' }
       ]
 
   mandatory_turn_left_or_right:
@@ -521,5 +633,23 @@
       { type: 'circle-bg', value: 'white' }
       { type: 'circle-o', value: 'red' }
       { type: 'truck', value: 'black' }
+    ]
+
+  prohibitory_no_trucks_bar:
+    category: 'prohibitory'
+    name: 'no trucks'
+    elements: [
+      { type: 'circle-bg', value: 'white' }
+      { type: 'circle-o', value: 'red' }
+      { type: 'truck', value: 'black' }
+      { type: 'circle-bar-rounded', value: 'red', transform: 'rotate(45deg)'}
+    ]
+
+  other_stop_position:
+    category: 'other'
+    name: 'stop position (bus/tram)'
+    elements: [
+      { type: 'circle-bg', value: 'yellow' }
+      { type: 'circle-o', value: 'green'}
     ]
 }

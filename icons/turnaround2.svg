@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="turnaround" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M306,227A50,50 0 0 0 206,227L206,347 181,385 156,346 156,227 A 100,100 0 0 1 356,227Z" id="path1881" sketch:type="MSShapeGroup"></path>
+            <path d="M306,385 306,226.9 356,226.9 L356,385 L331,347 L306,385 L306,385 Z" id="path1881" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

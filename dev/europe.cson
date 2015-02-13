@@ -197,6 +197,15 @@ information_parking:
     { type: 'parking', color: 'white' }
   ]
 
+information_pedestrian_crossing:
+  category: 'information'
+  name: 'pedestrian crossing'
+  elements: [
+    { type: 'square-bg', color: 'blue' }
+    { type: 'tri-bg-in', color: 'white', transform: 'scale(.9)' }
+    { type: 'pedestrian-crossing', color: 'black' }
+  ]
+
 mandatory_bicycle_pedestrian_dual_track:
   category: 'mandatory'
   name: 'bicycle/pedestrian dual track'
@@ -355,15 +364,6 @@ other_no_entry:
   elements: [
     { type: 'circle-bg', color: 'red' }
     { type: 'circle-bar', color: 'white' }
-  ]
-
-other_pedestrian_crossing:
-  category: 'other'
-  name: 'pedestrian crossing'
-  elements: [
-    { type: 'square-bg', color: 'blue' }
-    { type: 'tri-bg-in', color: 'white', transform: 'scale(.9)' }
-    { type: 'pedestrian-crossing', color: 'black' }
   ]
 
 other_stop_position:

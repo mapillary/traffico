@@ -103,3 +103,23 @@ a.splash__source {
     text-align: right;
   }
 }
+
+@keyframes blink {
+  0% { opacity: 1 }
+  40% { opacity: 1 }
+  55% { opacity: 0 }
+  100% { opacity: 0 }
+}
+@keyframes blink-inverse {
+  0% { opacity: 0 }
+  45% { opacity: 0 }
+  60% { opacity: 1 }
+  100% { opacity: 1 }
+}
+.blink {
+  animation: blink 10s infinite alternate;
+}
+.blink-inverse {
+  opacity:0;
+  animation: blink-inverse 10s infinite alternate;
+}

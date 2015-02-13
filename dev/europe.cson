@@ -197,6 +197,33 @@ information_parking:
     { type: 'parking', color: 'white' }
   ]
 
+information_parking_left:
+  category: 'information'
+  name: 'parking (left of this sign)'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'parking', color: 'white' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'translate(25%,30%) rotate(-90deg) scale(.33)'}
+  ]
+
+information_parking_right:
+  category: 'information'
+  name: 'parking (right of this sign)'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'parking', color: 'white' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'translate(25%,30%) rotate(90deg) scale(.33)'}
+  ]
+
+information_deadend:
+  category: 'information'
+  name: 'deadend'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'square-rounded', color: 'white', transform: 'translate(0,18%) scale(.15,.6)' }
+    { type: 'square-rounded', color: 'red', transform: 'translate(0,-15%) scale(.5,.15)' }
+  ]
+
 mandatory_bicycle_pedestrian_dual_track:
   category: 'mandatory'
   name: 'bicycle/pedestrian dual track'

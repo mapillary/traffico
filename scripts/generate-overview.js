@@ -3,7 +3,7 @@ var fs = require('fs');
 /** Config */
 const JSON_DIR = './build/json/';
 const VAR_VALUES = {
-  speed_value: [10, 20, 25, 30, 35, 50, 70, 75, 90, 100, 110, 120, 130],
+  speed_value: [10, 20, 25, 30, 35, 50, 60, 70, 75, 80, 90, 100, 110, 120, 130],
   height_value: ['2m ', '3.5m', '10ft'],
   width_value: ['2m ', '3.5m', '10ft'],
   weight_value: ['3.5t', '10t']

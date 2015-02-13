@@ -5,3 +5,4 @@ top_half: 'scale(.6) translate(0,-35%)'
 bottom_half: 'scale(.6) translate(0,35%)'
 left_half: 'scale(.6) translate(-40%,0)'
 right_half: 'scale(.6) translate(40%,0)'
+square_to_diamond: 'scale(0.707107) rotate(45deg)' # 1/sqrt(2) = 0.707107

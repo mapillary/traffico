@@ -49,7 +49,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
           files[f].charAt(0).toUpperCase()+files[f].charAt(1).toUpperCase() :
           files[f].charAt(0).toUpperCase() + files[f].slice(1)
         ).substring(0, files[f].length - 5) +
-        '</h2>';
+        '</h2>\n';
       var fileContent = fs.readFileSync(JSON_DIR + files[f], 'utf8');
 
       // This variable is an associative array with the category-name as key. The value for each key is an array of signContainer-<div>s (as string) for this category.
@@ -61,7 +61,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
         // This variable will contain one single sign
         var currentSign = '<span class="t">';
         // This variable will contain a <div> with one sign (or multiple signs for variable-content-signs) in it
-        var currentSignContainer = '<div class="signContainer">';
+        var currentSignContainer = '<div class="signContainer '+key+'">';
         // This variable will be set to the type of the variable sign content (for possible values see the keys of VAR_VALUES) or null if the sign is not variable
         var typeOfVariableContent = null;
         // Shortcut for the array of sign elements
@@ -89,7 +89,9 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
           // Prepare transformations
           if (typeof elements[i]['transform']!='undefined') {
             elements[i]['transform'] = elements[i]['transform'].replace('"', '&quot;').replace(';', '');
-            elements[i]['transform'] = 'style="-webkit-transform:'+elements[i]['transform']+';-moz-transform:'+elements[i]['transform']+';transform:'+elements[i]['transform']+'"';
+            elements[i]['transform'] = ' style="-webkit-transform:'+elements[i]['transform']+';-moz-transform:'+elements[i]['transform']+';transform:'+elements[i]['transform']+'"';
+          } else {
+            elements[i]['transform'] = '';
           }
           // add the sign element itself
           currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['color'] + '"'+elements[i]['transform']+'>'+content+'</i>';
@@ -107,7 +109,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
         } else {
           currentSignContainer += currentSign;
         }
-        currentSignContainer += '<span class="label">' + data[key]['name'] + '</span></div>';
+        currentSignContainer += '<span class="label">' + data[key]['name'] + '</span></div>\n';
 
         // Set category to "undefined" if it is not set in the json-file
         if (typeof data[key]['category'] == 'undefined') {
@@ -123,7 +125,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
       var numSigns = 0;
       // Output all the sign categories one after another
       for (var category in signCategories) {
-        output += '<h3>' + category + '</h3><div class="categoryContainer">' + signCategories[category].join('') + '</div>';
+        output += '<h3>' + category + '</h3>\n<div class="categoryContainer">\n' + signCategories[category].join('') + '</div>';
         numSigns += signCategories[category].length;
       }
       console.log("Gathered "+numSigns+" signs from " + files[f]) + " for overview.";

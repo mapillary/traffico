@@ -185,7 +185,7 @@ information_disabled_parking:
   category: 'information'
   name: 'disabled parking'
   elements: [
-    { type: 'square-bg', color: 'blue' }
+    { type: 'square-rounded', color: 'blue' }
     { type: 'disabled-p', color: 'white' }
   ]
 
@@ -193,7 +193,7 @@ information_parking:
   category: 'information'
   name: 'parking'
   elements: [
-    { type: 'square-bg', color: 'blue' }
+    { type: 'square-rounded', color: 'blue' }
     { type: 'parking', color: 'white' }
   ]
 
@@ -204,6 +204,33 @@ information_pedestrian_crossing:
     { type: 'square-bg', color: 'blue' }
     { type: 'tri-bg-in', color: 'white', transform: 'scale(.9)' }
     { type: 'pedestrian-crossing', color: 'black' }
+  ]
+
+information_parking_left:
+  category: 'information'
+  name: 'parking (left of this sign)'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'parking', color: 'white' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'translate(25%,30%) rotate(-90deg) scale(.33)'}
+  ]
+
+information_parking_right:
+  category: 'information'
+  name: 'parking (right of this sign)'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'parking', color: 'white' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'translate(25%,30%) rotate(90deg) scale(.33)'}
+  ]
+
+information_deadend:
+  category: 'information'
+  name: 'deadend'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'square-rounded', color: 'white', transform: 'translate(0,18%) scale(.15,.6)' }
+    { type: 'square-rounded', color: 'red', transform: 'translate(0,-15%) scale(.5,.15)' }
   ]
 
 mandatory_bicycle_pedestrian_dual_track:
@@ -387,9 +414,9 @@ priority_narrow:
   category: 'priority'
   name: 'priority at narrow location'
   elements: [
-    { type: 'square-bg', color: 'blue' }
-    { type: 'DE-arrow-up', color: 'red', transform: 'scale(.7) translate(-25%,5%) rotate(180deg)' }
-    { type: 'DE-arrow-up', color: 'white', transform: 'scale(.7) translate(25%,-5%)' }
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'red', transform: 'scale(.8) translate(-25%,5%) rotate(180deg)' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'scale(.8) translate(25%,-5%)' }
   ]
 
 priority_narrow2:
@@ -424,8 +451,9 @@ priority_priority_road:
   category: 'priority'
   name: 'priority_road'
   elements: [
-    { type: 'diamond-bg', color: 'yellow' }
-    { type: 'diamond-o', color: 'white' }
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
   ]
 
 priority_stop:
@@ -649,6 +677,6 @@ prohibitory_vehicles_with_dangerous_goods:
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'diamond-bg', color: 'orange', transform: 'scale(.4) translate(0,-15%) rotate(45deg)' }
+    { type: 'square-rounded', color: 'orange', transform: 'scale(.25) translate(0,-25%)' }
     { type: 'lorry', color: 'black' }
   ]

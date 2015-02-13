@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="circles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="circle-bar" sketch:type="MSArtboardGroup" fill="#000000">
-            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="26" y="215" width="460" height="82"></rect>
+            <path d="m 231,7.25 a 250,250 0 0 1 50,0 l 0,497.5 a 250,250 0 0 1 -50,0 z"/>
         </g>
     </g>
 </svg>

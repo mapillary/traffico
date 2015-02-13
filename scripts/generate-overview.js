@@ -3,10 +3,10 @@ var fs = require('fs');
 /** Config */
 const JSON_DIR = './build/json/';
 const VAR_VALUES = {
-  content: [10, 20, 25, 30, 35, 50, 70, 75, 90, 100, 110, 120, 130],
-  height: ['2m', '3.5m', '10ft'],
-  width: ['2m', '3.5m', '10ft'],
-  weight: ['3.5t', '10t']
+  speed_value: [10, 20, 25, 30, 35, 50, 70, 75, 90, 100, 110, 120, 130],
+  height_value: ['2m ', '3.5m', '10ft'],
+  width_value: ['2m ', '3.5m', '10ft'],
+  weight_value: ['3.5t', '10t']
 };
 const OUTPUT_FILES = [{
   path: 'build/sign-overview.html',
@@ -34,6 +34,7 @@ const OUTPUT_FILES = [{
     '<div class="pure-u-1 examples">',
   suffix: '</div></div>\n'
 }];
+const TRANSFORMATIONS = JSON.parse(fs.readFileSync('build/transformations.json', 'utf8'));
 /** Config END */
 
 var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
@@ -68,18 +69,30 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
 
         // Iterate over the elements of the current sign
         for (var i in elements) {
+          var content = '';
           // If the sign can have variable content…
           if (typeof VAR_VALUES[elements[i]['type']] != 'undefined') {
             // …add the placeholders "{{{length}}}" and "{{{variable}}}", which will be replaced later
-            if (elements[i]['type'] == 'width' || elements[i]['type'] == 'height') {
-              currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['value'] + '"></i>';
-            }
-            currentSign += '<i class="t-content{{{length}}} t-c-' + elements[i]['value'] + '">{{{variable}}}</i>';
+            content = '{{{variable}}}';
             typeOfVariableContent = elements[i]['type'];
-          } else {
-            // … else simply add the plain sign element
-            currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['value'] + '"></i>';
+            elements[i]['type'] = 'content{{{length}}}';
           }
+          // Insert named transformations
+          var transformRegex = /\{[a-z_]+\}/i;
+          var match;
+          while((match = transformRegex.exec(elements[i]['transform'])) != null) {
+            match[0] = match[0].substr(1,match[0].length-2);
+            if (typeof TRANSFORMATIONS[match[0]] != 'undefined') {
+              elements[i]['transform'] = elements[i]['transform'].replace('{'+match[0]+'}', TRANSFORMATIONS[match[0]]);
+            }
+          }
+          // Prepare transformations
+          if (typeof elements[i]['transform']!='undefined') {
+            elements[i]['transform'] = elements[i]['transform'].replace('"', '&quot;').replace(';', '');
+            elements[i]['transform'] = 'style="-webkit-transform:'+elements[i]['transform']+';-moz-transform:'+elements[i]['transform']+';transform:'+elements[i]['transform']+'"';
+          }
+          // add the sign element itself
+          currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['color'] + '"'+elements[i]['transform']+'>'+content+'</i>';
         }
         currentSign += '</span>';
 
@@ -113,15 +126,15 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
         output += '<h3>' + category + '</h3><div class="categoryContainer">' + signCategories[category].join('') + '</div>';
         numSigns += signCategories[category].length;
       }
-      console.log("Added "+numSigns+" signs from " + files[f]) + " to overview.";
+      console.log("Gathered "+numSigns+" signs from " + files[f]) + " for overview.";
     }
   }
 
   for (i in OUTPUT_FILES) {
     // Write the complete HTML-file
+    console.log('Writing signs to '+OUTPUT_FILES[i]['path']+'…');
     fs.writeFile(OUTPUT_FILES[i]['path'], OUTPUT_FILES[i]['prefix'] + output + OUTPUT_FILES[i]['suffix'], function(err) {
       if (err) throw err;
     });
-    console.log('Successfully wrote signs to '+OUTPUT_FILES[i]['path']);
   }
 });

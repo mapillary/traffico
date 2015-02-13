@@ -14,9 +14,9 @@ gulp.task('cson', ['clean'], function() {
     .pipe(cson())
     .pipe(gulp.dest('build/json'))
 
-  watch('dev/*.cson')
+  gulp.src('stylesheets/transformations.cson')
     .pipe(cson())
-    .pipe(gulp.dest('build/json'))
+    .pipe(gulp.dest('build'))
 });
 
 gulp.task('concat', ['compile'], function() {

@@ -201,7 +201,7 @@ information_pedestrian_crossing:
   category: 'information'
   name: 'pedestrian crossing'
   elements: [
-    { type: 'square-bg', color: 'blue' }
+    { type: 'square-rounded', color: 'blue' }
     { type: 'tri-bg-in', color: 'white', transform: 'scale(.9)' }
     { type: 'pedestrian-crossing', color: 'black' }
   ]

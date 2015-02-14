@@ -635,9 +635,9 @@ warning_double_2_reverse_curve:
     { type: 'single-2-reverse-curve', color: 'black', transform: '{fit_diamond} translate(9%)' }
   ]
 
-warning_triple_2_traverse_curve:
+warning_triple_2_reverse_curve:
   category: 'warning'
-  name: 'triple 2 traverse curve'
+  name: 'triple 2 reverse curve'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'orange', transform: 'scale(.95) {square_to_diamond}' }
@@ -662,4 +662,52 @@ school_obsolete:
     { type: 'school', color: 'black' }
     { type: 'school', color: 'yellow', transform: 'scale(.95)' }
     { type: 'children', color: 'black' }
+  ]
+
+warning_turn_left_curve:
+  category: 'warning'
+  name: 'turn left curve'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'turn-l-curve', color: 'black', transform: '{fit_diamond}' }
+  ]
+
+warning_turn_right_curve:
+  category: 'warning'
+  name: 'turn right curve'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'turn-l-curve', color: 'black', transform: '{fit_diamond} scale(-1,1)'}
+  ]
+
+
+warning_turn_left_curve_speed:
+  category: 'warning'
+  name: 'turn left curve with speed'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'turn-l-curve', color: 'black', transform: '{fit_diamond}' }
+    { type: 'turn-curve-speed', color: 'black', transform: '{fit_diamond} scale(-1,1)' }
+  ]
+
+warning_turn_right_curve_speed:
+  category: 'warning'
+  name: 'turn right curve with speed'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'turn-l-curve', color: 'black', transform: '{fit_diamond} scale(-1,1)'}
+    { type: 'turn-curve-speed', color: 'black', transform: '{fit_diamond}' }
+  ]
+
+warning_pretzel_loop:
+  category: 'warning'
+  name: 'pretzel_loop'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'pretzel-loop', color: 'black', transform: '{fit_diamond}' }
   ]

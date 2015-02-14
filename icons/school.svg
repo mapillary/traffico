@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>school</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="school" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M40,126.879276 C40,121.360071 43.8955493,114.678183 48.7016811,111.954448 L191.298319,31.1419523 C196.104125,28.4184017 203.895549,28.4182169 208.701681,31.1419523 L351.298319,111.954448 C356.104125,114.677998 360,121.372188 360,126.879276 L360,346.114032 C360,351.633236 355.522231,356.107435 350.005698,356.107435 L49.994302,356.107435 C44.4746014,356.107435 40,351.621119 40,346.114032 L40,126.879276 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

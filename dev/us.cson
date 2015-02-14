@@ -81,7 +81,7 @@ warning_road_narrows_left:
     { type: 'narrow-road-l', color: 'black', transform: '{fit_diamond}' }
   ]
 
-warning_road_narrows_both:
+warning_road_narrows_both_sides:
   category: 'warning'
   name: 'road narrows both'
   elements: [
@@ -437,7 +437,7 @@ warning_workers_in_road_ahead:
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'roadworks', color: 'black' }
+    { type: 'roadworks', color: 'black', transform: '{fit_diamond}' }
   ]
 
 warning_play_ground:
@@ -646,10 +646,20 @@ warning_triple_2_traverse_curve:
     { type: 'single-2-reverse-curve', color: 'black', transform: '{fit_diamond} translate(18%)' }
   ]
 
-warning_side_road_perpendicular:
-  category: 'warning'
-  name: 'side road perpendicular'
+school_school:
+  category: 'school'
+  name: 'school'
   elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'school', color: 'black' }
+    { type: 'school', color: 'fluogreen', transform: 'scale(.95)' }
+    { type: 'children', color: 'black' }
+  ]
+
+school_obsolete:
+  category: 'school'
+  name: 'school'
+  elements: [
+    { type: 'school', color: 'black' }
+    { type: 'school', color: 'yellow', transform: 'scale(.95)' }
+    { type: 'children', color: 'black' }
   ]

@@ -19,7 +19,12 @@ const OUTPUT_FILES = [{
     'body{margin:0;padding:0 0 2em}' +
     'h3{margin:0;padding:0 1em}' +
     '</style>' +
-    '<title>traffico sign overview</title><div class=examples>',
+    '<title>traffico sign overview</title><div class=examples>' +
+    '<script src="https://code.jquery.com/jquery.min.js"></script>' +
+    '<div style="background:rgba(0, 0, 0, 0.75);color:white;position:fixed;bottom:0;width:100%;z-index: 100;padding:.5em 2em;box-sizing: border-box">' +
+    '<label for=size-slider style="padding:1em">Sign size<input type="range" id="size-slider" min="20" max="1000" step="5" value="75" onchange="$(\'.t\').css(\'font-size\', this.value+\'px\')" style="width:100%"></label>' +
+    '</div>' +
+    '<script>$(function () { $(\'.t\').css(\'font-size\', $(\'#size-slider\').val()+\'px\'); });</script>',
   suffix: '</div>'
 }, {
   path: 'build/gh-pages/examples.html',
@@ -78,7 +83,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
             elements[i]['type'] = 'content{{{length}}}';
           }
           // Insert named transformations
-          var transformRegex = /\{[a-z_]+\}/i;
+          var transformRegex = /\{[a-z0-9_]+\}/i;
           var match;
           while((match = transformRegex.exec(elements[i]['transform'])) != null) {
             match[0] = match[0].substr(1,match[0].length-2);

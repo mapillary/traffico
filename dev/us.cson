@@ -48,9 +48,9 @@ warning_traffic_light:
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'traffic-l-bg', color: 'black' }
-    { type: 'traffic-l-middle', color: 'green', transform: 'translate(0,16%)' }
-    { type: 'traffic-l-middle', color: 'yellow' }
-    { type: 'traffic-l-middle', color: 'red', transform: 'translate(0,-16%)' }
+    { type: 'circle-bg', color: 'green', transform: 'translate(0,16.5%) scale(.14)' }
+    { type: 'circle-bg', color: 'yellow', transform: 'scale(.14)' }
+    { type: 'circle-bg', color: 'red', transform: 'translate(0,-16.5%) scale(.14)' }
   ]
 
 regulatory_no_parking:

@@ -88,6 +88,15 @@ danger_quayside_or_ferry_berth:
     { type: 'cliff', color: 'black', transform: '{fit_triangle}' }
   ]
 
+danger_railway_crossing_secured:
+  category: 'danger'
+  name: 'secured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'railway-xing-secured', color: 'black', transform: '{center2tri} translate(0,4%) scale(.35)' }
+  ]
+
 danger_road_narrows:
   category: 'danger'
   name: 'road narrows'
@@ -119,9 +128,9 @@ danger_roundabout:
   category: 'danger'
   name: 'roundabout'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'roundabout', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'roundabout', color: 'black', transform: '{center2tri} scale(.55)' }
   ]
 
 danger_school_crossing:
@@ -146,21 +155,20 @@ danger_snow:
   category: 'danger'
   name: 'danger snow'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'snowflake', color: 'black', transform: '{fit_triangle}'}
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'snowflake', color: 'black', transform: '{center2tri} scale(.7)'}
   ]
 
 danger_traffic_signal:
   category: 'danger'
   name: 'traffic signal'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'traffic-l-bg', color: 'black' }
-    { type: 'traffic-l-middle', color: 'red', transform: 'translate(0,-16%)' }
-    { type: 'traffic-l-middle', color: 'yellow' }
-    { type: 'traffic-l-middle', color: 'green', transform: 'translate(0,16%)' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'circle-bg', color: 'red', transform: '{center2tri} translate(0,-20%) scale(.13)' }
+    { type: 'circle-bg', color: 'yellow', transform: '{center2tri} translate(0,-5%) scale(.13)' }
+    { type: 'circle-bg', color: 'green', transform: '{center2tri} translate(0,10%) scale(.13)' }
   ]
 
 danger_uneven_road:
@@ -181,6 +189,15 @@ danger_wild_animals:
     { type: 'wild-animal', color: 'black', transform: '{fit_triangle}'}
   ]
 
+information_deadend:
+  category: 'information'
+  name: 'deadend'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'square-rounded', color: 'white', transform: 'translate(0,18%) scale(.15,.6)' }
+    { type: 'square-rounded', color: 'red', transform: 'translate(0,-15%) scale(.5,.15)' }
+  ]
+
 information_disabled_parking:
   category: 'information'
   name: 'disabled parking'
@@ -195,15 +212,6 @@ information_parking:
   elements: [
     { type: 'square-rounded', color: 'blue' }
     { type: 'parking', color: 'white' }
-  ]
-
-information_pedestrian_crossing:
-  category: 'information'
-  name: 'pedestrian crossing'
-  elements: [
-    { type: 'square-rounded', color: 'blue' }
-    { type: 'tri-bg-in', color: 'white', transform: 'scale(.9)' }
-    { type: 'pedestrian-crossing', color: 'black' }
   ]
 
 information_parking_left:
@@ -224,13 +232,13 @@ information_parking_right:
     { type: 'DE-arrow-up', color: 'white', transform: 'translate(25%,30%) rotate(90deg) scale(.33)'}
   ]
 
-information_deadend:
+information_pedestrian_crossing:
   category: 'information'
-  name: 'deadend'
+  name: 'pedestrian crossing'
   elements: [
     { type: 'square-rounded', color: 'blue' }
-    { type: 'square-rounded', color: 'white', transform: 'translate(0,18%) scale(.15,.6)' }
-    { type: 'square-rounded', color: 'red', transform: 'translate(0,-15%) scale(.5,.15)' }
+    { type: 'tri-angular', color: 'white', transform: 'scale(.8)' }
+    { type: 'pedestrian-crossing', color: 'black' }
   ]
 
 mandatory_bicycle_pedestrian_dual_track:
@@ -406,8 +414,8 @@ priority_give_way:
   category: 'priority'
   name: 'give way'
   elements: [
-    { type: 'tri-r-bg', color: 'white' }
-    { type: 'tri-r-o', color: 'red' }
+    { type: 'tri-rounded', color: 'red', transform: 'rotate(180deg)' }
+    { type: 'tri-angular', color: 'white', transform: '{tri2center} scale(.7) {center2tri} rotate(180deg)' }
   ]
 
 priority_narrow:

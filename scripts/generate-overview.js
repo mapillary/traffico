@@ -4,7 +4,9 @@ var fs = require('fs');
 const JSON_DIR = './build/json/';
 const VAR_VALUES = {
   speed_value: [10, 20, 25, 30, 35, 50, 60, 70, 75, 80, 90, 100, 110, 120, 130],
+  speed_zone_value: [20,30,40],
   height_value: ['2m ', '3.5m', '10ft'],
+  incline_value: ['10%','12%'],
   width_value: ['2m ', '3.5m', '10ft'],
   weight_value: ['3.5t', '10t']
 };
@@ -81,6 +83,8 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
             content = '{{{variable}}}';
             typeOfVariableContent = elements[i]['type'];
             elements[i]['type'] = 'content{{{length}}}';
+          } else if (typeof elements[i]['content'] != 'undefined') {
+            content = elements[i]['content'];
           }
           // Insert named transformations
           var transformRegex = /\{[a-z0-9_]+\}/i;

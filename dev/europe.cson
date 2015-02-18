@@ -1,3 +1,13 @@
+danger_ascent:
+  category: 'danger'
+  name: 'steep ascent'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'descent', color: 'black', transform: '{inner_triangle} scale(-1,1)' }
+    { type: 'incline_value', content: '10%', color: 'black', transform: 'translate(0,-25%) {center2tri} scale(.4) rotate(-30deg)' }
+  ]
+
 danger_bend_first_left:
   category: 'danger'
   name: 'bend first left'
@@ -38,54 +48,84 @@ danger_construction:
   category: 'danger'
   name: 'construction/road works'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'roadworks', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'roadworks', color: 'black', transform: 'scale(.7) translate(0,20%)' }
+  ]
+
+danger_crossroad:
+  category: 'danger'
+  name: 'crossroad with priority to the right ahead'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'square-angular', color: 'black', transform: '{center2tri} rotate(45deg) scale(.06,.32)' }
+    { type: 'square-angular', color: 'black', transform: '{center2tri} rotate(-45deg) scale(.06,.32)' }
   ]
 
 danger_cycle_crossing:
   category: 'danger'
   name: 'cycle crossing'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'bicycle', color: 'black', transform: '{fit_triangle}'}
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'bicycle', color: 'black', transform: 'scale(.65) translate(0,25%)'}
   ]
 
 danger_danger:
   category: 'danger'
   name: 'danger'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'exclamation', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'exclamation', color: 'black', transform: 'scale(.65) {center2tri}' }
   ]
 
-danger_intersection:
-  category: 'priority'
-  name: 'intersection'
+danger_danger_tmp:
+  category: 'danger'
+  name: 'danger (temporary)'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'right-of-way', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'yellow', transform: '{inner_triangle}' }
+    { type: 'exclamation', color: 'black', transform: 'scale(.65) {center2tri}' }
+  ]
+
+danger_descent:
+  category: 'danger'
+  name: 'steep descent'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'descent', color: 'black', transform: '{inner_triangle}' }
+    { type: 'incline_value', content: '10%', color: 'black', transform: 'translate(0,-25%) {center2tri} scale(.4) rotate(30deg)' }
+  ]
+
+danger_level_crossing:
+  category: 'danger'
+  name: 'level crossing'
+  elements: [
+    { type: 'level-crossing', color: 'red' }
+    { type: 'level-crossing', color: 'red', transform: 'scale(-1,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(60deg) scale(.05,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
   ]
 
 danger_pedestrian_crossing:
   category: 'danger'
   name: 'pedestrian crossing'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'pedestrian', color: 'black' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'pedestrian', color: 'black', transform: 'scale(.7) {center2tri}' }
   ]
 
 danger_quayside_or_ferry_berth:
   category: 'danger'
   name: 'quayside or ferry berth'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'cliff', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'cliff', color: 'black', transform: '{inner_triangle}' }
   ]
 
 danger_railway_crossing_secured:
@@ -95,6 +135,15 @@ danger_railway_crossing_secured:
     { type: 'tri-rounded', color: 'red' }
     { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'railway-xing-secured', color: 'black', transform: '{center2tri} translate(0,4%) scale(.35)' }
+  ]
+
+danger_railway_crossing_unsecured:
+  category: 'danger'
+  name: 'unsecured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'railway-xing-unsecured', color: 'black', transform: 'scale(1.6) translate(38.5%,46%)' }
   ]
 
 danger_road_narrows:
@@ -189,13 +238,22 @@ danger_wild_animals:
     { type: 'wild-animal', color: 'black', transform: '{fit_triangle}'}
   ]
 
+information_bus_stop:
+  category: 'information'
+  name: 'bus stop'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.7)' }
+    { type: 'bus', color: 'black', transform: 'scale(.7)' }
+  ]
+
 information_deadend:
   category: 'information'
   name: 'deadend'
   elements: [
     { type: 'square-rounded', color: 'blue' }
-    { type: 'square-rounded', color: 'white', transform: 'translate(0,18%) scale(.15,.6)' }
-    { type: 'square-rounded', color: 'red', transform: 'translate(0,-15%) scale(.5,.15)' }
+    { type: 'square-angular', color: 'white', transform: 'translate(0,20%) scale(.15,.6)' }
+    { type: 'square-angular', color: 'red', transform: 'translate(0,-15%) scale(.5,.15)' }
   ]
 
 information_disabled_parking:
@@ -204,6 +262,24 @@ information_disabled_parking:
   elements: [
     { type: 'square-rounded', color: 'blue' }
     { type: 'disabled-p', color: 'white' }
+  ]
+
+information_first_aid:
+  category: 'information'
+  name: 'first aid'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.7)' }
+    { type: 'square-angular', color: 'red', transform: 'scale(.15,.5)' }
+    { type: 'square-angular', color: 'red', transform: 'scale(.5,.15)' }
+  ]
+
+information_limited_access_road:
+  category: 'information'
+  name: 'limited-access road'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'car', color: 'white', transform: 'scale(1.5)' }
   ]
 
 information_parking:
@@ -358,7 +434,7 @@ mandatory_roundabout:
   name: 'roundabout'
   elements: [
     { type: 'circle-bg', color: 'blue' }
-    { type: 'roundabout', color: 'white' }
+    { type: 'roundabout', color: 'white', transform: 'scale(1.25)' }
   ]
 
 mandatory_turn_left:
@@ -398,16 +474,7 @@ other_no_entry:
   name: 'no entry'
   elements: [
     { type: 'circle-bg', color: 'red' }
-    { type: 'circle-bar', color: 'white' }
-  ]
-
-other_stop_position:
-  category: 'other'
-  name: 'stop position (bus/tram)'
-  elements: [
-    { type: 'circle-bg', color: 'yellow' }
-    { type: 'circle-o', color: 'green'}
-    { type: 'h', color: 'green', transform: '{fit_border_circle}'}
+    { type: 'square-angular', color: 'white', transform: 'scale(.92,.16)' }
   ]
 
 priority_give_way:
@@ -437,23 +504,32 @@ priority_narrow2:
     { type: 'DE-arrow-up', color: 'red', transform: '{fit_border_circle} scale(.7) translate(25%,-5%)' }
   ]
 
+priority_next_intersection:
+  category: 'priority'
+  name: 'priority at next intersection'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
+
 priority_next_intersection_left:
   category: 'priority'
   name: 'priority at next intersection on the left'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'right-of-way-l fit', color: 'black', transform: '{fit_triangle}' }
-    ]
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
 
 priority_next_intersection_right:
   category: 'priority'
   name: 'priority at next intersection on the right'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'right-of-way-l fit', color: 'black', transform: '{fit_triangle} scale(-1,1)' }
-    ]
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri} scale(-1,1)' }
+  ]
 
 priority_priority_road:
   category: 'priority'
@@ -462,6 +538,16 @@ priority_priority_road:
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
+  ]
+
+priority_priority_road_end:
+  category: 'priority'
+  name: 'end of priority road'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
+    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.2,1)' }
   ]
 
 priority_stop:
@@ -629,6 +715,18 @@ prohibitory_speed_limit:
     { type: 'circle-bg', color: 'red' }
     { type: 'circle-bg', color: 'white', transform: '{fit_border_circle}' }
     { type: 'speed_value', color: 'black' }
+  ]
+
+prohibitory_speed_limit_zone:
+  category: 'prohibitory'
+  name: 'speed limit'
+  elements: [
+    { type: 'square-rounded', color: 'black' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95)' }
+    { type: 'circle-bg', color: 'red', transform: 'translate(0,-8%) scale(.7)' }
+    { type: 'circle-bg', color: 'white', transform: 'translate(0,-8%) scale(.7) {fit_border_circle}' }
+    { type: 'speed_zone_value', color: 'black', transform: 'translate(0,-30%) scale(.7)' }
+    { type: 'content-4', content: 'ZONE', color: 'black', transform: 'translate(0,150%) scale(.8)'}
   ]
 
 prohibitory_trucks:

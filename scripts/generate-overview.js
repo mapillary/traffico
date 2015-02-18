@@ -81,6 +81,8 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
             content = '{{{variable}}}';
             typeOfVariableContent = elements[i]['type'];
             elements[i]['type'] = 'content{{{length}}}';
+          } else if (typeof elements[i]['content'] != 'undefined') {
+            content = elements[i]['content'];
           }
           // Insert named transformations
           var transformRegex = /\{[a-z0-9_]+\}/i;

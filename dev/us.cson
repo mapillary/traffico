@@ -3,7 +3,7 @@ regulatory_no_entry:
   name: 'no entry'
   elements: [
     { type: 'circle-bg', color: 'red' }
-    { type: 'circle-bar', color: 'white' }
+    { type: 'square-angular', color: 'white', transform: 'scale(.92,.16)' }
   ]
 
 regulatory_stop:

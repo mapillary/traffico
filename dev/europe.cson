@@ -575,13 +575,15 @@ prohibitory_pedestrians:
     { type: 'circle-o', color: 'red' }
     { type: 'pedestrian', color: 'black', transform: '{fit_border_circle}' }
   ]
-prohibitory_pedestrians:
+
+prohibitory_pedestrians_and_bicycles:
   category: 'prohibitory'
-  name: 'pedestrians prohibited'
+  name: 'pedestrians and bicycles prohibited'
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'pedestrian', color: 'black', transform: '{fit_border_circle}' }
+    { type: 'footpath', color: 'black', transform: '{fit_border_circle} {top_half}' }
+    { type: 'bicycle', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
   ]
 
 prohibitory_bicycles:
@@ -591,6 +593,16 @@ prohibitory_bicycles:
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
     { type: 'bicycle', color: 'black', transform: '{fit_border_circle}' }
+  ]
+
+prohibitory_mopeds_and_bicycles:
+  category: 'prohibitory'
+  name: 'mopeds and bicycles prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'moped', color: 'black', transform: '{fit_border_circle} {top_half} scale(.7)' }
+    { type: 'bicycle', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
   ]
 
 prohibitory_moped:

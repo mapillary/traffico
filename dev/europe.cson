@@ -247,6 +247,15 @@ danger_wild_animals:
     { type: 'wild-animal', color: 'black', transform: '{fit_triangle}'}
   ]
 
+danger_low_flying_aircraft:
+  category: 'danger'
+  name: 'low flying aircraft'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'airplane', color: 'black', transform: '{center2tri} scale(.4)' }
+  ]
+
 information_bus_stop:
   category: 'information'
   name: 'bus stop'

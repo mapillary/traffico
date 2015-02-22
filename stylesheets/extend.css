@@ -45,6 +45,15 @@
   font-size: 22.5%;
 }
 
+.t-content-5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15%;
+  letter-spacing:0;
+  top:50%;
+}
+
 /** Colours */
 
 .t-c-white {

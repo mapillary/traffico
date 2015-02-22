@@ -19,6 +19,17 @@ information_bus_stop:
     { type: 'h', color: 'green', transform: '{fit_border_circle}'}
   ]
 
+information_border_de:
+  category: 'information'
+  name: 'European border crossing into Germany'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'europe_stars', color: 'yellow' }
+    { type: 'content-5', color: 'white', content: 'Bundes-', transform: 'scale(.9) translate(0,-130%)'}
+    { type: 'content-5', color: 'white', content: 'republik', transform: 'scale(.9) translate(0,-30%)' }
+    { type: 'content-5', color: 'white', content: 'Deutschland', transform: 'scale(.9) translate(0,70%)' }
+  ]
+
 priority_priority_road_end:
   category: 'priority'
   name: 'end of priority road'

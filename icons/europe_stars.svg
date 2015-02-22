@@ -1,0 +1,26 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1" width="512" height="512" id="svg2">
+  <defs id="defs5">
+    <g id="star">
+      <g id="cone">
+        <path d="M0 0V1H0.5z" transform="matrix(0.95105652,0.30901699,-0.30901699,0.95105652,0,-1)" id="triangle" />
+        <use transform="scale(-1,1)" id="use1948" x="0" y="0" width="200" height="200" xlink:href="#triangle" />
+      </g>
+      <use transform="matrix(0.30901699,0.95105652,-0.95105652,0.30901699,0,0)" id="use1950" x="0" y="0" width="200" height="200" xlink:href="#cone" />
+      <use transform="matrix(-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0)" id="use1952" x="0" y="0" width="200" height="200" xlink:href="#cone" />
+      <use transform="matrix(-0.80901699,-0.58778525,0.58778525,-0.80901699,0,0)" id="use1954" x="0" y="0" width="200" height="200" xlink:href="#cone" />
+      <use transform="matrix(0.30901699,-0.95105652,0.95105652,0.30901699,0,0)" id="use1956" x="0" y="0" width="200" height="200" xlink:href="#cone" />
+    </g>
+  </defs>
+  <g transform="matrix(36.828934,0,0,36.828907,256,261.23135)" id="g1960" fill="#fc0">
+    <use id="use1962" x="0" y="-6" width="200" height="200" xlink:href="#star" />
+    <g id="rtl">
+      <use transform="matrix(0.309017,0.951057,-0.951057,0.309017,-3,5.196152)" id="use1965" x="0" y="0" width="200" height="200" xlink:href="#star" />
+      <use transform="matrix(0.309017,0.951057,-0.951057,0.309017,-5.196152,3)" id="use1967" x="0" y="0" width="200" height="200" xlink:href="#star" />
+      <use id="use1969" x="6" y="0" width="200" height="200" xlink:href="#star" />
+      <use transform="matrix(-0.809017,0.587785,-0.587785,-0.809017,-5.196152,-3)" id="use1971" x="0" y="0" width="200" height="200" xlink:href="#star" />
+      <use transform="matrix(-0.809017,-0.587785,0.587785,-0.809017,-3,-5.196152)" id="use1973" x="0" y="0" width="200" height="200" xlink:href="#star" />
+    </g>
+    <use id="use1975" x="0" y="6" width="200" height="200" xlink:href="#star" />
+    <use transform="scale(-1,1)" id="use1977" x="0" y="0" width="200" height="200" xlink:href="#rtl" />
+  </g>
+</svg>

@@ -256,6 +256,16 @@ danger_low_flying_aircraft:
     { type: 'airplane', color: 'black', transform: '{center2tri} scale(.4)' }
   ]
 
+danger_strong_sidewind:
+  category: 'danger'
+  name: 'strong sidewind'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'windbag', color: 'black', transform: '{center2tri} scale(.3)' }
+  ]
+
+
 information_bus_stop:
   category: 'information'
   name: 'bus stop'

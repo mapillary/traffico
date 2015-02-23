@@ -10,4 +10,4 @@ before_script:
   - npm install --global gulp
 script:
   - gulp
-  - exit $(expr `find ./dev/*.cson | wc -l` != `find ./build/json/*.json | wc -l`)
+  - scripts/check_build

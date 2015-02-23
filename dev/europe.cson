@@ -229,6 +229,15 @@ danger_uneven_road:
     { type: 'bump', color: 'black'}
   ]
 
+danger_hump:
+  category: 'danger'
+  name: '(speed) hump'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'speedbump', color: 'black', transform: '{center2tri} scale(.45)'}
+  ]
+
 danger_wild_animals:
   category: 'danger'
   name: 'wild animals crossing'
@@ -237,6 +246,25 @@ danger_wild_animals:
     { type: 'tri-o', color: 'red' }
     { type: 'wild-animal', color: 'black', transform: '{fit_triangle}'}
   ]
+
+danger_low_flying_aircraft:
+  category: 'danger'
+  name: 'low flying aircraft'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'airplane', color: 'black', transform: '{center2tri} scale(.4)' }
+  ]
+
+danger_strong_sidewind:
+  category: 'danger'
+  name: 'strong sidewind'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'windbag', color: 'black', transform: '{center2tri} scale(.3)' }
+  ]
+
 
 information_bus_stop:
   category: 'information'
@@ -558,6 +586,53 @@ priority_stop:
     { type: 'stop', color: 'white' }
   ]
 
+prohibitory_pedestrians:
+  category: 'prohibitory'
+  name: 'pedestrians prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'pedestrian', color: 'black', transform: '{fit_border_circle}' }
+  ]
+
+prohibitory_pedestrians_and_bicycles:
+  category: 'prohibitory'
+  name: 'pedestrians and bicycles prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'footpath', color: 'black', transform: '{fit_border_circle} {top_half}' }
+    { type: 'bicycle', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
+  ]
+
+prohibitory_bicycles:
+  category: 'prohibitory'
+  name: 'cycling prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'bicycle', color: 'black', transform: '{fit_border_circle}' }
+  ]
+
+prohibitory_mopeds_and_bicycles:
+  category: 'prohibitory'
+  name: 'mopeds and bicycles prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'moped', color: 'black', transform: '{fit_border_circle} {top_half} scale(.7)' }
+    { type: 'bicycle', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
+  ]
+
+prohibitory_moped:
+  category: 'prohibitory'
+  name: 'mopeds prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'moped', color: 'black', transform: '{fit_border_circle} scale(.7)' }
+  ]
+
 prohibitory_motorcycles:
   category: 'prohibitory'
   name: 'motorcycles prohibited'
@@ -575,6 +650,63 @@ prohibitory_motor_vehicles:
     { type: 'circle-o', color: 'red' }
     { type: 'motorbike', color: 'black', transform: '{fit_border_circle} {top_half}' }
     { type: 'car', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
+    { type: 'circle-separator', color: 'black', transform: 'rotate(90deg) {fit_border_circle}' }
+  ]
+
+prohibitory_slow_vehicles:
+  category: 'prohibitory'
+  name: 'slow motorized vehicles prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'tractor', color: 'black', transform: '{fit_border_circle} scale(.7)' }
+  ]
+
+prohibitory_trailers:
+  category: 'prohibitory'
+  name: 'no trailers allowed'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'trailer', color: 'black' , transform: '{fit_border_circle} scale(.8)'}
+  ]
+
+prohibitory_buses:
+  category: 'prohibitory'
+  name: 'no buses'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'bus', color: 'black' , transform: '{fit_border_circle}'}
+  ]
+
+prohibitory_trucks:
+  category: 'prohibitory'
+  name: 'no trucks'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black' }
+  ]
+
+prohibitory_trucks_bar:
+  category: 'prohibitory'
+  name: 'no trucks'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)'}
+  ]
+
+prohibitory_trucks_and_buses:
+  category: 'prohibitory'
+  name: 'buses and trucks prohibited'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black', transform: '{fit_border_circle} {top_half}' }
+    { type: 'bus', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
     { type: 'circle-separator', color: 'black', transform: 'rotate(90deg) {fit_border_circle}' }
   ]
 
@@ -698,16 +830,6 @@ prohibitory_overtaking_trucks:
     { type: 'car-right', color: 'black' }
   ]
 
-prohibitory_pedestrians_and_bicycles:
-  category: 'prohibitory'
-  name: 'pedestrians and bicycles prohibited'
-  elements: [
-    { type: 'circle-bg', color: 'white' }
-    { type: 'circle-o', color: 'red' }
-    { type: 'footpath', color: 'black', transform: '{fit_border_circle} {top_half}' }
-    { type: 'bicycle', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
-  ]
-
 prohibitory_speed_limit:
   category: 'prohibitory'
   name: 'speed limit'
@@ -727,25 +849,6 @@ prohibitory_speed_limit_zone:
     { type: 'circle-bg', color: 'white', transform: 'translate(0,-10%) scale(.65) {fit_border_circle}' }
     { type: 'speed_zone_value', color: 'black', transform: 'translate(0,-30%) scale(.7)' }
     { type: 'content-4', content: 'ZONE', color: 'black', transform: 'translate(0,150%) scale(.8)'}
-  ]
-
-prohibitory_trucks:
-  category: 'prohibitory'
-  name: 'no trucks'
-  elements: [
-    { type: 'circle-bg', color: 'white' }
-    { type: 'circle-o', color: 'red' }
-    { type: 'truck', color: 'black' }
-  ]
-
-prohibitory_trucks_bar:
-  category: 'prohibitory'
-  name: 'no trucks'
-  elements: [
-    { type: 'circle-bg', color: 'white' }
-    { type: 'circle-o', color: 'red' }
-    { type: 'truck', color: 'black' }
-    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)'}
   ]
 
 prohibitory_vehicle_height_limit:

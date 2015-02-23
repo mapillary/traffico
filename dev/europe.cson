@@ -509,10 +509,18 @@ mandatory_turn_right_or_straight:
 
 other_no_entry:
   category: 'other'
-  name: 'no entry'
+  name: 'no entry, one way street'
   elements: [
     { type: 'circle-bg', color: 'red' }
     { type: 'square-angular', color: 'white', transform: 'scale(.92,.16)' }
+  ]
+
+other_entry:
+  category: 'other'
+  name: 'entry, one way street'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'arrow-oneway', color: 'white', transform: 'scale(.75)' }
   ]
 
 priority_give_way:

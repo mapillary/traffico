@@ -1,6 +1,6 @@
 information_border_be_nl:
   category: 'information'
-  name: 'European border crossing into Belgium'
+  name: 'European border crossing into Belgium from the Netherlands'
   elements: [
     { type: 'square-rounded', color: 'blue' }
     { type: 'europe_stars', color: 'yellow' }
@@ -9,7 +9,7 @@ information_border_be_nl:
 
 information_border_be_fr:
   category: 'information'
-  name: 'European border crossing into Belgium'
+  name: 'European border crossing into Belgium from France'
   elements: [
     { type: 'square-rounded', color: 'blue' }
     { type: 'europe_stars', color: 'yellow' }

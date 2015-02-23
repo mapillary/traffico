@@ -53,6 +53,16 @@ danger_construction:
     { type: 'roadworks', color: 'black', transform: 'scale(.7) translate(0,20%)' }
   ]
 
+danger_contraflow:
+  category: 'danger'
+  name: 'contraflow'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'DE-arrow-up', color: 'black', transform: '{center2tri} scale(.35) translate(-25%,5%) rotate(180deg)' }
+    { type: 'DE-arrow-up', color: 'black', transform: '{center2tri} scale(.35) translate(25%,-5%)' }
+  ]
+
 danger_crossroad:
   category: 'danger'
   name: 'crossroad with priority to the right ahead'

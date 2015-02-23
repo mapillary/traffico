@@ -768,6 +768,18 @@ prohibitory_no_parking_or_stopping_left:
     { type: 'DE-arrow-up', color: 'white', transform: 'rotate(-90deg) scale(.3) translate(95%)' }
   ]
 
+prohibitory_no_parking_or_stopping_left_and_right:
+  category: 'prohibitory'
+  name: 'no parking or stopping'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(-90deg) scale(.3) translate(95%)' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(90deg) scale(.3) translate(95%)' }
+  ]
+
 prohibitory_no_parking_or_stopping_right:
   category: 'prohibitory'
   name: 'no parking or stopping'
@@ -787,6 +799,17 @@ prohibitory_no_parking_left:
     { type: 'circle-o', color: 'red' }
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
     { type: 'DE-arrow-up', color: 'white', transform: 'rotate(90deg) scale(.3) translate(95%)' }
+  ]
+
+prohibitory_no_parking_left_and_right:
+  category: 'prohibitory'
+  name: 'no_parking'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(90deg) scale(.3) translate(95%)' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(-90deg) scale(.3) translate(95%)' }
   ]
 
 prohibitory_no_parking_right:
@@ -916,4 +939,108 @@ prohibitory_vehicles_with_dangerous_goods:
     { type: 'circle-o', color: 'red' }
     { type: 'square-rounded', color: 'orange', transform: 'scale(.25) translate(0,-25%)' }
     { type: 'lorry', color: 'black' }
+  ]
+
+supplementary_priority_road_bends_left_3way_1:
+  category: 'supplementary'
+  name: 'priority road bends to the left at a 3-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,-30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(-.85,.85)'}
+  ]
+
+supplementary_priority_road_bends_left_3way_2:
+  category: 'supplementary'
+  name: 'priority road bends to the left at a 3-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'rotate(-90deg) translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(-.85,.85)'}
+  ]
+
+supplementary_priority_road_bends_left_4way:
+  category: 'supplementary'
+  name: 'priority road bends to the left at a 4-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,-30%) scale(.1,.25)'}
+    { type: 'square-angular', color: 'black', transform: 'rotate(-90deg) translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(-.85,.85)'}
+  ]
+
+supplementary_priority_road_bends_right_3way_1:
+  category: 'supplementary'
+  name: 'priority road bends to the right at a 3-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,-30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(.85)'}
+  ]
+
+supplementary_priority_road_bends_right_3way_2:
+  category: 'supplementary'
+  name: 'priority road bends to the right at a 3-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'rotate(90deg) translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(.85)'}
+  ]
+
+supplementary_priority_road_bends_right_4way:
+  category: 'supplementary'
+  name: 'priority road bends to the right at a 4-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,-30%) scale(.1,.25)'}
+    { type: 'square-angular', color: 'black', transform: 'rotate(90deg) translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(.85)'}
+  ]
+
+supplementary_priority_road_from_left_3way:
+  category: 'supplementary'
+  name: 'priority road comes from the left and continues straight at a 3-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(-.85,-.85)'}
+  ]
+
+supplementary_priority_road_from_left_4way:
+  category: 'supplementary'
+  name: 'priority road comes from the left and continues straight at a 4-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,30%) scale(.1,.25)'}
+    { type: 'square-angular', color: 'black', transform: 'rotate(-90deg) translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(-.85,-.85)'}
+  ]
+
+supplementary_priority_road_from_right_3way:
+  category: 'supplementary'
+  name: 'priority road comes from the right and continues straight at a 3-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(.85,-.85)'}
+  ]
+
+supplementary_priority_road_from_right_4way:
+  category: 'supplementary'
+  name: 'priority road comes from the right and continues straight at a 4-way intersection'
+  elements: [
+    { type: 'square-rounded', color: 'black'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .95)'}
+    { type: 'square-angular', color: 'black', transform: 'translate(0,30%) scale(.1,.25)'}
+    { type: 'square-angular', color: 'black', transform: 'rotate(90deg) translate(0,30%) scale(.1,.25)'}
+    { type: 'bending-priority', color: 'black', transform: 'scale(.85,-.85)'}
   ]

@@ -44,6 +44,9 @@ const OUTPUT_FILES = [{
 const TRANSFORMATIONS = JSON.parse(fs.readFileSync('build/transformations.json', 'utf8'));
 /** Config END */
 
+var numSignsOverall = 0;
+var signKeys = [];
+
 var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
 
   var output = '';
@@ -65,6 +68,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
       var data = JSON.parse(fileContent);
       // Iterate over the individual signs in the json-file
       for (var key in data) {
+        signKeys[key]=true;
         // This variable will contain one single sign
         var currentSign = '<span class="t">';
         // This variable will contain a <div> with one sign (or multiple signs for variable-content-signs) in it
@@ -131,15 +135,18 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
         // Insert sign-container into correct category
         signCategories[data[key]['category']][signCategories[data[key]['category']].length] = currentSignContainer;
       }
-      var numSigns = 0;
+      var numSignsCountry = 0;
       // Output all the sign categories one after another
       for (var category in signCategories) {
         output += '<h3>' + category + '</h3>\n<div class="categoryContainer">\n' + signCategories[category].join('') + '</div>';
-        numSigns += signCategories[category].length;
+        numSignsCountry += signCategories[category].length;
       }
-      console.log("Gathered "+numSigns+" signs from " + files[f]) + " for overview.";
+      numSignsOverall += numSignsCountry;
+      console.log("Gathered "+numSignsCountry+" signs from " + files[f]) + " for overview.";
     }
   }
+
+  console.log('\nFound '+Object.keys(signKeys).length+' different signs ('+numSignsOverall+' with country-specific variants).\n');
 
   for (i in OUTPUT_FILES) {
     // Write the complete HTML-file

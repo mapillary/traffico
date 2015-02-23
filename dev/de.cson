@@ -10,6 +10,15 @@ danger_level_crossing:
     { type: 'square-angular', color: 'white', transform: 'rotate(-30deg) scale(.14,.6)' }
   ]
 
+danger_railway_crossing_unsecured:
+  category: 'danger'
+  name: 'unsecured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red'}
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}'}
+    { type: 'train-electric', color: 'black', transform: 'scale(.4) translate(10%,40%)'}
+  ]
+
 information_bus_stop:
   category: 'information'
   name: 'bus stop (also used for tram)'
@@ -82,4 +91,61 @@ prohibitory_low_emission_zone_end:
     { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.3) translate(150%, 0)' }
     { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.25) translate(-300%, 0)' }
     { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.25) translate(300%, 0)' }
+  ]
+
+supplementary_destination:
+  category: 'supplementary'
+  name: 'destination traffic excluded'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'content-4', color: 'black', content: 'Anlieger', transform: 'translate(0,-45%) scale(.8)'}
+    { type: 'content-4', color: 'black', content: 'frei', transform: 'translate(0,45%) scale(.8)'}
+  ]
+
+supplementary_left_pointing:
+  category: 'supplementary'
+  name: 'left pointing'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(-90deg)'}
+  ]
+
+supplementary_pedestrians_use_opposite_sidewalk:
+  category: 'supplementary'
+  name: 'pedestrians should use opposite sidewalk'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'DE-arrow-up', color: 'black', transform: 'translate(-20%,0) scale(.5) rotate(-90deg)'}
+    { type: 'pedestrians', color: 'black', transform: 'translate(25%,0) scale(.6)'}
+  ]
+
+supplementary_pedestrians_use_opposite_sidewalk2:
+  category: 'supplementary'
+  name: 'pedestrians should use opposite sidewalk'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'DE-arrow-up', color: 'black', transform: 'translate(20%,0) scale(.5) rotate(90deg)'}
+    { type: 'pedestrians', color: 'black', transform: 'translate(-25%,0) scale(.6)'}
+  ]
+
+supplementary_railway_only:
+  category: 'supplementary'
+  name: 'railway only'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'train-electric', color: 'black', transform: 'scale(.45)'}
+  ]
+
+supplementary_right_pointing:
+  category: 'supplementary'
+  name: 'right pointing'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(90deg)'}
   ]

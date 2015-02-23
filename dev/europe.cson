@@ -120,14 +120,24 @@ danger_level_crossing:
     { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
   ]
 
+danger_pedestrians:
+  category: 'danger'
+  name: 'pedestrians'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'pedestrian', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
+
 danger_pedestrian_crossing:
   category: 'danger'
   name: 'pedestrian crossing'
   elements: [
     { type: 'tri-rounded', color: 'red' }
     { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'pedestrian', color: 'black', transform: 'scale(.7) {center2tri}' }
+    { type: 'pedestrian-crossing', color: 'black', transform: 'translate(0,2%)' }
   ]
+
 
 danger_quayside_or_ferry_berth:
   category: 'danger'

@@ -6,3 +6,12 @@ information_cycleway:
     { type: 'square-rounded', color: 'blue', transform: 'scale(.95,.25)' }
     { type: 'content-4', color: 'white', content: 'fietspad' }
   ]
+
+information_border_nl:
+  category: 'information'
+  name: 'European border crossing into the Netherlands'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'europe_stars', color: 'yellow' }
+    { type: 'content-5', color: 'white', content: 'Nederland' }
+  ]

@@ -103,6 +103,24 @@ supplementary_destination:
     { type: 'content-4', color: 'black', content: 'frei', transform: 'translate(0,45%) scale(.8)'}
   ]
 
+supplementary_disabled:
+  category: 'supplementary'
+  name: 'for disabled people'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'disabled-p', color: 'black', transform: 'scale(.6)'}
+  ]
+
+supplementary_glaze:
+  category: 'supplementary'
+  name: 'for disabled people'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'snowflake', color: 'black', transform: 'scale(.8)'}
+  ]
+
 supplementary_left_pointing:
   category: 'supplementary'
   name: 'left pointing'
@@ -110,6 +128,16 @@ supplementary_left_pointing:
     { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
     { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
     { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(-90deg)'}
+  ]
+
+supplementary_both_directions:
+  category: 'supplementary'
+  name: 'both directions'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
+    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
+    { type: 'DE-arrow-up', color: 'black', transform: 'translate(-15%,0) scale(.5) rotate(180deg)'}
+    { type: 'DE-arrow-up', color: 'black', transform: 'translate(15%,0) scale(.5)'}
   ]
 
 supplementary_pedestrians_use_opposite_sidewalk:

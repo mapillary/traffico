@@ -246,7 +246,7 @@ danger_uneven_road:
   elements: [
     { type: 'tri-bg', color: 'white' }
     { type: 'tri-o', color: 'red' }
-    { type: 'bump', color: 'black', transform: '{center2tri} scale(.45)'}
+    { type: 'bumps', color: 'black', transform: '{center2tri} scale(.45)'}
   ]
 
 danger_hump:

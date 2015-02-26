@@ -255,7 +255,7 @@ danger_hump:
   elements: [
     { type: 'tri-rounded', color: 'red' }
     { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
-    { type: 'speedbump', color: 'black', transform: '{center2tri} scale(.45)'}
+    { type: 'bump', color: 'black', transform: '{center2tri} scale(.45)'}
   ]
 
 danger_wild_animals:

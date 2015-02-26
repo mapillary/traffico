@@ -1,12 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>bump</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="bump" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M92.138978,380.856558 L92.138978,345.432385 L100.982847,345.432385 C114.93686,345.432385 128.052102,338.878243 136.430871,327.711852 L143.051599,318.868976 C157.735065,299.291022 185.494021,295.32574 205.071975,310.009206 C208.43203,312.531483 211.401518,315.500972 213.923795,318.868976 L220.560423,327.711852 C235.24389,347.2908 263.001852,351.272976 282.5808,336.58951 C285.93191,334.067233 288.918294,331.08085 291.44057,327.711852 L297.645888,318.868976 C312.329354,299.291022 340.070421,295.32574 359.632475,310.009206 C363.017374,312.531483 365.970962,315.500972 368.50914,318.868976 L375.593974,327.711852 C383.956842,338.878243 397.064133,345.432385 411.018147,345.432385 L419.861022,345.432385 L419.861022,380.856558" id="path9-3" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512px" height="512px" viewBox="0 0 512 512">
+  <path d="m0,420 h512 v-60 c-64,0 -64,-64 -128,-64 -64,0 -64,64 -128,64 -64,0 -64,-64 -128,-64 -64,0 -64,64 -128,64 z" />
 </svg>

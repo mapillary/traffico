@@ -53,6 +53,18 @@ warning_traffic_light:
     { type: 'circle-bg', color: 'red', transform: 'translate(0,-16.5%) scale(.14)' }
   ]
 
+warning_traffic_light_horizontal:
+  category: 'warning'
+  name: 'traffic light'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'square-angular', color: 'black', transform: 'scale(.55,.2)' }
+    { type: 'circle-bg', color: 'green', transform: 'translate(16.5%,0) scale(.14)' }
+    { type: 'circle-bg', color: 'yellow', transform: 'scale(.14)' }
+    { type: 'circle-bg', color: 'red', transform: 'translate(-16.5%,0) scale(.14)' }
+  ]
+
 regulatory_no_parking:
   category: 'regulatory'
   name: 'no parking'

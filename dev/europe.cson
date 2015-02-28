@@ -163,7 +163,7 @@ danger_railway_crossing_unsecured:
   elements: [
     { type: 'tri-rounded', color: 'red' }
     { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'railway-xing-unsecured', color: 'black', transform: 'scale(1.6) translate(38.5%,46%)' }
+    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(.4)' }
   ]
 
 danger_road_narrows:

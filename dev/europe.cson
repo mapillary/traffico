@@ -12,36 +12,36 @@ danger_bend_first_left:
   category: 'danger'
   name: 'bend first left'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'd-curve-l', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'd-curve-l', color: 'black', transform: '{center2tri} scale(.6)' }
   ]
 
 danger_bend_first_right:
   category: 'danger'
   name: 'bend first right'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'd-curve-l', color: 'black', transform: '{fit_triangle} scale(-1,1)' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'd-curve-l', color: 'black', transform: '{center2tri} scale(-.6,.6)' }
   ]
 
 danger_bend_left:
   category: 'danger'
   name: 'bend left'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'turn-l', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'turn-l', color: 'black', transform: '{center2tri} scale(.6)' }
   ]
 
 danger_bend_right:
   category: 'danger'
   name: 'bend right'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'turn-l', color: 'black', transform: '{fit_triangle} scale(-1,1)' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'turn-l', color: 'black', transform: '{center2tri} scale(-.6,.6)' }
   ]
 
 danger_construction:
@@ -170,27 +170,27 @@ danger_road_narrows:
   category: 'danger'
   name: 'road narrows'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'narrow-road-both', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-both', color: 'black', transform: '{center2tri} scale(.6)' }
   ]
 
 danger_road_narrows_left:
   category: 'danger'
   name: 'road narrows left'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'narrow-road-l', color: 'black', transform: '{fit_triangle}' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-l', color: 'black', transform: '{center2tri} scale(.6)' }
   ]
 
 danger_road_narrows_right:
   category: 'danger'
   name: 'road narrows right'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'narrow-road-l', color: 'black', transform: '{fit_triangle} scale(-1,1)' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-l', color: 'black', transform: '{center2tri} scale(-.6,.6)' }
   ]
 
 danger_roundabout:
@@ -206,18 +206,18 @@ danger_school_crossing:
   category: 'danger'
   name: 'school crossing'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'children', color: 'black'}
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'children', color: 'black', transform: '{center2tri} scale(.75)'}
   ]
 
 danger_slippery_road:
   category: 'danger'
   name: 'slippery road'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'slippery-road', color: 'black'}
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'slippery-road', color: 'black', transform: '{center2tri} scale(.75)'}
   ]
 
 danger_snow:
@@ -225,7 +225,7 @@ danger_snow:
   name: 'danger snow'
   elements: [
     { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'snowflake', color: 'black', transform: '{center2tri} scale(.7)'}
   ]
 
@@ -234,7 +234,7 @@ danger_traffic_signal:
   name: 'traffic signal'
   elements: [
     { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'circle-bg', color: 'red', transform: '{center2tri} translate(0,-20%) scale(.13)' }
     { type: 'circle-bg', color: 'yellow', transform: '{center2tri} translate(0,-5%) scale(.13)' }
     { type: 'circle-bg', color: 'green', transform: '{center2tri} translate(0,10%) scale(.13)' }
@@ -244,8 +244,8 @@ danger_uneven_road:
   category: 'danger'
   name: 'uneven road'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'bumps', color: 'black', transform: '{center2tri} scale(.45)'}
   ]
 
@@ -254,7 +254,7 @@ danger_hump:
   name: '(speed) hump'
   elements: [
     { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'bump', color: 'black', transform: '{center2tri} scale(.45)'}
   ]
 
@@ -262,9 +262,9 @@ danger_wild_animals:
   category: 'danger'
   name: 'wild animals crossing'
   elements: [
-    { type: 'tri-bg', color: 'white' }
-    { type: 'tri-o', color: 'red' }
-    { type: 'wild-animal', color: 'black', transform: '{fit_triangle}'}
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'wild-animal', color: 'black', transform: '{center2tri} scale(.7)'}
   ]
 
 danger_low_flying_aircraft:
@@ -272,7 +272,7 @@ danger_low_flying_aircraft:
   name: 'low flying aircraft'
   elements: [
     { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'airplane', color: 'black', transform: '{center2tri} scale(.4)' }
   ]
 
@@ -281,7 +281,7 @@ danger_strong_sidewind:
   name: 'strong sidewind'
   elements: [
     { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{center2tri} scale(.7) {tri2center}' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'windbag', color: 'black', transform: '{center2tri} scale(.3)' }
   ]
 

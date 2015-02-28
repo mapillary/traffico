@@ -53,7 +53,7 @@ The other one is `t-c-COLOR` where `COLOR` is the color of the symbol (one of `r
 ```html
 <span class="t">
   <i class="t-square-bg t-c-blue"></i>
-  <i class="t-tri-bg-in t-c-white"></i>
+  <i class="t-tri-angular t-c-white" style="transform:scale(.8)"></i>
   <i class="t-pedestrian-crossing t-c-black"></i>
 </span>
 <span class="t">

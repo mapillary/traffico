@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   id="svg2">
+  <title
+     id="title4">stop</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>stop</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <g
+     id="other-shapes"
+     style="fill:none;stroke:none">
+    <g
+       id="yield"
+       style="fill:#000000">
+      <g
+         transform="matrix(0.87630115,0,0,1.0189176,0,13.710882)"
+         id="text3826"
+         style="font-size:36.51712799px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Helvetica">
+        <path
+           d="m 189.57524,112.1612 7.73849,0 14.76376,21.89601 14.65678,-21.89601 7.73849,0 -18.82915,27.8871 0,25.35516 -7.23923,0 0,-25.35516 -18.82914,-27.8871"
+           id="path3861"
+           style="font-size:73.03425598px" />
+        <path
+           d="m 241.53369,112.1612 7.20357,0 0,53.24226 -7.20357,0 0,-53.24226"
+           id="path3863"
+           style="font-size:73.03425598px" />
+        <path
+           d="m 263.07309,112.1612 33.66422,0 0,6.06241 -26.46065,0 0,15.76228 25.35516,0 0,6.06241 -25.35516,0 0,19.29274 27.10256,0 0,6.06242 -34.30613,0 0,-53.24226"
+           id="path3865"
+           style="font-size:73.03425598px" />
+        <path
+           d="m 309.29008,112.1612 7.20358,0 0,47.17984 25.92573,0 0,6.06242 -33.12931,0 0,-53.24226"
+           id="path3867"
+           style="font-size:73.03425598px" />
+        <path
+           d="m 357.14749,118.08097 0,41.40272 8.70134,0 c 7.34619,0 12.71915,-1.66419 16.11889,-4.99258 3.42344,-3.32837 5.13518,-8.58245 5.13522,-15.76227 -4e-5,-7.13222 -1.71178,-12.35065 -5.13522,-15.6553 -3.39974,-3.32833 -8.7727,-4.99252 -16.11889,-4.99257 l -8.70134,0 m -7.20358,-5.91977 14.79943,0 c 10.31795,5e-5 17.89002,2.15161 22.71622,6.45469 4.8261,4.27939 7.23918,10.9837 7.23923,20.11295 -5e-5,9.17684 -2.42501,15.91682 -7.27489,20.21993 -4.84998,4.30313 -12.41015,6.45469 -22.68056,6.45469 l -14.79943,0 0,-53.24226"
+           id="path3869"
+           style="font-size:73.03425598px" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -14,6 +14,15 @@ regulatory_stop:
     { type: 'stop', color: 'white' }
   ]
 
+regulatory_yield:
+  category: 'regulatory'
+  name: 'yield'
+  elements: [
+    { type: 'tri-rounded', color: 'red', transform: 'rotate(180deg)' }
+    { type: 'tri-rounded', color: 'white', transform: '{tri2center} scale(.5) {center2tri} rotate(180deg)' }
+    { type: 'yield', color: 'red', transform: 'scale(.7,.9)' }
+  ]
+
 warning_merge:
   category: 'warning'
   name: 'merge'

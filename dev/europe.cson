@@ -383,6 +383,14 @@ mandatory_cycle_track:
     { type: 'bicycle', color: 'white' }
   ]
 
+mandatory_equestrian_track:
+  category: 'mandatory'
+  name: 'equestrian track'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'equestrian', color: 'white', transform: 'scale(.7)' }
+  ]
+
 mandatory_footpath:
   category: 'mandatory'
   name: 'footpath'

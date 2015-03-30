@@ -110,6 +110,15 @@ danger_descent:
     { type: 'incline_value', content: '10%', color: 'black', transform: 'translate(0,-25%) {center2tri} scale(.4) rotate(30deg)' }
   ]
 
+danger_domestic_animals:
+  category: 'danger'
+  name: 'domestic animals'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'domestic-animal', color: 'black', transform: '{center2tri} translate(-6%,4%) scale(.25)' }
+  ]
+
 danger_level_crossing:
   category: 'danger'
   name: 'level crossing'

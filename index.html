@@ -119,18 +119,18 @@ subtitle: An Open Source Traffic Sign Font
       <p>For example, to build a &lsquo;Warning of danger ahead&rsquo; sign, after attaching stylesheets and the font files:</p>
 {% highlight html %}
 <span class="t">
-  <i class="t-tri-bg t-c-yellow"></i>
-  <i class="t-tri-o t-c-red"></i>
-  <i class="t-exclamation t-c-black" style="transform:scale(.8)"></i>
+  <i class="t-tri-rounded t-c-red"></i>
+  <i class="t-tri-angular t-c-yellow" style="transform:translate(0,14.43%) scale(.7) translate(0,-14.43%)"></i>
+  <i class="t-exclamation t-c-black" style="transform:translate(0,14.43%) scale(.65) translate(0,-14.43%)"></i>
 </span>
 {% endhighlight %}
 
         <p>
           This will result in:
           <span class="t example">
-            <i class="t-tri-bg t-c-yellow"></i>
-            <i class="t-tri-o t-c-red"></i>
-            <i class="t-exclamation t-c-black" style="-webkit-transform:scale(.8);-moz-transform:scale(.8);transform:scale(.8)"></i>
+            <i class="t-tri-rounded t-c-red"></i>
+            <i class="t-tri-angular t-c-yellow" style="-webkit-transform:translate(0,14.43%) scale(.7) translate(0,-14.43%);-moz-transform:translate(0,14.43%) scale(.7) translate(0,-14.43%);transform:translate(0,14.43%) scale(.7) translate(0,-14.43%)"></i>
+            <i class="t-exclamation t-c-black" style="-webkit-transform:translate(0,14.43%) scale(.65) translate(0,-14.43%);-moz-transform:translate(0,14.43%) scale(.65) translate(0,-14.43%);transform:translate(0,14.43%) scale(.65) translate(0,-14.43%)"></i>
           </span>
         </p>
       </div>
@@ -142,7 +142,7 @@ subtitle: An Open Source Traffic Sign Font
 {% highlight json %}
 {
   "information_pedestrian_crossing": {
-    "category":"other",
+    "category":"information",
     "name":"pedestrian crossing",
     "elements":[
       {
@@ -150,8 +150,9 @@ subtitle: An Open Source Traffic Sign Font
         "color":"blue"
       },
       {
-        "type":"tri-bg-in",
-        "color":"white"
+        "type":"tri-angular",
+        "color":"white",
+        "transform":"scale(.8)"
       },
       {
         "type":"pedestrian-crossing",

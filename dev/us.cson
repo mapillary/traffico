@@ -733,5 +733,26 @@ regulatory_speed_limit:
     { type: 'square-rounded', color: 'white', transform: 'scale(.7,1) scale(.90)' }
     { type: 'content-4', color: 'black',  content: 'SPEED', transform: 'translate(0,-145%) scale(.8)' }
     { type: 'content-4', color: 'black',  content: 'LIMIT', transform: 'translate(0,-60%) scale(.8)' }
-    { type: 'us_speed_value', color: 'black',  transform: 'translate(0,50%)' }
+    { type: 'us_speed_value', color: 'black',  transform: 'translate(0,45%)' }
+  ]
+
+regulatory_night_speed_limit:
+  category: 'regulatory'
+  name: 'night_speed_limit'
+  elements: [
+    { type: 'square-rounded', color: 'white' }
+    { type: 'square-rounded', color: 'black', transform: 'scale(.95)' }
+    { type: 'content-4', color: 'white',  content: 'NIGHT', transform: 'translate(0,-100%) scale(.8)' }
+    { type: 'us_speed_value', color: 'white',  transform: 'translate(0,35%) scale(1.1)' }
+  ]
+
+regulatory_truck_speed_limit:
+  category: 'regulatory'
+  name: 'truck_speed_limit'
+  elements: [
+    { type: 'square-rounded', color: 'white' }
+    { type: 'square-rounded', color: 'black', transform: 'scale(.95)' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.90)' }
+    { type: 'content-4', color: 'black',  content: 'TRUCKS', transform: 'translate(0,-100%) scale(.7,.9)' }
+    { type: 'us_speed_value', color: 'black',  transform: 'translate(0,35%) scale(1.1)' }
   ]

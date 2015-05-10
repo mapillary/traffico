@@ -728,9 +728,10 @@ regulatory_speed_limit:
   category: 'regulatory'
   name: 'speed_limit'
   elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(.7,1)' }
-    { type: 'square-rounded', color: 'white', transform: 'scale(.7,1) scale(.95)' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.7,1)' }
+    { type: 'square-rounded', color: 'black', transform: 'scale(.7,1) scale(.95)' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.7,1) scale(.90)' }
     { type: 'content-4', color: 'black',  content: 'SPEED', transform: 'translate(0,-145%) scale(.8)' }
     { type: 'content-4', color: 'black',  content: 'LIMIT', transform: 'translate(0,-60%) scale(.8)' }
-    { type: 'content-4', color: 'black',  content: '65', transform: 'translate(0,160%) scale(2.2)' }
+    { type: 'us_speed_value', color: 'black',  transform: 'translate(0,50%)' }
   ]

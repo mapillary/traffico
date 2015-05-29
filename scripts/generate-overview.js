@@ -47,6 +47,9 @@ const TRANSFORMATIONS = JSON.parse(fs.readFileSync('build/transformations.json',
 var numSignsOverall = 0;
 var signKeys = [];
 
+
+var globalDict = {};
+
 var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
 
   var output = '';
@@ -117,11 +120,19 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
           for (var i in VAR_VALUES[typeOfVariableContent]) {
             var value = VAR_VALUES[typeOfVariableContent][i] + "";
             var length = value.length;
-            currentSignContainer += currentSign.replace(/\{\{\{variable\}\}\}/, value).replace(/\{\{\{length\}\}\}/, length == 2 ? '' : '-' + length);
+            var currentT = currentSign.replace(/\{\{\{variable\}\}\}/, value).replace(/\{\{\{length\}\}\}/, length == 2 ? '' : '-' + length);
+            currentSignContainer += currentT;
+
+            // Add appropriate keys with speed values as object properties
+            if (typeOfVariableContent == 'speed_value') {
+              globalDict[key + '_' + value] = currentT
+            }
           }
         } else {
           currentSignContainer += currentSign;
+          globalDict[key] = currentSign;
         }
+
         currentSignContainer += '<span class="label">' + data[key]['name'] + '</span></div>\n';
 
         // Set category to "undefined" if it is not set in the json-file
@@ -155,4 +166,8 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
       if (err) throw err;
     });
   }
+
+  fs.writeFile('build/global.json', JSON.stringify(globalDict), function(err) {
+    if (err) throw err;
+  });
 });

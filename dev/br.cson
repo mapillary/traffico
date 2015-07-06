@@ -1,0 +1,284 @@
+'warning--stop_ahead--c-brazil':
+  category: 'warning'
+  name: "stop ahead"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'content-4', color: 'black', content: 'PARE', transform: 'scale(.9)'}
+  ]
+
+'warning--wild_animals--c-brazil':
+  category: 'warning'
+  name: "wild animals"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'wild-animal', color: 'black', transform: '{fit_diamond} scale(.9)'}
+  ]
+
+'warning--uneven_road--c-brazil':
+  category: 'warning'
+  name: "uneven road"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'bump_bra', color: 'black', transform: '{fit_diamond}'}
+  ]
+'warning--two-way_traffic_ahead--c-brazil':
+  category: 'warning'
+  name: "two way traffic ahead"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'arrows_both_bra', color: 'black', transform: '{fit_diamond}'}
+  ]
+
+'warning--slippery_road_surface--c-brazil':
+  category: 'warning'
+  name: "slippery road surface"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'slippery', color: 'black' }
+  ]
+
+'warning--school_zone--c-brazil':
+  category: 'warning'
+  name: "school zone"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'school_zone_bra', color: 'black' }
+  ]
+
+'warning--roadworks--c-brazil':
+  category: 'warning'
+  name: "roadworks"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'roadworks_bra', color: 'black' }
+  ]
+
+'warning--road_narrows_ahead--c-brazil':
+  category: 'warning'
+  name: "road narrows ahead"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'narrow-road-both', color: 'black', transform: '{fit_diamond}' }
+  ]
+
+'warning--pedestrian_crossing--c-brazil':
+  category: 'warning'
+  name: "pedestrian crossing"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'pedestrian_crossing_bra', color: 'black', transform: '{fit_diamond}' }
+  ]
+
+'warning--loose_road_surface--c-brazil':
+  category: 'warning'
+  name: "Wild Animals"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'loose_road_surface_bra', color: 'black', transform: '{fit_diamond}' }
+  ]
+'warning--farm_vehicles--c-brazil':
+  category: 'warning'
+  name: "Wild Animals"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'tractor', color: 'black', transform: 'scale(.45)' }
+
+  ]
+'warning--falling_rocks_or_debris--c-brazil':
+  category: 'warning'
+  name: "falling rocks or debris"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'falling-rocks', color: 'black' }
+  ]
+'warning--domestic_animals--c-brazil':
+  category: 'warning'
+  name: "domestic animals"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'domestic-animal', color: 'black', transform: '{center2tri} translate(-6%,-10%) scale(.35)' }
+  ]
+
+'warning--cyclists_crossing--c-brazil':
+  category: 'warning'
+  name: "cyclists crossing"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'cyclists_crossing_bra', color: 'black', transform: '{fit_diamond}' }
+  ]
+
+'warning--bump_in_road--c-brazil':
+  category: 'warning'
+  name: "bump in road"
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'bump_road_bra', color: 'black', transform: '{fit_diamond}' }
+  ]
+'regulatory--stop--c-brazil':
+  category: 'regulatory'
+  name: "stop"
+  elements: [
+    { type: 'octagon', color: 'red' }
+    { type: 'content-4', content: 'PARE', color:'white', transform: 'scale(1)'}
+  ]
+
+'regulatory--no_stopping--c-brazil':
+  category: 'regulatory'
+  name: "no stopping"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'content', color: 'black', content: 'E', transform: 'scale(1.5) translate(0,20%)'}
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)' }
+  ]
+'regulatory--no_pedestrians--c-brazil':
+  category: 'regulatory'
+  name: "no pedestrians"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'pedestrian_bra', color: 'black', transform: '{fit_border_circle}' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+
+'regulatory--no_parking--c-brazil':
+  category: 'regulatory'
+  name: "no parking"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'content', color: 'black', content: 'E', transform: 'scale(1.5) translate(0,20%)'}
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+'regulatory--no_overtaking--c-brazil':
+  category: 'regulatory'
+  name: "no overtaking"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'car-left', color: 'black' }
+    { type: 'car-right', color: 'black' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+'regulatory--no_motorcycles--c-brazil':
+  category: 'regulatory'
+  name: "no motorcycles"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'motorbike', color: 'black', transform: '{fit_border_circle} scale(1.3)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+'regulatory--no_motor_vehicles--c-brazil':
+  category: 'regulatory'
+  name: "no motor vehicles"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'car', color: 'black', transform: '{fit_border_circle} scale(1.3)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+
+'regulatory--no_heavy_goods_vehicles--c-brazil':
+  category: 'regulatory'
+  name: "no heavy goods vehicles"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black', transform: 'scale(1.2)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+
+'regulatory--no_entry--c-brazil':
+  category: 'regulatory'
+  name: "no entry"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'US-arrow-oneway', color: 'black', transform: 'scale(.6)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+
+'regulatory--no_bicycles--c-brazil':
+  category: 'regulatory'
+  name: "no bicycles"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'cyclists_crossing_bra', color: 'black', transform: 'scale(1.2)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+'other--two-way_traffic--c-brazil':
+  category: 'other'
+  name: "two way traffic"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'two_way_arrows_bra', color: 'black'}
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+  ]
+
+'other--parking_zone--c-brazil':
+  category: 'other'
+  name: "parking zone"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'content', color: 'black', content: 'E', transform: 'scale(1.5) translate(0,20%)'}
+  ]
+'mandatory--transit_only--c-brazil':
+  category: 'mandatory'
+  name: "transit only"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'transit_bra', color: 'black' }
+  ]
+'mandatory--proceed_straight_no_turns--c-brazil':
+  category: 'mandatory'
+  name: "proceed straight no turns"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'US-arrow-oneway', color: 'black', transform: 'scale(.6)' }
+  ]
+'mandatory--keep_right_or_left--c-brazil':
+  category: 'mandatory'
+  name: "keep right or left"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'US-arrow-oneway', color: 'black', transform: 'rotate(135deg) scale(.6)' }
+  ]
+'mandatory--bicycles_only--c-brazil':
+  category: 'mandatory'
+  name: "bicycles only"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'bicycle', color: 'black' }
+  ]
+'mandatory--turn_right--c-brazil':
+  category: 'mandatory'
+  name: "turn_right"
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'US-arrow-oneway', color: 'black', transform: 'rotate(90deg) scale(.6)' }
+  ]

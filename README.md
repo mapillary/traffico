@@ -16,10 +16,10 @@ brew install node
 gem install fontcustom
 ```
 
-### Linux
+### Linux (Ubuntu 15.04)
 
 ```shell
-sudo apt-get install fontforge node
+sudo apt-get install fontforge nodejs nodejs-legacy npm ruby-dev zlib1g-dev
 wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
 unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/
 gem install fontcustom
@@ -30,7 +30,7 @@ The build process is a simple gulp task.
 
 First get the gulp dependencies: <code>npm install</code>.
 
-To finally build the font run: <code>gulp</code>.
+To finally build the font run: <code>npm run gulp</code>.
 
 The resulting `build`-folder contains the following:
 * `build/fonts/` contains the packaged font in different formats (woff, svg, eot, ttf)
@@ -39,7 +39,7 @@ The resulting `build`-folder contains the following:
 * `build/sign-overview.html` an overview of all the pre-built signs from the `json`-folder
 * `build/stylesheets/traffico.css` this file lets you simply use CSS-classes for constructing signs (see section "Usage")
 
-To remove all the generated files run <code>gulp clean</code>.
+To remove all the generated files run <code>npm run clean</code>.
 
 ## Usage
 

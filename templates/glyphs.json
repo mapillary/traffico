@@ -1,0 +1,6 @@
+{
+  "name": "<%= font_name %>",
+  "glyphs": {<% @glyphs.each_with_index do |(name, value), index| %><%= "," if index >= 1 %>
+    "<%= name.to_s %>":"\u<%= value[:codepoint].to_s(16) %>"<% end %>
+  }
+}

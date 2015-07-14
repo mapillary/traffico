@@ -1,6 +1,6 @@
 #!/bin/bash
 # For usage with Travis CI
-numJson=$(ls -1 build/json/ | grep .json$ | wc -l)
+numJson=$(ls -1 build/signs/ | grep .json$ | wc -l)
 numCson=$(ls -1 dev/ | grep .cson$ | wc -l)
 
 if [ $numJson -ne $numCson ]

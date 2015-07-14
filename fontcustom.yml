@@ -47,13 +47,13 @@ no_hash: false
 
 input:
   vectors: icons
-  #templates: templates
+  templates: templates
 
 output:
   fonts: build/fonts
   css: build/stylesheets
   #preview: app/views/styleguide
- # my-custom-template.yml: path/to/template/output
+  glyphs.json: build/
 
 
 # -----------------------------------------------------------------------------
@@ -70,10 +70,10 @@ output:
 #   Default: css, preview
 # -----------------------------------------------------------------------------
 
-#templates:
-#- scss-rails
-#- preview
-#- my-custom-template.yml
+templates:
+- css
+- preview
+- glyphs.json
 
 #preprocessor_path: ../fonts/
 

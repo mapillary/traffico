@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 /** Config */
-const JSON_DIR = './build/json/';
+const JSON_DIR = './build/signs/';
 const VAR_VALUES = {
   speed_value: [10, 20, 25, 30, 35, 50, 60, 70, 75, 80, 90, 100, 110, 120, 130],
   speed_zone_value: [20,30,40],

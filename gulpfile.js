@@ -12,7 +12,7 @@ gulp.task('compile-font', ['clean'], shell.task('fontcustom compile'));
 gulp.task('cson-signs', ['clean'], function() {
   return gulp.src('dev/*.cson')
     .pipe(cson())
-    .pipe(gulp.dest('build/json'));
+    .pipe(gulp.dest('build/signs'));
 });
 
 gulp.task('cson-transformations', ['clean'], function() {

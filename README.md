@@ -35,7 +35,7 @@ To finally build the font run: <code>npm run gulp</code>.
 The resulting `build`-folder contains the following:
 * `build/fonts/` contains the packaged font in different formats (woff, svg, eot, ttf)
 * `build/fonts/traffico-preview.html` a collection of all available symbols for building custom signs
-* `build/json` contains json-files with pre-built sign-definitions
+* `build/signs` contains json-files with pre-built sign-definitions
 * `build/sign-overview.html` an overview of all the pre-built signs from the `json`-folder
 * `build/stylesheets/traffico.css` this file lets you simply use CSS-classes for constructing signs (see section "Usage")
 

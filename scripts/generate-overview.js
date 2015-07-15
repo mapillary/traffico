@@ -120,7 +120,7 @@ var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
           for (var i in VAR_VALUES[typeOfVariableContent]) {
             var value = VAR_VALUES[typeOfVariableContent][i] + "";
             var length = value.length;
-            var currentT = currentSign.replace(/\{\{\{variable\}\}\}/, value).replace(/\{\{\{length\}\}\}/, length == 2 ? '' : '-' + length);
+            var currentT = currentSign.replace(/\{\{\{variable\}\}\}/g, value).replace(/\{\{\{length\}\}\}/g, length == 2 ? '' : '-' + length);
             currentSignContainer += currentT;
 
             // Add appropriate keys with speed values as object properties

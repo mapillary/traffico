@@ -16,13 +16,11 @@ brew install node
 gem install fontcustom
 ```
 
-### Linux (Ubuntu 15.04)
+### Linux (Ubuntu 14.04 LTS or 15.04)
 
 ```shell
-sudo apt-get install fontforge nodejs nodejs-legacy npm ruby-dev zlib1g-dev
-wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
-unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/
-gem install fontcustom
+sudo apt-get install fontforge nodejs nodejs-legacy npm ruby-dev woff-tools zlib1g-dev
+sudo gem install fontcustom
 ```
 
 ## Build

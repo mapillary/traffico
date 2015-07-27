@@ -129,6 +129,33 @@ danger_level_crossing:
     { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
   ]
 
+danger_next_intersection:
+  category: 'danger'
+  name: 'danger at next intersection'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
+
+danger_next_intersection_left:
+  category: 'danger'
+  name: 'danger at next intersection on the left'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
+
+danger_next_intersection_right:
+  category: 'danger'
+  name: 'danger at next intersection on the right'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri} scale(-1,1)' }
+  ]
+
 danger_pedestrians:
   category: 'danger'
   name: 'pedestrians'
@@ -575,33 +602,6 @@ priority_narrow2:
     { type: 'circle-o', color: 'red' }
     { type: 'DE-arrow-up', color: 'black', transform: '{fit_border_circle} scale(.7) translate(-25%,5%) rotate(180deg)' }
     { type: 'DE-arrow-up', color: 'red', transform: '{fit_border_circle} scale(.7) translate(25%,-5%)' }
-  ]
-
-priority_next_intersection:
-  category: 'priority'
-  name: 'priority at next intersection'
-  elements: [
-    { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'right-of-way', color: 'black', transform: 'scale(.7) {center2tri}' }
-  ]
-
-priority_next_intersection_left:
-  category: 'priority'
-  name: 'priority at next intersection on the left'
-  elements: [
-    { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri}' }
-  ]
-
-priority_next_intersection_right:
-  category: 'priority'
-  name: 'priority at next intersection on the right'
-  elements: [
-    { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri} scale(-1,1)' }
   ]
 
 priority_priority_road:

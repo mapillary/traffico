@@ -39,7 +39,11 @@ gulp.task('gen-overview', ['cson-signs', 'cson-transformations'], function () {
   return gulp.src('scripts/generate-overview.js').pipe(shell(['mkdir -p build/gh-pages && node <%= file.path %>']));
 });
 
+gulp.task('resolve-transformations', ['cson-signs', 'cson-transformations'], function () {
+  return gulp.src('scripts/resolve-transformations.js').pipe(shell(['mkdir -p build/signs-simple && node <%= file.path %>']));
+});
+
 gulp.task('patch-names', ['gen-overview'], function() {
   return gulp.src('scripts/patch-names.js').pipe(shell(['node <%= file.path %>']));
 });
-gulp.task('default', ['concat-traffico-css', 'gen-overview', 'gen-overview-scss', 'gen-overview-css']);
+gulp.task('default', ['concat-traffico-css', 'gen-overview', 'resolve-transformations', 'gen-overview-scss', 'gen-overview-css']);

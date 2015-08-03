@@ -1,4 +1,4 @@
-# traffico [![Build Status](https://travis-ci.org/mapillary/traffico.svg?branch=master)](https://travis-ci.org/floscher/traffico)
+# traffico [![Build Status](https://travis-ci.org/mapillary/traffico.svg?branch=master)](https://travis-ci.org/mapillary/traffico)
 An Open Source Traffic Sign Font. Read more on [traffico.io](http://traffico.io/)
 
 ## Getting the dependencies

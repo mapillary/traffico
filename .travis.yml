@@ -13,5 +13,31 @@ install:
   - rvmsudo gem install fontcustom
   - npm install
 script:
-  - gulp
+  - npm run gulp
   - scripts/check_build
+
+# Automatically deploys a tagged release to GitHub pages if the Travis build succeeds
+after_success: |
+  if [ "$TRAVIS_TAG" == "" ]; then
+    echo "Not a tagged release, so GitHub pages are not updated!"
+  else
+    git config --global user.email "deploy@travis"
+    git config --global user.name "Travis CI"
+    git remote add deploy "https://knikel:${GH_TOKEN}@github.com/mapillary/traffico.git"
+    git fetch --depth=1 origin gh-pages:gh-pages
+    git checkout gh-pages
+    git rm examples.html _sass/pages/_examples.scss
+    cp build/gh-pages/examples.html ./
+    cp build/gh-pages/_config.yml ./
+    cp -T build/gh-pages/examples.scss _sass/pages/_examples.scss
+    git stage examples.html _config.yml _sass/pages/_examples.scss
+    masterCommit=`git rev-parse "$TRAVIS_TAG"`
+    git commit -m "Bump gh-pages to latest version
+
+  This commit has automatically been crafted by Travis CI based on $masterCommit."
+    git push deploy gh-pages
+  fi
+
+env:
+  global:
+    secure: h8M2G/BoR5uTTBhq1Y5Sfcs42FTM6ytzGDOkAMFj8GKxDQvP3DqYcDt6n7l2AhQb3jKFu1z1Qrk+g+oNpTo02Xu560wzMhg60/1yn1SFrCRkTl6f/YAfhQMIR6VEd++cYgG0ISkrm3O0QRDpByTxAOZa6LIzLcPAGr9LsiH+/fo=

@@ -1,8 +1,37 @@
-information_border_it:
+'information_border_it':
   category: 'information'
   name: 'European border crossing into Italy'
   elements: [
     { type: 'square-rounded', color: 'blue' }
     { type: 'europe_stars', color: 'yellow' }
     { type: 'content-5', color: 'white', content: 'ITALIA' }
+  ]
+
+'cyclists-crossing-ahead':
+  category: 'danger'
+  name: 'cyclists crossing ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+
+'children':
+  category: 'danger'
+  name: 'children'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'pedestrians-only':
+  category: 'mandatory'
+  name: 'pedestrians only'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'turn-right-ahead':
+  category: 'mandatory'
+  name: 'turn right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
   ]

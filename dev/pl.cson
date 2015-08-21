@@ -1,4 +1,4 @@
-information_border_pl:
+'information_border_pl':
   category: 'information'
   name: 'European border crossing into Poland'
   elements: [
@@ -6,4 +6,11 @@ information_border_pl:
     { type: 'europe_stars', color: 'yellow' }
     { type: 'content-5', color: 'white', content: 'Rzeczpospolita', transform: 'translate(0,-70%) scale(.7)' }
     { type: 'content-5', color: 'white', content: 'Polska', transform: 'translate(0,40%)' }
+  ]
+
+'pedestrian-crossing':
+  category: 'danger'
+  name: 'pedestrian crossing'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
   ]

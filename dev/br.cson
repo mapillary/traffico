@@ -375,3 +375,229 @@
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'wild-animal', color: 'black', transform: '{fit_diamond} scale(.9)'}
   ]
+
+'warning--y-roads':
+  category: 'warning'
+  name: 'y roads'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--added-lane-right':
+  category: 'warning'
+  name: 'added lane right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--added-lane-left':
+  category: 'warning'
+  name: 'added lane left'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--double-curve-first-left-ahead':
+  category: 'warning'
+  name: 'double curve first left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--double-curve-first-right-ahead':
+  category: 'warning'
+  name: 'double curve first right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--double-reverse-curve':
+  category: 'warning'
+  name: 'double reverse curve'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--flaggers-in-road-ahead':
+  category: 'warning'
+  name: 'flaggers in road ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--divided-highway-ahead':
+  category: 'warning'
+  name: 'divided highway ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--horizontal-alignment-right':
+  category: 'warning'
+  name: 'horizontal alignment right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--roundabout-ahead':
+  category: 'warning'
+  name: 'roundabout ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--loop-pretzel':
+  category: 'warning'
+  name: 'loop pretzel'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--height-restriction-ahead--feet':
+  category: 'warning'
+  name: 'height-restriction-ahead'
+  variation: 'feet'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--traffic-merges-right-ahead':
+  category: 'warning'
+  name: 'traffic merges right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--pass-left-or-right':
+  category: 'warning'
+  name: 'pass left or right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--playground-ahead':
+  category: 'warning'
+  name: 'playground ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--road-narrows-left-ahead':
+  category: 'warning'
+  name: 'road narrows left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--road-narrows-right-ahead':
+  category: 'warning'
+  name: 'road narrows right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--junction-with-a-side-road-acute-left-ahead':
+  category: 'warning'
+  name: 'junction with a side road acute left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--junction-with-a-side-road-perpendicular-left-ahead':
+  category: 'warning'
+  name: 'junction with a side road perpendicular left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--junction-with-a-side-road-perpendicular-right-ahead':
+  category: 'warning'
+  name: 'junction with a side road perpendicular right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--t-roads':
+  category: 'warning'
+  name: 't-roads'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--traffic-signals-ahead':
+  category: 'warning'
+  name: 'traffic signals  ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--triple-reverse-curve':
+  category: 'warning'
+  name: 'triple reverse curve'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--trucks-rollover':
+  category: 'warning'
+  name: 'trucks rollover'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--turn-curve-left':
+  category: 'warning'
+  name: 'turn curve left'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--turn-curve-right':
+  category: 'warning'
+  name: 'turn curve right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--turn-left':
+  category: 'warning'
+  name: 'turn left'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--turn-right':
+  category: 'warning'
+  name: 'turn right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--double-turn-first-left-ahead':
+  category: 'warning'
+  name: 'double turn first left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--double-turn-first-right-ahead':
+  category: 'warning'
+  name: 'double turn first right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+
+'warning--winding-road-first-left-ahead':
+  category: 'warning'
+  name: 'winding road first left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'warning--winding-road-first-right-ahead':
+  category: 'warning'
+  name: 'winding road first right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]

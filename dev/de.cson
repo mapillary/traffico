@@ -177,3 +177,474 @@ supplementary_right_pointing:
     { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
     { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(90deg)'}
   ]
+
+
+
+
+  category: 'information'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+
+DANGER
+'unprotected-quayside-or-riverbank':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'wild-animals':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'double-curve-first-left':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'double-curve-first-right':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'curve-left':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'curve-right':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'crossroads-with-priority-to-the-right':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'cyclists-crossing-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'other-danger':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'crossroads-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'junction-with-a-side-road-perpendicular-left':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'junction-with-a-side-road-perpendicular-right':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'pedestrian-crossing':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'road-bump':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'road-narrows-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'road-narrows-left-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'road-narrows-right-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'roadworks-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'roundabout-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'children':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'slippery-road-surface':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'traffic-signals-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'two-way-traffic-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'uneven-road-ahead':
+  category: 'danger'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+
+INFORMATION
+'bus-stop':
+  category: 'information'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'disabled-persons':
+  category: 'information'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'parking':
+  category: 'information'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'pedestrian-crossing':
+  category: 'information'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+
+MANDATORY
+'dual-path-pedestrians-and-cyclists':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'bicycles-only':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'pedestrians-only':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'turn-left':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'pass-on-either-side':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'proceed-straight-or-turn-left':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'turn-right':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'proceed-straight-or-turn-right':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'proceed-straight':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'pass-on-this-side-left':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'pass-on-this-side-right':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'dual-path-cyclists-and-pedestrians':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'shared-path-pedestrians-and-cyclists':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'roundabout':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'turn-left-ahead':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'turn-right-ahead':
+  category: 'mandatory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+
+PRIORITY
+'give-way':
+  category: 'priority'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'priority-road':
+  category: 'priority'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'give-way-to-oncoming-traffic':
+  category: 'priority'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'stop':
+  category: 'priority'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-entry':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-motor-vehicles':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-motorcycles':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-parking':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-stopping-or-parking':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-traffic-both-ways':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-heavy-goods-vehicles':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-u-turn':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-vehicles-carrying-dangerous-goods':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-left-turn':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-right-turn':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-overtaking':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'no-overtaking-by-heavy-goods-vehicles':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'maximum-speed-limit':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'maximum-height':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]
+
+'maximum-width':
+  category: 'prohibitory'
+  name: ''
+  elements: [
+    { type: 'circle-bg', color: 'black'}
+  ]

@@ -21,7 +21,6 @@
     { type: 'circle-bg', color: 'black' }
   ]
 
-
 'regulatory--no-bicycles':
   category: 'regulatory'
   name: 'no bicycles'
@@ -36,7 +35,6 @@
     { type: 'circle-bg', color: 'black' }
   ]
 
-
 'regulatory--no-heavy-goods-vehicles':
   category: 'regulatory'
   name: 'no heavy goods vehicles'
@@ -50,7 +48,6 @@
   elements: [
     { type: 'circle-bg', color: 'black' }
   ]
-
 
 'regulatory--no-pedestrians':
   category: 'regulatory'
@@ -86,7 +83,6 @@
   elements: [
     { type: 'circle-bg', color: 'black' }
   ]
-
 
 'warning--added-lane-left':
   category: 'warning'
@@ -257,7 +253,6 @@
   elements: [
     { type: 'circle-bg', color: 'black' }
   ]
-
 
 'warning--pedestrians-cyclists':
   category: 'warning'

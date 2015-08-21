@@ -1,8 +1,50 @@
-information_border_se:
+'information_border_se':
   category: 'information'
   name: 'European border crossing into Sweden'
   elements: [
     { type: 'square-rounded', color: 'blue' }
     { type: 'europe_stars', color: 'yellow' }
     { type: 'content-5', color: 'white', content: 'SVERIGE' }
+  ]
+
+'cyclists-crossing-ahead':
+  category: 'danger'
+  name: 'cyclists crossing ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'pedestrian-crossing':
+  category: 'danger'
+  name: 'pedestrian crossing'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'children':
+  category: 'danger'
+  name: 'children'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'give-way-to-oncoming-traffic':
+  category: 'priority'
+  name: 'give way to oncoming traffic'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-bicycles':
+  category: 'prohibitory'
+  name: 'no bicycles'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-pedestrians':
+  category: 'prohibitory'
+  name: 'no pedestrians'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
   ]

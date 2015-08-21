@@ -178,17 +178,6 @@ supplementary_right_pointing:
     { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(90deg)'}
   ]
 
-
-
-
-  category: 'information'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-
-DANGER
 'unprotected-quayside-or-riverbank':
   category: 'danger'
   name: ''
@@ -357,8 +346,6 @@ DANGER
     { type: 'circle-bg', color: 'black'}
   ]
 
-
-INFORMATION
 'bus-stop':
   category: 'information'
   name: ''
@@ -393,8 +380,6 @@ INFORMATION
     { type: 'circle-bg', color: 'black'}
   ]
 
-
-MANDATORY
 'dual-path-pedestrians-and-cyclists':
   category: 'mandatory'
   name: ''
@@ -507,8 +492,6 @@ MANDATORY
     { type: 'circle-bg', color: 'black'}
   ]
 
-
-PRIORITY
 'give-way':
   category: 'priority'
   name: ''

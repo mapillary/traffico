@@ -16,10 +16,11 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-shell": "^0.4.2",
     "gulp-cson": "0.3.0",
+    "gulp-sass": "2.0.3",
+    "gulp-shell": "^0.4.2",
     "gulp-watch": "^4.2.4",
-    "gulp-sass": "2.0.3"
+    "standard": "^5.1.0"
   },
   "scripts": {
     "gulp": "gulp",

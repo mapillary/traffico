@@ -25,3 +25,10 @@ prohibitory_overtaking:
     { type: 'car-left', color: 'black' }
     { type: 'car-right', color: 'red' }
   ]
+
+'children':
+  category: 'danger'
+  name: 'children'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]

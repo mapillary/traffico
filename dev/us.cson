@@ -811,3 +811,488 @@ regulatory_truck_speed_limit:
     { type: 'content-4', color: 'black',  content: 'TRUCKS', transform: 'translate(0,-100%) scale(.7,.9)' }
     { type: 'us_speed_value', color: 'black',  transform: 'translate(0,35%) scale(1.1)' }
   ]
+
+'pass-on-either-side':
+  category: 'mandatory'
+  name: 'Pass on either side'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'yield':
+  category: 'regulatory'
+  name: 'Yield'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-bicycles':
+  category: 'Regulatory'
+  name: 'No bicycles'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-entry':
+  category: 'regulatory'
+  name: 'No entry'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-left-or-u-turn':
+  category: 'regulatory'
+  name: 'No left or U turn'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-left-turn':
+  category: 'regulatory'
+  name: 'No left turn'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-parking':
+  category: 'regulatory'
+  name: 'No parking'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-pedestrians':
+  category: 'regulatory'
+  name: 'No pedestrians'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-straight-through':
+  category: 'regulatory'
+  name: 'No straight through'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-heavy-goods-vehicles':
+  category: 'regulatory'
+  name: 'No heaby goods vehicles'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-right-turn':
+  category: 'regulatory'
+  name: 'No right turn'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'no-u-turn':
+  category: 'regulatory'
+  name: 'No U turn'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'maximum-speed-limit':
+  category: 'regulatory'
+  name: 'Maximum speed limit'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'stop':
+  category: 'regulatory'
+  name: 'Stop'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'t-roads':
+  category: 'warning'
+  name: 'T-roads'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'y-roads':
+  category: 'warning'
+  name: 'Y-roads'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'added-lane-from-entering-roadway':
+  category: 'warning'
+  name: 'Added lane from entering roadway'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'added-lane-right':
+  category: 'warning'
+  name: 'Added lane right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'slippery-bicycles':
+  category: 'warning'
+  name: 'Slippery bicycles'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'crossroads-ahead':
+  category: 'warning'
+  name: 'Crossroads ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'double-curve-first-left-ahead':
+  category: 'warning'
+  name: 'Double curve first left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'double-curve-first-right-ahead':
+  category: 'warning'
+  name: 'Double curve first right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'cyclists-crossing':
+  category: 'warning'
+  name: 'Cyclists crossing'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'double-reverse-curve':
+  category: 'warning'
+  name: 'Reverse curve'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'falling-rocks-or-debris-right':
+  category: 'warning'
+  name: 'Falling rocks or debris right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'emergency-vehicles':
+  category: 'warning'
+  name: 'Emergency vehicles'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'flaggers-in-road-ahead':
+  category: 'warning'
+  name: 'Flaggers in road ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'hairpin-curve-right-ahead':
+  category: 'warning'
+  name: 'Curve right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'divided-highway-ahead':
+  category: 'warning'
+  name: 'Highway ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'horizontal-alignment-left':
+  category: 'warning'
+  name: 'Horizontal alignment left'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'horizontal-alignment-right':
+  category: 'warning'
+  name: 'Horizontal alignment right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'roundabout-ahead':
+  category: 'warning'
+  name: 'Roundabout ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'tram-crossing':
+  category: 'warning'
+  name: 'Tram crossing'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'loop-270-degree':
+  category: 'warning'
+  name: 'Loop 270 degree'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'loop-pretzel':
+  category: 'warning'
+  name: 'Loop pretzel'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'height-restriction-ahead':
+  category: 'warning'
+  name: 'Height restriction ahead'
+  variation: 'feet'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'traffic-merges-right-ahead':
+  category: 'warning'
+  name: 'Traffic merges right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'height-restriction-ahead--meters':
+  category: 'warning'
+  name: 'Height restriction ahead'
+  variation: 'meters'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'motorcycle-crossing':
+  category: 'warning'
+  name: 'Motorcycle crossing'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'narrow-bridge-ahead':
+  category: 'warning'
+  name: 'Bridge ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'offset-roads':
+  category: 'warning'
+  name: 'Offset roads'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'pass-left-or-right':
+  category: 'warning'
+  name: 'Pass left or right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'pedestrian-crossing':
+  category: 'warning'
+  name: 'Pedestrian crossing'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'playground-ahead':
+  category: 'warning'
+  name: 'Playground ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'uncontrolled-railroad-crossing-ahead':
+  category: 'warning'
+  name: 'Uncrontroller railroad crossing ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'road-narrows-ahead':
+  category: 'warning'
+  name: 'Road narrows ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'road-narrows-left-ahead':
+  category: 'warning'
+  name: 'Road narrows left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'road-narrows-right-ahead':
+  category: 'warning'
+  name: 'Road narrows right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'junction-with-a-side-road-acute-left-ahead':
+  category: 'warning'
+  name: 'Junction with a side road acute left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'junction-with-a-side-road-acute-right-ahead':
+  category: 'warning'
+  name: 'Junction with a side road acute right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'junction-with-a-side-road-perpendicular-left-ahead':
+  category: 'warning'
+  name: 'Junction with a side road perpendicular left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'junction-with-a-side-road-perpendicular-right-ahead':
+  category: 'warning'
+  name: 'Junction with a side road perpendicular right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'slippery-road-surface':
+  category: 'warning'
+  name: 'Slippery road surface'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'steep-hill-downwards':
+  category: 'warning'
+  name: 'Steep hill downwards'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'stop-ahead':
+  category: 'warning'
+  name: 'Stop ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'traffic-signals-ahead':
+  category: 'warning'
+  name: 'Traffic signals ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'triple-reverse-curve':
+  category: 'warning'
+  name: 'Triple reverse curve'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'trucks-rollover':
+  category: 'warning'
+  name: 'Trucks rollover'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'turn-curve-left':
+  category: 'warning'
+  name: 'Turn curve left'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'turn-curve-right':
+  category: 'warning'
+  name: 'Turn curve right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'turn-left':
+  category: 'warning'
+  name: 'Turn left'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'double-turn-first-left-ahead':
+  category: 'warning'
+  name: 'Double turn first left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'double-turn-first-right-ahead':
+  category: 'warning'
+  name: 'Double turn first right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'turn-right':
+  category: 'warning'
+  name: 'Turn right'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'two-way-traffic-ahead':
+  category: 'warning'
+  name: 'Two way traffic ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'winding-road-first-left-ahead':
+  category: 'warning'
+  name: 'Winding road first left ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'winding-road-first-right-ahead':
+  category: 'warning'
+  name: 'Winding road first right ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'workers-in-road-ahead':
+  category: 'warning'
+  name: 'Workers in road ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]
+
+'yield-ahead':
+  category: 'warning'
+  name: 'Yield ahead'
+  elements: [
+    { type: 'circle-bg', color: 'black' }
+  ]

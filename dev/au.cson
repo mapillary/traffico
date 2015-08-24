@@ -448,14 +448,14 @@
 
 'truck-crossing':
   category: 'warning'
-  name: 'truck crossing'
+  name: 'Truck crossing'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'truck', color: 'black', transform: 'scale(-1,1)' }
   ]
 
-'warning--turn-left':
+'turn-left':
   category: 'warning'
   name: 'turn left'
   elements: [
@@ -464,27 +464,27 @@
     { type: 'turn-90-l', color: 'black' }
   ]
 
-'warning--turn-right':
+'turn-right':
   category: 'warning'
-  name: 'turn right'
+  name: 'Turn right'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'turn-90-l', color: 'black', 'transform': 'scale(-1,1)' }
   ]
 
-'warning--two-way-traffic-ahead':
+'two-way-traffic-ahead':
   category: 'warning'
-  name: 'two way traffic ahead'
+  name: 'Two way traffic ahead'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'arrows_both_bra', color: 'black', transform: '{fit_diamond}'}
   ]
 
-'warning--uncontrolled-railroad-crossing-ahead':
+'uncontrolled-railroad-crossing-ahead':
   category: 'warning'
-  name: 'uncontrolled railroad crossing ahead'
+  name: 'Uncontrolled railroad crossing ahead'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
@@ -493,7 +493,7 @@
 
 'wild-animals':
   category: 'warning'
-  name: 'wild animals'
+  name: 'Wild animals'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
@@ -502,7 +502,7 @@
 
 'winding-road-first-left-ahead':
   category: 'warning'
-  name: 'winding road first left ahead'
+  name: 'Winding road first left ahead'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
@@ -511,7 +511,7 @@
 
 'yield-ahead':
   category: 'warning'
-  name: 'yield ahead'
+  name: 'Yield ahead'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }

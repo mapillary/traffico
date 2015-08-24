@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>divided-highway</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="divided-highway" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M143.544703,202.22012 L143.544703,153.92027 C143.544703,149.29511 145.56527,144.667181 147.998254,141.381684 L163.562155,119.927692 C166.086479,116.642195 167.769363,112.271681 167.769363,107.726789 L167.769363,53.1161275 L141.266721,53.1161275 L141.266721,101.499015 C141.020378,106.124175 139.841253,110.334151 137.654612,113.61688 L127.978034,127.663972 L118.301456,113.61688 C116.117586,110.334151 114.93846,106.124175 114.681045,101.499015 L114.681045,53.1161275 L88.1756365,53.1161275 L88.1756365,107.726789 C88.1756365,112.271681 89.8585196,116.642195 92.3828443,119.927692 L107.949511,141.381684 C110.390799,144.667181 112.414133,149.29511 112.414133,153.92027 L112.414133,202.22012 L143.544703,202.22012" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>turn-l-aus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="turn-l-aus" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M75.23915,238 L11,238 L11,82.1705627 C11,50.0940247 35.274456,18 75.239151,18 L189.3818,18 L245,50.094026 L189.3818,82.170566 L100.517029,82.1705627 C75.1740728,82.1705627 75.239151,90.1363003 75.239151,115.429733" sketch:type="MSShapeGroup" transform="translate(128.000000, 128.000000) scale(-1, 1) translate(-128.000000, -128.000000) "></path>
+        </g>
+    </g>
+</svg>

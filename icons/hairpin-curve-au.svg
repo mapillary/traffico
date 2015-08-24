@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>hairpin-curve-au</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="hairpin-curve-au" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M195.168898,97.2770088 C195.168898,65.8149381 170.630966,41.2645681 140.587957,41.2645681 C110.448468,41.2645681 85.9976699,65.8149381 85.9976699,95.8579449 L85.9105149,108.131582 L66.2521652,101.907626 C63.6847909,101.907626 60.8311022,104.574593 60.8311022,107.599434 C60.8311022,108.747753 61.5468576,110.169922 61.9918682,110.711412 L101.641542,169.207215 L140.849333,111.156422 C141.294344,110.440667 142.010099,109.021603 142.010099,107.599434 C142.010099,104.574593 139.60143,101.907626 136.489452,101.907626 L116.669274,108.131582 L116.843549,95.8579449 C116.756394,82.7067426 127.424263,72.0357799 140.58793,72.0357799 C153.739141,72.0357799 164.410107,82.7067426 164.410107,97.2770088 L164.410107,214.735432 L195.168871,214.735432 L195.168871,97.2770088" id="path3468" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

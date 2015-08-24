@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>reverse-curve-au</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="reverse-curve-au" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M163.783294,148.214715 L127.314377,114.943394 C125.133462,112.838997 123.646721,109.791724 123.646721,106.594134 L140.826246,111.983577 C143.168408,111.983577 145.748341,109.564883 145.748341,106.831906 C145.748341,105.965548 145.119762,104.642788 144.652422,104.251965 L109.908018,52.956624 L75.6282185,103.784625 C75.1608785,104.402281 74.5322925,105.73598 74.5322925,106.831906 C74.5322925,109.564883 76.6476207,111.983577 79.4571268,111.983577 L96.8607617,106.594134 C96.8607617,117.135248 101.318251,126.971249 108.421277,134.465081 L150.662247,171.789419 C152.851366,174.134323 154.338108,177.331912 154.338108,180.77 L154.338108,203.727056 L181.350908,203.956624 L181.350908,180.77 C181.350908,167.258139 174.474723,155.31774 163.783294,148.214715" id="path3312" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

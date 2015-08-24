@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>side-road-perpendicular</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="side-road-perpendicular" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M151.398799,99.5143593 L151.398799,204.097641 L124.146369,204.097641 L124.146369,152.45378 L56,152.45378 L56,129.177574 L124.146369,129.177574 L124.146369,99.8429819 L112.459092,102.862027 L112.455328,102.863909 C112.097703,102.950869 111.728314,102.995666 111.361278,102.995666 C108.853198,102.995666 106.820383,100.962851 106.820383,98.4547706 C106.820383,97.5465915 107.093307,96.6595876 107.601511,95.9090459 L138.409015,51.902359 L169.218872,95.9090459 C169.727076,96.6595876 170,97.5465915 170,98.4547706 C170,100.962851 167.967185,102.995666 165.459105,102.995666 C165.089716,102.995666 164.72268,102.951057 164.365055,102.863909 L164.36129,102.862027 L164.359408,102.862027 L151.398799,99.5143593 L151.398799,99.5143593 Z" id="1" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

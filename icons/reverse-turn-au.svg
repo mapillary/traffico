@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>reverse-turn-au</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="reverse-turn-au" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M163.055871,128.445413 C169.627909,128.445413 175.767542,133.351054 175.767542,140.866295 L175.767542,200.03742 L150.844865,200.03742 L150.844865,156.549167 C150.624874,154.953575 149.039389,153.148092 147.883786,153.37062 L112.987989,153.37062 C105.472755,153.37062 100.77699,147.438333 100.926183,140.727216 L100.926183,106.842891 L85.1042292,111.829451 C82.7146261,111.829451 80.767542,109.662369 80.767542,107.272766 C80.767542,106.261294 81.1291439,105.10569 81.5615475,104.534207 L113.77947,57.2150068 L145.064301,104.314209 C145.496706,104.895807 146.078303,106.048887 146.078303,107.272766 C146.078303,109.662369 144.05283,111.829451 141.885755,111.829451 L125.699667,106.842891 L125.699667,125.696733 C125.699667,126.849814 127.295266,128.225415 129.029937,128.445413 L163.055871,128.445413" id="path3188" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

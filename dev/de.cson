@@ -1,25 +1,224 @@
-danger_level_crossing:
+'unprotected-quayside-or-riverbank':
   category: 'danger'
-  name: 'level crossing'
+  name: 'Unprotected quayside or ferry berth'
   elements: [
-    { type: 'square-angular', color: 'black', transform: 'rotate(30deg) scale(.15,1)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(-30deg) scale(.15,1)' }
-    { type: 'square-angular', color: 'red', transform: 'rotate(30deg) scale(.14,.99)' }
-    { type: 'square-angular', color: 'red', transform: 'rotate(-30deg) scale(.14,.99)' }
-    { type: 'square-angular', color: 'white', transform: 'rotate(30deg) scale(.14,.6)' }
-    { type: 'square-angular', color: 'white', transform: 'rotate(-30deg) scale(.14,.6)' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'cliff', color: 'black', transform: '{inner_triangle}' }
   ]
 
-danger_railway_crossing_unsecured:
+'wild-animals':
   category: 'danger'
-  name: 'unsecured railway crossing'
+  name: 'wild animals crossing'
   elements: [
-    { type: 'tri-rounded', color: 'red'}
-    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}'}
-    { type: 'train-electric', color: 'black', transform: 'scale(.4) translate(10%,40%)'}
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'wild-animal', color: 'black', transform: '{center2tri} scale(.7)' }
   ]
 
-information_bus_stop:
+'double-curve-first-left':
+  category: 'danger'
+  name: 'Double curve first left'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'd-curve-l', color: 'black', transform: '{center2tri} scale(.6)' }
+  ]
+
+'double-curve-first-right':
+  category: 'danger'
+  name: 'Double curve first right'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'd-curve-l', color: 'black', transform: '{center2tri} scale(-.6,.6)' }
+  ]
+
+'curve-left':
+  category: 'danger'
+  name: 'Curve left'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'turn-l', color: 'black', transform: '{center2tri} scale(.6)' }
+  ]
+
+'curve-right':
+  category: 'danger'
+  name: 'Curve right'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'turn-l', color: 'black', transform: '{center2tri} scale(-.6,.6)' }
+  ]
+
+'crossroads-with-priority-to-the-right':
+  category: 'danger'
+  name: 'Crossroads w priority to the right ahead'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'square-angular', color: 'black', transform: '{center2tri} rotate(45deg) scale(.06,.32)' }
+    { type: 'square-angular', color: 'black', transform: '{center2tri} rotate(-45deg) scale(.06,.32)' }
+  ]
+
+'cyclists-crossing-ahead':
+  category: 'danger'
+  name: 'Cyclists crossing ahead'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'bicycle', color: 'black', transform: 'scale(.65) translate(0,25%)' }
+  ]
+
+'other-danger':
+  category: 'danger'
+  name: 'danger'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'exclamation', color: 'black', transform: 'scale(.65) {center2tri}' }
+  ]
+
+'crossroads-ahead':
+  category: 'danger'
+  name: 'Danger at next intersection'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
+
+'junction-with-a-side-road-perpendicular-left':
+  category: 'danger'
+  name: 'Junction with a side road perpendicular'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri}' }
+  ]
+
+'junction-with-a-side-road-perpendicular-right':
+  category: 'danger'
+  name: 'Junction with a side road perpendicular right'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'right-of-way-l fit', color: 'black', transform: 'scale(.7) {center2tri} scale(-1,1)' }
+  ]
+
+'pedestrian-crossing':
+  category: 'information'
+  name: 'pedestrian crossing'
+  elements: [
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'tri-angular', color: 'white', transform: 'scale(.8)' }
+    { type: 'pedestrian-crossing', color: 'black' }
+  ]
+
+'road-bump':
+  category: 'danger'
+  name: 'road bump'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'bump', color: 'black', transform: '{center2tri} scale(.45)'}
+  ]
+
+'road-narrows-ahead':
+  category: 'danger'
+  name: 'Road narrows'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-both', color: 'black', transform: '{center2tri} scale(.6)' }
+  ]
+
+'road-narrows-left-ahead':
+  category: 'danger'
+  name: 'Road narrows left'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-l', color: 'black', transform: '{center2tri} scale(.6)' }
+  ]
+
+'road-narrows-right-ahead':
+  category: 'danger'
+  name: 'road narrows right'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-l', color: 'black', transform: '{center2tri} scale(-.6,.6)' }
+  ]
+
+'roadworks-ahead':
+  category: 'danger'
+  name: 'Roadworks ahead'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'roadworks', color: 'black', transform: 'scale(.7) translate(0,20%)' }
+  ]
+
+'roundabout-ahead':
+  category: 'danger'
+  name: 'roundabout ahead'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'roundabout', color: 'black', transform: '{center2tri} scale(.55)' }
+  ]
+
+'children':
+  category: 'danger'
+  name: 'children'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'children', color: 'black', transform: '{center2tri} scale(.75)'}
+  ]
+
+'slippery-road-surface':
+  category: 'danger'
+  name: 'slippery road surface'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'slippery-road', color: 'black', transform: '{center2tri} scale(.75)'}
+  ]
+
+'traffic-signals-ahead':
+  category: 'danger'
+  name: 'traffic signal'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'circle-bg', color: 'red', transform: '{center2tri} translate(0,-20%) scale(.13)' }
+    { type: 'circle-bg', color: 'yellow', transform: '{center2tri} translate(0,-5%) scale(.13)' }
+    { type: 'circle-bg', color: 'green', transform: '{center2tri} translate(0,10%) scale(.13)' }
+  ]
+
+'two-way-traffic-ahead':
+  category: 'danger'
+  name: 'Two-way traffic ahead'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'DE-arrow-up', color: 'black', transform: '{center2tri} scale(.35) translate(-25%,5%) rotate(180deg)' }
+    { type: 'DE-arrow-up', color: 'black', transform: '{center2tri} scale(.35) translate(25%,-5%)' }
+  ]
+
+'uneven-road':
+  category: 'danger'
+  name: 'uneven road'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'bumps', color: 'black', transform: '{center2tri} scale(.45)'}
+  ]
+
+'bus-stop':
   category: 'information'
   name: 'bus stop (also used for tram)'
   elements: [
@@ -28,606 +227,340 @@ information_bus_stop:
     { type: 'h', color: 'green', transform: '{fit_border_circle}'}
   ]
 
-information_border_de:
-  category: 'information'
-  name: 'European border crossing into Germany'
-  elements: [
-    { type: 'square-rounded', color: 'blue' }
-    { type: 'europe_stars', color: 'yellow' }
-    { type: 'content-5', color: 'white', content: 'Bundes-', transform: 'scale(.9) translate(0,-130%)'}
-    { type: 'content-5', color: 'white', content: 'republik', transform: 'scale(.9) translate(0,-30%)' }
-    { type: 'content-5', color: 'white', content: 'Deutschland', transform: 'scale(.9) translate(0,70%)' }
-  ]
-
-priority_priority_road_end:
-  category: 'priority'
-  name: 'end of priority road'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'white', transform: '{square_to_diamond} scale(.98)' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
-    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.05,1)' }
-    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.05,1) translate(150%,0)' }
-    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.05,1) translate(-150%,0)' }
-  ]
-
-prohibitory_end_of_limits:
-  category: 'prohibitory'
-  name: 'end of all speed and passing limits'
-  elements: [
-    { type: 'circle-bg', color: 'black' }
-    { type: 'circle-bg', color: 'white', transform: 'scale(.95)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.025,.99)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.025,.98) translate(150%,0)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.025,.97) translate(300%,0)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.025,.98) translate(-150%,0)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.025,.97) translate(-300%,0)' }
-  ]
-
-prohibitory_low_emission_zone:
-  category: 'prohibitory'
-  name: 'low-emission zone'
-  elements: [
-    { type: 'square-rounded', color: 'black' }
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95)' }
-    { type: 'circle-bg', color: 'red', transform: 'translate(0,-8%) scale(.7)' }
-    { type: 'circle-bg', color: 'white', transform: 'translate(0,-8%) scale(.7) {fit_border_circle}' }
-    { type: 'content-4', content: 'Umwelt', color: 'black', transform: 'translate(0,-50%) scale(.8) {fit_border_circle}' }
-    { type: 'content-4', content: 'ZONE', color: 'black', transform: 'translate(0,150%) scale(.8)'}
-  ]
-
-prohibitory_low_emission_zone_end:
-  category: 'prohibitory'
-  name: 'end of low-emission zone'
-  elements: [
-    { type: 'square-rounded', color: 'black' }
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95)' }
-    { type: 'circle-bg', color: 'grey', transform: 'translate(0,-8%) scale(.7)' }
-    { type: 'circle-bg', color: 'white', transform: 'translate(0,-8%) scale(.7) {fit_border_circle}' }
-    { type: 'content-4', content: 'Umwelt', color: 'grey', transform: 'translate(0,-50%) scale(.8) {fit_border_circle}' }
-    { type: 'content-4', content: 'ZONE', color: 'grey', transform: 'translate(0,150%) scale(.8)'}
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.35)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.3) translate(-150%, 0)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.3) translate(150%, 0)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.25) translate(-300%, 0)' }
-    { type: 'square-angular', color: 'black', transform: 'rotate(45deg) scale(.02,1.25) translate(300%, 0)' }
-  ]
-
-supplementary_destination:
-  category: 'supplementary'
-  name: 'destination traffic excluded'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'content-4', color: 'black', content: 'Anlieger', transform: 'translate(0,-45%) scale(.8)'}
-    { type: 'content-4', color: 'black', content: 'frei', transform: 'translate(0,45%) scale(.8)'}
-  ]
-
-supplementary_disabled:
-  category: 'supplementary'
-  name: 'for disabled people'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'disabled-p', color: 'black', transform: 'scale(.6)'}
-  ]
-
-supplementary_glaze:
-  category: 'supplementary'
-  name: 'for disabled people'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'snowflake', color: 'black', transform: 'scale(.8)'}
-  ]
-
-supplementary_left_pointing:
-  category: 'supplementary'
-  name: 'left pointing'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(-90deg)'}
-  ]
-
-supplementary_both_directions:
-  category: 'supplementary'
-  name: 'both directions'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'DE-arrow-up', color: 'black', transform: 'translate(-15%,0) scale(.5) rotate(180deg)'}
-    { type: 'DE-arrow-up', color: 'black', transform: 'translate(15%,0) scale(.5)'}
-  ]
-
-supplementary_pedestrians_use_opposite_sidewalk:
-  category: 'supplementary'
-  name: 'pedestrians should use opposite sidewalk'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'DE-arrow-up', color: 'black', transform: 'translate(-20%,0) scale(.5) rotate(-90deg)'}
-    { type: 'pedestrians', color: 'black', transform: 'translate(25%,0) scale(.6)'}
-  ]
-
-supplementary_pedestrians_use_opposite_sidewalk2:
-  category: 'supplementary'
-  name: 'pedestrians should use opposite sidewalk'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'DE-arrow-up', color: 'black', transform: 'translate(20%,0) scale(.5) rotate(90deg)'}
-    { type: 'pedestrians', color: 'black', transform: 'translate(-25%,0) scale(.6)'}
-  ]
-
-supplementary_railway_only:
-  category: 'supplementary'
-  name: 'railway only'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'train-electric', color: 'black', transform: 'scale(.45)'}
-  ]
-
-supplementary_right_pointing:
-  category: 'supplementary'
-  name: 'right pointing'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: 'scale(1,.5)'}
-    { type: 'square-rounded', color: 'white', transform: 'scale(.95, .45)'}
-    { type: 'DE-arrow-up', color: 'black', transform: 'scale(.6) rotate(90deg)'}
-  ]
-
-'unprotected-quayside-or-riverbank':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'wild-animals':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'double-curve-first-left':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'double-curve-first-right':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'curve-left':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'curve-right':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'crossroads-with-priority-to-the-right':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'cyclists-crossing-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'other-danger':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'crossroads-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'junction-with-a-side-road-perpendicular-left':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'junction-with-a-side-road-perpendicular-right':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'pedestrian-crossing':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'road-bump':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'road-narrows-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'road-narrows-left-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'road-narrows-right-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'roadworks-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'roundabout-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'children':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'slippery-road-surface':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'traffic-signals-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'two-way-traffic-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'uneven-road-ahead':
-  category: 'danger'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'bus-stop':
-  category: 'information'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
 'disabled-persons':
   category: 'information'
-  name: ''
+  name: 'disabled parking'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'disabled-p', color: 'white' }
   ]
 
 'parking':
   category: 'information'
-  name: ''
+  name: 'parking'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'parking', color: 'white' }
   ]
 
 'pedestrian-crossing':
   category: 'information'
-  name: ''
+  name: 'pedestrian crossing'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'square-rounded', color: 'blue' }
+    { type: 'tri-angular', color: 'white', transform: 'scale(.8)' }
+    { type: 'pedestrian-crossing', color: 'black' }
   ]
 
+'dual-path-pedestrian-and-cyclists':
   category: 'mandatory'
-  name: ''
+  name: 'bicycle/pedestrian dual track'
   elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'dual-path-pedestrians-and-cyclists':
-  category: 'mandatory'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'bicycle', color: 'white', transform: '{right_half}' }
+    { type: 'footpath', color: 'white', transform: '{left_half}' }
+    { type: 'circle-separator', color: 'white' }
   ]
 
 'bicycles-only':
   category: 'mandatory'
-  name: ''
+  name: 'Bicycles only'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'bicycle', color: 'white' }
   ]
 
-'pedestrians-only':
+'pedestrains-only':
   category: 'mandatory'
-  name: ''
+  name: 'Pedestrians only'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'footpath', color: 'white' }
   ]
 
 'turn-left':
   category: 'mandatory'
-  name: ''
+  name: 'Turn left'
   elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'pass-on-either-side':
-  category: 'mandatory'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'proceed-straight-or-turn-left':
-  category: 'mandatory'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(-90deg)' }
   ]
 
 'turn-right':
   category: 'mandatory'
-  name: ''
+  name: 'Turn right'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(90deg)' }
+  ]
+
+'pass-on-either-side':
+  category: 'mandatory'
+  name: 'Pass on either side'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'translate(0,-15%) rotate(135deg) scale(.6) translate(0,-32%)' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'translate(0,-15%) rotate(-135deg) scale(.6) translate(0,-32%)' }
+  ]
+
+'proceed-straight-or-turn-left':
+  category: 'mandatory'
+  name: 'Proceed straight or turn left'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'arrow-s-l', color: 'white' }
   ]
 
 'proceed-straight-or-turn-right':
   category: 'mandatory'
-  name: ''
+  name: 'Proceed straight or turn right'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'arrow-s-l', color: 'white', transform: 'scale(-1,1)' }
   ]
 
-'proceed-straight':
+'procced-straight':
   category: 'mandatory'
-  name: ''
+  name: 'go straight'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white' }
   ]
 
 'pass-on-this-side-left':
   category: 'mandatory'
-  name: ''
+  name: 'Pass on this side left'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(-135deg)' }
   ]
 
 'pass-on-this-side-right':
   category: 'mandatory'
-  name: ''
+  name: 'Pass on this side right'
   elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'dual-path-cyclists-and-pedestrians':
-  category: 'mandatory'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white', transform: 'rotate(135deg)' }
   ]
 
 'shared-path-pedestrians-and-cyclists':
   category: 'mandatory'
-  name: ''
+  name: 'pedestrian cycle track'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'footpath', color: 'white', transform: '{top_half}' }
+    { type: 'bicycle', color: 'white', transform: '{bottom_half}' }
+    { type: 'circle-separator', color: 'white', transform: 'rotate(90deg)' }
   ]
 
 'roundabout':
   category: 'mandatory'
-  name: ''
+  name: 'roundabout'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'roundabout', color: 'white', transform: 'scale(1.25)' }
   ]
 
 'turn-left-ahead':
   category: 'mandatory'
-  name: ''
+  name: 'Turn left ahead'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'arrow-l', color: 'white', transform: 'scale(1.25)' }
   ]
 
 'turn-right-ahead':
   category: 'mandatory'
-  name: ''
+  name: 'Turn right ahead'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'arrow-l', color: 'white', transform: 'scale(-1.25, 1.25)' }
   ]
 
 'give-way':
   category: 'priority'
-  name: ''
+  name: 'give way'
   elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'priority-road':
-  category: 'priority'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'give-way-to-oncoming-traffic':
-  category: 'priority'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
-  ]
-
-'stop':
-  category: 'priority'
-  name: ''
-  elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'tri-rounded', color: 'red', transform: 'rotate(180deg)' }
+    { type: 'tri-angular', color: 'white', transform: '{tri2center} scale(.7) {center2tri} rotate(180deg)' }
   ]
 
 'no-entry':
   category: 'prohibitory'
-  name: ''
+  name: 'no entry, one way street'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'red' }
+    { type: 'square-angular', color: 'white', transform: 'scale(.92,.16)' }
   ]
 
-'no-motor-vehicles':
-  category: 'prohibitory'
-  name: ''
+'priority-road':
+  category: 'priority'
+  name: 'Priority road'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
+  ]
+
+'give-way-to-oncoming-traffic':
+  category: 'priority'
+  name: 'Give way to oncoming traffic'
+  elements: [
+    { type: 'circle-bg', color: 'red' }
+    { type: 'circle-bg', color: 'white', transform: 'scale(0.8)' }
+    { type: 'DE-arrow-up', color: 'black', transform: 'scale(.7) translate(-25%,5%) rotate(180deg)' }
+    { type: 'DE-arrow-up', color: 'red', transform: 'scale(.7) translate(25%,-5%)' }
+  ]
+
+'stop':
+  category: 'priority'
+  name: 'stop'
+  elements: [
+    { type: 'octagon', color: 'red' }
+    { type: 'stop', color: 'white' }
+  ]
+
+'no-motor-vehicles'
+  category: 'prohibitory'
+  name: 'No motor vehicles'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'moped', color: 'black', transform: '{fit_border_circle} {top_half} scale(.7)' }
+    { type: 'bicycle', color: 'black', transform: '{fit_border_circle} {bottom_half}' }
   ]
 
 'no-motorcycles':
   category: 'prohibitory'
-  name: ''
+  name: 'No motorcycles'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'motorbike', color: 'black', transform: '{fit_border_circle}' }
   ]
 
 'no-parking':
   category: 'prohibitory'
-  name: ''
+  name: 'no_parking'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
 'no-stopping-or-parking':
   category: 'prohibitory'
-  name: ''
+  name: 'no parking or stopping'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)' }
   ]
 
 'no-traffic-both-ways':
   category: 'prohibitory'
-  name: ''
+  name: 'no traffic both ways'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
   ]
 
-'no-heavy-goods-vehicles':
+'no-trucks':
   category: 'prohibitory'
-  name: ''
+  name: 'no trucks'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black' }
   ]
 
 'no-u-turn':
   category: 'prohibitory'
-  name: ''
+  name: 'no u-turn'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'red' }
+    { type: 'circle-bg', color: 'white', transform: '{fit_border_circle}' }
+    { type: 'turnaround', color: 'black' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-55deg)' }
+    { type: 'turnaround2', color: 'black' }
   ]
 
 'no-vehicles-carrying-dangerous-goods':
   category: 'prohibitory'
-  name: ''
+  name: 'no vehicles with dangerous goods'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'square-rounded', color: 'orange', transform: 'scale(.25) translate(0,-25%)' }
+    { type: 'lorry', color: 'black' }
   ]
 
 'no-left-turn':
   category: 'prohibitory'
-  name: ''
+  name: 'no turn left'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'turn-l', color: 'black' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)' }
   ]
 
 'no-right-turn':
   category: 'prohibitory'
-  name: ''
+  name: 'no turn right'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'turn-l', color: 'black', transform: 'scale(-1,1)' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
 'no-overtaking':
   category: 'prohibitory'
-  name: ''
+  name: 'no overtaking'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'car-left', color: 'red' }
+    { type: 'car-right', color: 'black' }
   ]
 
 'no-overtaking-by-heavy-goods-vehicles':
   category: 'prohibitory'
-  name: ''
+  name: 'no overtaking by heavy goods vehicles'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'lorry-left', color: 'red' }
+    { type: 'car-right', color: 'black' }
   ]
 
 'maximum-speed-limit':
   category: 'prohibitory'
-  name: ''
+  name: 'Maximum speed limit'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'red' }
+    { type: 'circle-bg', color: 'white', transform: '{fit_border_circle}' }
+    { type: 'speed_value', color: 'black' }
   ]
 
 'maximum-height':
   category: 'prohibitory'
-  name: ''
+  name: 'Maximum height'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'height', color: 'black' }
+    { type: 'height_value', color: 'black'}
   ]
 
 'maximum-width':
   category: 'prohibitory'
-  name: ''
+  name: 'Maximum width'
   elements: [
-    { type: 'circle-bg', color: 'black'}
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'height', color: 'black', transform: 'rotate(90deg)' }
+    { type: 'width_value', color: 'black'}
   ]

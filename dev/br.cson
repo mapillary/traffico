@@ -283,7 +283,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'domestic-animal', color: 'black', transform: 'translate(-6%,-10%) scale(.35)' }
+    { type: 'domestic-animal', color: 'black', transform: 'translate(-10%,0%) scale(.35)' }
   ]
 
 'falling-rocks-or-debris':
@@ -492,7 +492,6 @@
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'pretzel-loop', color: 'black', transform: '{fit_diamond}' }
-    { type: 'circle-bg', color: 'black' }
   ]
 
 'height-restriction-ahead--feet':
@@ -652,7 +651,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'turn-90-r', color: 'black' }
+    { type: 'turn-90-l', color: 'black', transform: 'scale(-1,1)' }
   ]
 
 'double-turn-first-left-ahead':

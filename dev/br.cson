@@ -160,17 +160,6 @@
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
-'no-parking':
-  category: 'regulatory'
-  name: 'No parking'
-  variation: 'v1'
-  elements: [
-    { type: 'circle-bg', color: 'white' }
-    { type: 'circle-o', color: 'red' }
-    { type: 'content', color: 'black', content: 'E', transform: 'scale(1.5) translate(0,20%)'}
-    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
-  ]
-
 'no-pedestrians':
   category: 'regulatory'
   name: 'No pedestrians'

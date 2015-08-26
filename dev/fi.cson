@@ -13,5 +13,7 @@
   category: 'danger'
   name: 'cyclists crossing ahead'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'yellow', transform: '{inner_triangle}' }
+    { type: 'bicycle', color: 'black', transform: 'scale(.65) translate(0,25%)' }
   ]

@@ -30,5 +30,7 @@ prohibitory_overtaking:
   category: 'danger'
   name: 'children'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'children', color: 'black', transform: '{center2tri} scale(-.75,.75)'}
   ]

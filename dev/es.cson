@@ -11,5 +11,7 @@
   category: 'danger'
   name: 'pedestrian crossing'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'pedestrian', color: 'black', transform: '{fit_triangle}' }
   ]

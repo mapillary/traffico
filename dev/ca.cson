@@ -1,5 +1,5 @@
 'pass-on-either-side':
-  category: 'regulatory'
+  category: 'mandatory'
   name: 'Pass on either side'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
@@ -133,7 +133,7 @@
     { type: 'square-rounded', color: 'black', transform: 'scale(.9,1) scale(.95)' }
     { type: 'square-rounded', color: 'white', transform: 'scale(.9,1) scale(.90)' }
     { type: 'content-4', color: 'black',  content: 'MAXIMUM', transform: 'translate(0,-125%) scale(.5)' }
-    { type: 'us_speed_value', color: 'black',  transform: 'translate(0,45%)' }
+    { type: 'speed_value', color: 'black',  transform: 'translate(0,45%)' }
   ]
 
 'stop':
@@ -162,7 +162,7 @@
     { type: 'crossroads-ahead', color: 'black' }
   ]
 
-'crossroads-ahead':
+'crossroads-ahead_v2':
   category: 'warning'
   name: 'Crossroads ahead'
   vartiation: 'ontario'
@@ -181,7 +181,7 @@
     { type: 'turn-l-curve', color: 'black', transform: '{fit_diamond}'}
   ]
 
-'curve-left-ahead':
+'curve-left-ahead_v2':
   category: 'warning'
   name: 'Curve left ahead'
   variation: 'ontario'
@@ -220,7 +220,7 @@
     { type: 'turn-r-curve', color: 'black', transform: '{fit_diamond}'}
   ]
 
-'curve-right-ahead':
+'curve-right-ahead_v2':
   category: 'warning'
   name: 'Curve right ahead'
   variatio: 'ontario'
@@ -321,7 +321,7 @@
     { type: 'hairpin-curve-au', color: 'black', transform: ' scale(-0.85, 0.85) {fit_diamond}' }
   ]
 
-'hairpin-curve-right-ahead':
+'hairpin-curve-right-ahead_v2':
   category: 'warning'
   name: 'Hairpin curve right ahead'
   variation: 'ontario'
@@ -360,7 +360,7 @@
     { type: 'height_value', color: 'black'}
   ]
 
-'height-restriction-ahead':
+'height-restriction-ahead_v2':
   category: 'warning'
   name: 'Height restriction ahead'
   variation: 'meters'
@@ -408,7 +408,7 @@
     { type: 'pedestrian', color: 'black' }
   ]
 
-'pedestrian-crossing':
+'pedestrian-crossing_v2':
   category: 'warning'
   name: 'Pedestrian crossing'
   variation: 'quebec'
@@ -483,7 +483,7 @@
     { type: 'side-road-perpendicular', color: 'black', transform: '{fit_diamond}' }
   ]
 
-'junction-with-a-side-road-perpendicular-left-ahead':
+'junction-with-a-side-road-perpendicular-left-ahead_v2':
   category: 'warning'
   name: 'junction with a side road perpendicular left ahead'
   variation: 'ontario'
@@ -502,7 +502,7 @@
     { type: 'side-road-perpendicular', color: 'black', transform: '{fit_diamond} scale(-1,1)' }
   ]
 
-'junction-with-a-side-road-perpendicular-right-ahead':
+'junction-with-a-side-road-perpendicular-right-ahead_v2':
   category: 'warning'
   name: 'junction with a side road perpendicular right ahead'
   vartiation: 'ontario'
@@ -549,7 +549,7 @@
     { type: 'octagon', color: 'red', transform: 'translate(0,15%) scale(.3)' }
   ]
 
-'stop-ahead':
+'stop-ahead_v2':
   category: 'warning'
   name: 'Stop ahead'
   variation: 'ontario'
@@ -569,7 +569,7 @@
     { type: 'side-road-a-a-r', color: 'black', transform: 'scale(1, -1)' }
   ]
 
-'traffic-merges-left-ahead':
+'traffic-merges-left-ahead_v2':
   category: 'warning'
   name: 'Traffic merges left ahead'
   variation: 'ontario'
@@ -588,7 +588,7 @@
     { type: 'side-road-a-a-r', color: 'black' }
   ]
 
-'traffic-merges-right-ahead':
+'traffic-merges-right-ahead_v2':
   category: 'warning'
   name: 'Traffic mergest right ahead'
   variation: 'ontario'
@@ -709,7 +709,7 @@
     { type: 'winding-road-left', color: 'black', transform: 'scale(-1,1)' }
   ]
 
-'warning--workers-in-road-ahead':
+'workers-in-road-ahead':
   category: 'warning'
   name: 'workers in road ahead'
   elements: [
@@ -718,7 +718,7 @@
     { type: 'roadworks_bra', color: 'black' }
   ]
 
-'warning--yield-ahead':
+'yield-ahead':
   category: 'warning'
   name: 'yield ahead'
   elements: [

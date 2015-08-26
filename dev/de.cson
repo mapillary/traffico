@@ -121,7 +121,7 @@
     { type: 'exclamation', color: 'black', transform: 'scale(.65) {center2tri}' }
   ]
 
-'other-danger':
+'other-danger_v2':
   category: 'danger'
   name: 'danger'
   variation: 'temporary'
@@ -279,7 +279,7 @@
     { type: 'roadworks', color: 'black', transform: 'scale(.7) translate(0,20%)' }
   ]
 
-'roundabout-ahead':
+'roundabout':
   category: 'danger'
   name: 'roundabout ahead'
   elements: [
@@ -327,9 +327,9 @@
     { type: 'DE-arrow-up', color: 'black', transform: '{center2tri} scale(.35) translate(25%,-5%)' }
   ]
 
-'uneven-road':
+'uneven-road-ahead':
   category: 'danger'
-  name: 'uneven road'
+  name: 'uneven road ahead'
   elements: [
     { type: 'tri-rounded', color: 'red' }
     { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
@@ -348,7 +348,7 @@
   ]
 
 
-'pedestrian-crossing':
+'pedestrian-crossing_v2':
   category: 'information'
   name: 'pedestrian crossing'
   elements: [
@@ -427,7 +427,7 @@
     { type: 'parking', color: 'white' }
   ]
 
-'pedestrian-crossing':
+'pedestrian-crossing_v3':
   category: 'information'
   name: 'pedestrian crossing'
   elements: [
@@ -471,7 +471,7 @@
     { type: 'circle-separator', color: 'white' }
   ]
 
-'dual-path-pedestrian-and-cyclists':
+'dual-path-pedestrians-and-cyclists':
   category: 'mandatory'
   name: 'bicycle/pedestrian dual track'
   elements: [
@@ -489,7 +489,7 @@
     { type: 'bicycle', color: 'white' }
   ]
 
-'pedestrains-only':
+'pedestrians-only':
   category: 'mandatory'
   name: 'Pedestrians only'
   elements: [
@@ -520,6 +520,14 @@
     { type: 'circle-bg', color: 'blue' }
     { type: 'DE-arrow-up', color: 'white', transform: 'translate(0,-15%) rotate(135deg) scale(.6) translate(0,-32%)' }
     { type: 'DE-arrow-up', color: 'white', transform: 'translate(0,-15%) rotate(-135deg) scale(.6) translate(0,-32%)' }
+  ]
+
+'proceed-straight':
+  category: 'mandatory'
+  name: 'Proceed straight or turn left'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'DE-arrow-up', color: 'white' }
   ]
 
 'proceed-straight-or-turn-left':
@@ -572,7 +580,7 @@
     { type: 'circle-separator', color: 'white', transform: 'rotate(90deg)' }
   ]
 
-'roundabout':
+'roundabout_v2':
   category: 'mandatory'
   name: 'roundabout'
   elements: [

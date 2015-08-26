@@ -7,6 +7,16 @@
     { type: 'speed_value', color: 'black'}
   ]
 
+'yield':
+  category: 'regulatory'
+  name: 'Yield/Give way'
+  elements: [
+    { type: 'tri-rounded', color: 'red', transform: 'rotate(180deg)' }
+    { type: 'tri-rounded', color: 'white', transform: '{tri2center} scale(.7) {center2tri} rotate(180deg)' }
+    { type: 'content-4', content: 'GIVE', color:'black', transform: 'translate(0,-115%) scale(.6)'}
+    { type: 'content-4', content: 'WAY', color:'black', transform: 'translate(0,-45%) scale(.6)'}
+  ]
+
 'yield-to-oncoming-traffic':
   category: 'regulatory'
   name: 'Yield to oncoming traffic'
@@ -596,7 +606,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'wombat', color: 'black', transform: 'translate(0,-25%)' }
+    { type: 'wombat', color: 'black' }
   ]
 
 'wombat-crossing_v2':
@@ -606,5 +616,5 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'wombat', color: 'black', transform: 'translate(0,-25%)' }
+    { type: 'wombat', color: 'black' }
   ]

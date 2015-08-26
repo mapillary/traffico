@@ -40,6 +40,10 @@ gulp.task('gen-overview', ['cson-signs', 'cson-transformations'], function () {
   return gulp.src('scripts/generate-overview.js').pipe(shell(['mkdir -p build/gh-pages && node <%= file.path %>']))
 })
 
+gulp.task('gen-html-map', ['resolve-transformations'], function () {
+  return gulp.src('scripts/generate-html-string-dict.js').pipe(shell(['mkdir -p build/string-maps && node <%= file.path %>']))
+})
+
 gulp.task('resolve-transformations', ['cson-signs', 'cson-transformations'], function () {
   return gulp.src('scripts/resolve-transformations.js').pipe(shell(['mkdir -p build/signs-simple && node <%= file.path %>']))
 })
@@ -52,4 +56,4 @@ gulp.task('patch-names', ['gen-overview'], function () {
   return gulp.src('scripts/patch-names.js').pipe(shell(['node <%= file.path %>']))
 })
 
-gulp.task('default', ['concat-traffico-css', 'gen-overview', 'gen-overview-scss', 'gen-overview-css', 'generate_gh-pages_config'])
+gulp.task('default', ['concat-traffico-css', 'gen-overview', 'gen-overview-scss', 'gen-overview-css', 'generate_gh-pages_config', 'gen-html-map'])

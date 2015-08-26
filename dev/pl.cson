@@ -13,6 +13,6 @@
   name: 'pedestrian crossing'
   elements: [
     { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'yellowg', transform: '{inner_triangle}' }
+    { type: 'tri-angular', color: 'yellow', transform: '{inner_triangle}' }
     { type: 'pedestrian', color: 'black', transform: '{fit_triangle}' }
   ]

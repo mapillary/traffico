@@ -2,7 +2,7 @@ var fs = require('fs')
 
 const JSON_DIR = './build/signs-simple/'
 const VAR_VALUES = {
-  speed_value: [10, 20, 25, 30, 35, 50, 60, 70, 75, 80, 90, 100, 110, 120, 130],
+  speed_value: [10, 20, 25, 30, 35, 40, 50, 60, 70, 75, 80, 90, 100, 110, 120, 130],
   us_speed_value: [10, 25, 30, 35, 45, 50, 55, 60, 65, 70, 75, 80, 85]
 }
 
@@ -56,12 +56,14 @@ var fileList = fs.readdir(JSON_DIR, function (err, files) {
             var val = String(VAR_VALUES[typeOfVariableContent][i])
             var len = val.length
             var replaced = currentSign.replace(/\{\{\{variable\}\}\}/g, val).replace(/\{\{\{length\}\}\}/g, len == 2 ? '' : '-' + len)
-            outputKey = category + '--' + key + '-' + val + '--' + country + variation
+            outputKey = category + '--' + key.replace(/_v[0-9]$/g, '') + '-' + val + '--' + country + variation
 
             globalObject[outputKey] = replaced
           }
         } else {
-          outputKey = category + '--' + key + '--' + country + variation
+          outputKey = category + '--' + key.replace(/_v[0-9]$/g, '') + '--' + country + variation
+          outputKey = outputKey.replace(/_v[0-9]$/g, '')
+
           globalObject[outputKey] = currentSign
         }
       }

@@ -434,7 +434,10 @@
   category: 'warning'
   name: 'Stop ahead'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'small-arrow-au', color: 'black', transform: 'translate(0,-25%)' }
+    { type: 'octagon', color: 'red', transform: 'translate(0,15%) scale(.4)' }
   ]
 
 'traffic-signals-ahead':
@@ -515,5 +518,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'circle-bg', color: 'black' }
+    { type: 'small-arrow-au', color: 'black', transform: 'translate(0,-25%)' }
+    { type: 'tri-rounded', color: 'red', transform: 'translate(0, 15%) scale(.45) rotate(180deg)' }
+    { type: 'tri-rounded', color: 'white', transform: 'translate(0, 12%) scale(.25) rotate(180deg)' }
   ]

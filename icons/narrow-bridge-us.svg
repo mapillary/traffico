@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>narrow-bridge-us</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="narrow-bridge-us" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(73.000000, 51.000000)">
+                <path d="M-7.10542736e-15,154.552023 L-7.10542736e-15,116.643006 L17.3127838,96.0299947 L17.3127838,58.5219747 L-7.33099648e-16,37.9089637 L-7.33099648e-16,1.42108547e-14 L4.99862226,1.42108547e-14 L4.99862226,32.9152042 L30.6120767,62.5133546 L30.6120767,92.0386192 L4.99862226,121.636819 L4.99862226,154.552023 L-7.10542736e-15,154.552023 Z" id="path4297" sketch:type="MSShapeGroup"></path>
+                <path d="M112.6716,154.552023 L112.6716,116.643006 L95.3588212,96.0299947 L95.3588212,58.5219747 L112.6716,37.9089637 L112.6716,1.42108547e-14 L107.672983,1.42108547e-14 L107.672983,32.9152042 L82.0595238,62.5133546 L82.0595238,92.0386192 L107.672983,121.636819 L107.672983,154.552023 L112.6716,154.552023 Z" id="path3038" sketch:type="MSShapeGroup"></path>
+                <path d="M53.3611111,122.297688 L58.8486826,122.297688 L58.8486826,154.491161 L53.3611111,154.491161 L53.3611111,122.297688 Z" id="rect3084" opacity="0.98999999" sketch:type="MSShapeGroup"></path>
+                <path d="M53.3611111,32.1934731 L58.8486826,32.1934731 L58.8486826,0 L53.3611111,0 L53.3611111,32.1934731 Z" id="path3098" opacity="0.98999999" sketch:type="MSShapeGroup"></path>
+                <path d="M53.3611111,61.3728324 L58.8486826,61.3728324 L58.8486826,93.5663055 L53.3611111,93.5663055 L53.3611111,61.3728324 Z" id="path3100" opacity="0.98999999" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

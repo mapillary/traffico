@@ -7,9 +7,9 @@
     { type: 'speed_value', color: 'black'}
   ]
 
-'yield':
+'yield-to-oncoming-traffic':
   category: 'regulatory'
-  name: 'Yield'
+  name: 'Yield to oncoming traffic'
   elements: [
     { type: 'tri-rounded', color: 'red', transform: 'rotate(180deg)' }
     { type: 'tri-rounded', color: 'white', transform: '{tri2center} scale(.7) {center2tri} rotate(180deg)' }
@@ -122,7 +122,7 @@
     { type: 'bump_road_bra', color: 'black', transform: '{fit_diamond}' }
   ]
 
-'warning--children':
+'children':
   category: 'warning'
   name: 'Children'
   elements: [
@@ -284,7 +284,7 @@
     { type: 'koalas', color: 'black', transform: '{fit_diamond}' }
   ]
 
-'warning--narrow-bridge-ahead':
+'narrow-bridge-ahead':
   category: 'warning'
   name: 'Narrow bridge ahead'
   elements: [
@@ -303,7 +303,7 @@
     { type: 'pedestrian-crossing-au', color: 'black' }
   ]
 
-'pedestrian-crossing':
+'pedestrian-crossing_v2':
   category: 'warning'
   name: 'Pedestrian-crossing'
   elements: [
@@ -347,6 +347,15 @@
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'reverse-curve-au', color: 'black', transform: 'scale(-1,1) {fit_diamond}' }
+  ]
+
+'double-curve-first-left-ahead':
+  category: 'warning'
+  name: 'Double curve first left ahead'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'reverse-curve-au', color: 'black', transform:'{fit_diamond}' }
   ]
 
 'double-turn-first-left-ahead':
@@ -394,7 +403,7 @@
     { type: 'side-road-perpendicular', color: 'black', transform: '{fit_diamond}' }
   ]
 
-'warning--junction-with-a-side-road-perpendicular-right-ahead':
+'junction-with-a-side-road-perpendicular-right-ahead':
   category: 'warning'
   name: 'Junction with a side road perpendicular right ahead'
   elements: [
@@ -512,6 +521,15 @@
     { type: 'series-of-curves-left', color: 'black' }
   ]
 
+'winding-road-first-right-ahead':
+  category: 'warning'
+  name: 'Winding road first right ahead'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'series-of-curves-left', color: 'black', transform: 'scale(-1,1)' }
+  ]
+
 'yield-ahead':
   category: 'warning'
   name: 'Yield ahead'
@@ -521,4 +539,72 @@
     { type: 'small-arrow-au', color: 'black', transform: 'translate(0,-25%)' }
     { type: 'tri-rounded', color: 'red', transform: 'translate(0, 15%) scale(.45) rotate(180deg)' }
     { type: 'tri-rounded', color: 'white', transform: 'translate(0, 12%) scale(.25) rotate(180deg)' }
+  ]
+
+'emu-crossing':
+  category: 'warning'
+  name: 'Emu crossing'
+  variation: 'left'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'emu', color: 'black' }
+
+  ]
+
+'emu-crossing_v2':
+  category: 'warning'
+  name: 'Emu crossing right'
+  variation: 'right'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'emu', color: 'black', transform: 'scale(-1,1)' }
+  ]
+
+'slippery-motorcycles':
+  category: 'warning'
+  name: 'Slippery motorcycles'
+  variation: 'victoria'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'slipper-motorcycle', color: 'black' }
+  ]
+
+'traffic-merges-left-ahead':
+  category: 'warning'
+  name: 'Traffic merges left ahead'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'merge', color: 'black', transform: 'scale(-1,1)' }
+  ]
+
+'traffic-merges-right-ahead':
+  category: 'warning'
+  name: 'Traffic merges right ahead'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'merge', color: 'black' }
+  ]
+
+'wombat-crossing':
+  category: 'warning'
+  name: 'Wombat crossing'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'wombat', color: 'black', transform: 'translate(0,-25%)' }
+  ]
+
+'wombat-crossing_v2':
+  category: 'warning'
+  name: 'Slippery motorcycles'
+  variation: 'victoria'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'wombat', color: 'black', transform: 'translate(0,-25%)' }
   ]

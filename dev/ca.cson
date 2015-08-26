@@ -41,7 +41,7 @@
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'turn-90-l', color: 'black', transform: 'translate(-10%, 5%)' }
+    { type: 'turn-90-l', color: 'black', transform: '{fit_border_circle}' }
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
@@ -82,9 +82,8 @@
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'content', color: 'black', content: 'E', transform: 'scale(1.5) translate(0,20%)'}
+    { type: 'content', color: 'black', content: 'P', transform: 'scale(1.5) translate(0,20%)'}
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
-    { type: 'circle-bg', color: 'black' }
   ]
 
 'no-pedestrians':
@@ -113,9 +112,8 @@
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'content', color: 'black', content: 'E', transform: 'scale(1.5) translate(0,20%)'}
+    { type: 'octagon', color: 'black', transform: 'scale(.7)' }
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
-    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)' }
   ]
 
 'no-u-turn':
@@ -545,7 +543,10 @@
   category: 'warning'
   name: 'Stop ahead'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'small-arrow-au', color: 'black', transform: 'translate(0,-25%)' }
+    { type: 'octagon', color: 'red', transform: 'translate(0,15%) scale(.3)' }
   ]
 
 'stop-ahead':
@@ -553,7 +554,10 @@
   name: 'Stop ahead'
   variation: 'ontario'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'small-arrow-au', color: 'black', transform: 'translate(0,-25%) scale(1.2)' }
+    { type: 'octagon', color: 'red', transform: 'translate(0,15%) scale(.4)' }
   ]
 
 'traffic-merges-left-ahead':
@@ -598,7 +602,12 @@
   category: 'warning'
   name: 'Traffic signals ahead'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'square-angular', color: 'black', transform: 'scale(.2,.55)' }
+    { type: 'circle-bg', color: 'green', transform: 'translate(0,16.5%) scale(.14)' }
+    { type: 'circle-bg', color: 'yellow', transform: 'scale(.14)' }
+    { type: 'circle-bg', color: 'red', transform: 'translate(0,-16.5%) scale(.14)' }
   ]
 
 'tunnel-ahead':
@@ -713,5 +722,9 @@
   category: 'warning'
   name: 'yield ahead'
   elements: [
-    { type: 'circle-bg', color: 'black' }
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'small-arrow-au', color: 'black', transform: 'translate(0,-25%)' }
+    { type: 'tri-rounded', color: 'red', transform: 'translate(0, 15%) scale(.45) rotate(180deg)' }
+    { type: 'tri-rounded', color: 'white', transform: 'translate(0, 12%) scale(.25) rotate(180deg)' }
   ]

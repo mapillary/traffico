@@ -3,7 +3,7 @@ var fs = require('fs')
 const JSON_DIR = './build/signs-simple/'
 const VAR_VALUES = {
   speed_value: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 100, 110, 120, 130],
-  us_speed_value: [10, 25, 30, 35, 45, 50, 55, 60, 65, 70, 75, 80, 85]
+  us_speed_value: [5, 10, 15, 20, 25, 30, 35, 45, 50, 55, 60, 65, 70, 75, 80, 85]
 }
 
 var fileList = fs.readdir(JSON_DIR, function (err, files) {
@@ -12,7 +12,6 @@ var fileList = fs.readdir(JSON_DIR, function (err, files) {
     if (files[f].indexOf('.json', files[f].length - 5) !== -1) {
       var fileContent = fs.readFileSync(JSON_DIR + files[f], 'utf8')
       var data = JSON.parse(fileContent)
-      var firstSign = true
 
       for (var key in data) {
         var elements = data[key]['elements']

@@ -15,3 +15,12 @@
     { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'pedestrian', color: 'black', transform: '{fit_triangle}' }
   ]
+
+'road-narrows-ahead':
+  category: 'danger'
+  name: 'Road narrows'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'narrow-road-both', color: 'black', transform: '{center2tri} scale(.6)' }
+  ]

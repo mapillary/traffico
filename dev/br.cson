@@ -52,8 +52,8 @@
     { type: 'US-arrow-oneway', color: 'black', transform: 'rotate(90deg) scale(.6)' }
   ]
 
-'parking-zone':
-  category: 'other'
+'parking':
+  category: 'information'
   name: 'Parking zone'
   elements: [
     { type: 'circle-bg', color: 'white' }
@@ -62,13 +62,12 @@
   ]
 
 'two-way-traffic':
-  category: 'other'
+  category: 'information'
   name: 'Two-way traffic'
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
     { type: 'two_way_arrows_bra', color: 'black'}
-    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
 'maximum-speed-limit':
@@ -77,8 +76,8 @@
   elements: [
     { type: 'circle-bg', color: 'red' }
     { type: 'circle-bg', color: 'white', transform: '{fit_border_circle}' }
-    { type: 'speed_value', color: 'black'}
     { type: 'content-4', color: 'black',  content: 'km/h', transform: 'translate(0,120%) scale(.8)' }
+    { type: 'speed_value', color: 'black'}
   ]
 
 'yield':
@@ -275,7 +274,7 @@
     { type: 'domestic-animal', color: 'black', transform: 'translate(-10%,0%) scale(.35)' }
   ]
 
-'falling-rocks-or-debris':
+'falling-rocks-or-debris-right':
   category: 'warning'
   name: 'Falling rocks or debris'
   elements: [
@@ -329,7 +328,7 @@
     { type: 'roadworks_bra', color: 'black' }
   ]
 
-'warning--school-zone':
+'school-zone':
   category: 'warning'
   name: 'School zone'
   elements: [
@@ -483,7 +482,7 @@
     { type: 'pretzel-loop', color: 'black', transform: '{fit_diamond}' }
   ]
 
-'height-restriction-ahead--feet':
+'height-restriction-ahead':
   category: 'warning'
   name: 'Height restriction ahead'
   variation: 'feet'
@@ -530,7 +529,7 @@
     { type: 'narrow-road-l', color: 'black', transform: '{fit_diamond}' }
   ]
 
-'warning--road-narrows-right-ahead':
+'road-narrows-right-ahead':
   category: 'warning'
   name: 'Road narrows right ahead'
   elements: [
@@ -634,7 +633,7 @@
     { type: 'turn-90-l', color: 'black' }
   ]
 
-'turn-right':
+'turn-right_v2':
   category: 'warning'
   name: 'Turn right'
   elements: [
@@ -677,4 +676,13 @@
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'winding-road-left', color: 'black', transform: 'scale(-1,1)' }
+  ]
+
+'road-narrows-right-ahead':
+  category: 'warning'
+  name: 'road narrows right'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'narrow-road-l', color: 'black', transform: '{fit_diamond} scale(-1,1)' }
   ]

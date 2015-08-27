@@ -112,6 +112,16 @@
     { type: 'bicycle', color: 'black', transform: 'scale(.65) translate(0,25%)' }
   ]
 
+'cyclists-crossing-ahead_v2':
+  category: 'danger'
+  name: 'Cyclists crossing ahead right'
+  variation: 'right'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'bicycle', color: 'black', transform: 'scale(.65) translate(0,25%)' }
+  ]
+
 'other-danger':
   category: 'danger'
   name: 'danger'

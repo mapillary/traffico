@@ -728,3 +728,11 @@
     { type: 'tri-rounded', color: 'red', transform: 'translate(0, 15%) scale(.45) rotate(180deg)' }
     { type: 'tri-rounded', color: 'white', transform: 'translate(0, 12%) scale(.25) rotate(180deg)' }
   ]
+
+'yield':
+  category: 'regulatory'
+  name: 'Yield'
+  elements: [
+    { type: 'tri-rounded', color: 'red', transform: 'rotate(180deg)' }
+    { type: 'tri-rounded', color: 'white', transform: '{tri2center} scale(.55) {center2tri} rotate(180deg)' }
+  ]

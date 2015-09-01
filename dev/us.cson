@@ -762,7 +762,7 @@
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
-'one-way-small-left':
+'one-way-left':
   category: 'regulatory'
   name: 'one way small left'
   elements: [
@@ -773,7 +773,7 @@
     { type: 'content-4', color: 'black',  content: 'WAY', transform: 'scale(.5,.6) translate(45%,-25%)' }
   ]
 
-'one-way-small-right':
+'one-way-right':
   category: 'regulatory'
   name: 'one way small right'
   elements: [
@@ -784,9 +784,10 @@
     { type: 'content-4', color: 'black',  content: 'WAY', transform: 'scale(.5,.6) translate(15%,-25%)' }
   ]
 
-'one-way-large-left':
+'one-way-left_v2':
   category: 'regulatory'
   name: 'one way large left'
+  variation: 'alternate'
   elements: [
     { type: 'square-rounded', color: 'white', transform: 'scale(.7,1)' }
     { type: 'square-rounded', color: 'black', transform: 'scale(.7,1) scale(.95)' }
@@ -796,9 +797,10 @@
     { type: 'US-arrow-oneway', color: 'black', transform: 'scale(.5) translate(0,45%) rotate(-90deg)' }
   ]
 
-'one-way-large-right':
+'one-way-right_v2':
   category: 'regulatory'
   name: 'one way large right'
+  variation: 'alternate'
   elements: [
     { type: 'square-rounded', color: 'white', transform: 'scale(.7,1)' }
     { type: 'square-rounded', color: 'black', transform: 'scale(.7,1) scale(.95)' }

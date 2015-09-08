@@ -94,7 +94,7 @@
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
-'no-turn-right':
+'no-right-turn':
   category: 'regulatory'
   name: 'no right turn'
   elements: [

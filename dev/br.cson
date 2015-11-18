@@ -621,7 +621,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'turn-l-curve', color: 'black', transform: '{fit_diamond}' }
+    { type: 'turn-l-curve', color: 'black', transform: 'scale(-1,1) {fit_diamond}' }
   ]
 
 'turn-left':

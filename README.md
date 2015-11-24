@@ -11,8 +11,7 @@ Then run:
 
 ```shell
 brew install fontforge --with-python
-brew install eot-utils
-brew install node
+brew install eot-utils node
 gem install fontcustom
 ```
 

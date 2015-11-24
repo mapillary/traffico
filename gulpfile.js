@@ -10,6 +10,12 @@ gulp.task('clean', shell.task(['rm -f .fontcustom-manifest.json', 'rm -rf ./buil
 
 gulp.task('compile-font', ['clean'], shell.task('fontcustom compile'))
 
+gulp.task('pngs', [], function () {
+  return gulp.src('./scripts/scrape-pngs.js')
+    .pipe(shell(['phantomjs  <%= file.path %>']))
+    .pipe(gulp.dest('build'));
+})
+
 gulp.task('cson-signs', ['clean'], function () {
   return gulp.src('dev/*.cson')
     .pipe(cson())
@@ -55,5 +61,6 @@ gulp.task('generate_gh-pages_config', function () {
 gulp.task('patch-names', ['gen-overview'], function () {
   return gulp.src('scripts/patch-names.js').pipe(shell(['node <%= file.path %>']))
 })
+
 
 gulp.task('default', ['concat-traffico-css', 'gen-overview', 'gen-overview-scss', 'gen-overview-css', 'generate_gh-pages_config', 'gen-html-map'])

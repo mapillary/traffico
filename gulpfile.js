@@ -4,8 +4,6 @@ var concat = require('gulp-concat')
 var cson = require('gulp-cson')
 var sass = require('gulp-sass')
 
-gulp.task('lint', shell.task('node node_modules/standard/bin/cmd.js gulpfile.js'))
-
 gulp.task('clean', shell.task(['rm -f .fontcustom-manifest.json', 'rm -rf ./build/']))
 
 gulp.task('compile-font', shell.task('fontcustom compile'))
@@ -13,7 +11,7 @@ gulp.task('compile-font', shell.task('fontcustom compile'))
 gulp.task('pngs', function () {
   return gulp.src('./scripts/scrape-pngs.js')
     .pipe(shell(['phantomjs  <%= file.path %>']))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'))
 })
 
 gulp.task('cson-signs', function () {
@@ -70,9 +68,11 @@ gulp.task(
     'gen-overview-scss',
     'gen-overview-css',
     'generate_gh-pages_config',
-    'gen-html-map',
+    'gen-html-map'
   ]
 )
+
+gulp.task('lint', shell.task('node node_modules/standard/bin/cmd.js gulpfile.js scripts/*.js'))
 
 gulp.task('check-for-duplicate-signs', ['build'], function () {
   return gulp.src('scripts/check-for-duplicate-signs.js').pipe(shell(['node <%= file.path %>']))
@@ -82,6 +82,7 @@ gulp.task(
   'check',
   [
     'check-for-duplicate-signs',
+    'lint'
   ]
 )
 

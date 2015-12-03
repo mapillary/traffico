@@ -28,6 +28,7 @@
     "build": "gulp build",
     "check": "gulp check",
     "clean": "gulp clean",
+    "lint": "gulp lint",
     "pngs": "gulp pngs"
   }
 }

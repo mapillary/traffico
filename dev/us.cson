@@ -200,11 +200,11 @@
 
 'double-turn-first-left-ahead':
   category: 'warning'
-  name: 'Double turn first left ahead'
+  name: 'turn reverse left'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'reverse-turn-au', color: 'black', transform: '{fit_diamond}' }
+    { type: 'turn-reverse-left', color: 'black' }
   ]
 
 'cyclists-crossing':
@@ -587,15 +587,6 @@
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'turn-reverse-left', color: 'black', transform: 'scale(-1,1)' }
-  ]
-
-'double-turn-first-left-ahead':
-  category: 'warning'
-  name: 'turn reverse left'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'turn-reverse-left', color: 'black' }
   ]
 
 'two-way-traffic-ahead':

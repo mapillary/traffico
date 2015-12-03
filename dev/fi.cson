@@ -17,3 +17,22 @@
     { type: 'tri-angular', color: 'yellow', transform: '{inner_triangle}' }
     { type: 'bicycle', color: 'black', transform: 'scale(.65) translate(0,25%)' }
   ]
+
+'priority-road-end':
+  category: 'priority'
+  name: 'end of priority road'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
+    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.2,1)' }
+  ]
+
+'railway-crossing-unsecured':
+  category: 'danger'
+  name: 'unsecured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'yellow', transform: '{inner_triangle}' }
+    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(.4)' }
+  ]

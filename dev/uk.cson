@@ -37,6 +37,15 @@ prohibitory_overtaking:
     { type: 'car-right', color: 'red' }
   ]
 
+'railway-crossing-unsecured':
+  category: 'danger'
+  name: 'unsecured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(-.4,.4)' }
+  ]
+
 'children':
   category: 'danger'
   name: 'children'

@@ -197,15 +197,6 @@
     { type: 'railway-xing-secured', color: 'black', transform: '{center2tri} translate(0,4%) scale(.35)' }
   ]
 
-'railway-crossing-unsecured':
-  category: 'danger'
-  name: 'unsecured railway crossing'
-  elements: [
-    { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(.4)' }
-  ]
-
 'snow':
   category: 'danger'
   name: 'snow'
@@ -621,17 +612,6 @@
     { type: 'circle-o', color: 'red' }
     { type: 'DE-arrow-up', color: 'black', transform: '{fit_border_circle} scale(.7) translate(-25%,5%) rotate(180deg)' }
     { type: 'DE-arrow-up', color: 'red', transform: '{fit_border_circle} scale(.7) translate(25%,-5%)' }
-  ]
-
-'priority-road-end':
-  category: 'priority'
-  name: 'end of priority road'
-  variation: 'other'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
-    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.2,1)' }
   ]
 
 'priority-road-end':
@@ -1108,7 +1088,7 @@ no_trucks:
     { type: 'pedestrians', color: 'black', transform: 'translate(25%,0) scale(.6)'}
   ]
 
-'pedestrians-use-opposite-sidewalk':
+'pedestrians-use-opposite-sidewalk_v2':
   category: 'supplementary'
   name: 'pedestrians should use opposite sidewalk'
   variation: 'right'
@@ -1156,7 +1136,7 @@ no_trucks:
     { type: 'bending-priority', color: 'black', transform: 'scale(-.85,.85)'}
   ]
 
-'priority-road-bends-left-3way':
+'priority-road-bends-left-3way_v2':
   category: 'supplementary'
   name: 'priority road bends to the left at a 3-way intersection'
   variation: '2'
@@ -1188,7 +1168,7 @@ no_trucks:
     { type: 'square-angular', color: 'black', transform: 'translate(0,-30%) scale(.1,.25)'}
     { type: 'bending-priority', color: 'black', transform: 'scale(.85)'}
   ]
-'priority-road-bends-right-3way':
+'priority-road-bends-right-3way_v2':
   category: 'supplementary'
   name: 'priority road bends to the right at a 3-way intersection'
   variation: '2'

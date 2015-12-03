@@ -18,3 +18,13 @@ information_border_dk:
     { type: 'europe_stars', color: 'yellow' }
     { type: 'content-5', color: 'white', content: 'Danmark' }
   ]
+
+no_trucks:
+  category: 'prohibitory'
+  name: 'no trucks'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)'}
+  ]

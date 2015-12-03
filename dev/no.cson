@@ -1,0 +1,9 @@
+no_trucks:
+  category: 'prohibitory'
+  name: 'no trucks'
+  elements: [
+    { type: 'circle-bg', color: 'white' }
+    { type: 'circle-o', color: 'red' }
+    { type: 'truck', color: 'black' }
+    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)'}
+  ]

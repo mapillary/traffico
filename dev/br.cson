@@ -218,7 +218,7 @@
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 
-'no-trucks':
+no_trucks:
   category: 'regulatory'
   name: 'no trucks'
   elements: [

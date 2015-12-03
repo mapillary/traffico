@@ -51,7 +51,7 @@ var signKeys = [];
 
 var globalDict = {};
 
-var builtFiles = fs.readdir(JSON_DIR, function(err, files) {
+require('fs').readdir(JSON_DIR, function(err, files) {
 
   var output = '';
 

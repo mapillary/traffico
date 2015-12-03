@@ -13,7 +13,7 @@ install:
   - rvmsudo gem install fontcustom
   - npm install
 script:
-  - npm run gulp
+  - npm run check
   - scripts/check_build
 
 # Automatically deploys a tagged release to GitHub pages if the Travis build succeeds

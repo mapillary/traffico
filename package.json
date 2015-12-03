@@ -25,7 +25,8 @@
     "standard": "^5.4.1"
   },
   "scripts": {
-    "gulp": "gulp",
+    "build": "gulp build",
+    "check": "gulp check",
     "clean": "gulp clean",
     "pngs": "gulp pngs"
   }

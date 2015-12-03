@@ -8,6 +8,17 @@ danger_contraflow:
     { type: 'DE-arrow-up', color: 'black', transform: '{center2tri} scale(.35) translate(25%,5%) rotate(180deg)' }
   ]
 
+'level-crossing':
+  category: 'danger'
+  name: 'Level crossing'
+  variation: 'other'
+  elements: [
+    { type: 'level-crossing', color: 'red' }
+    { type: 'level-crossing', color: 'red', transform: 'scale(-1,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(60deg) scale(.05,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
+  ]
+
 mandatory_roundabout:
   category: 'mandatory'
   name: 'roundabout'

@@ -25,6 +25,17 @@
     { type: 'children', color: 'black', transform: '{center2tri} scale(.75)'}
   ]
 
+'level-crossing':
+  category: 'danger'
+  name: 'Level crossing'
+  variation: 'other'
+  elements: [
+    { type: 'level-crossing', color: 'red' }
+    { type: 'level-crossing', color: 'red', transform: 'scale(-1,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(60deg) scale(.05,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
+  ]
+
 'pedestrians-only':
   category: 'mandatory'
   name: 'pedestrians only'

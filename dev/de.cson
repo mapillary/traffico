@@ -188,17 +188,6 @@
     { type: 'train-electric', color: 'black', transform: 'scale(.4) translate(10%,40%)'}
   ]
 
-'level-crossing':
-  category: 'danger'
-  name: 'Level crossing'
-  variation: 'other'
-  elements: [
-    { type: 'level-crossing', color: 'red' }
-    { type: 'level-crossing', color: 'red', transform: 'scale(-1,1)' }
-    { type: 'square-angular', color: 'white', transform: 'rotate(60deg) scale(.05,1)' }
-    { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
-  ]
-
 'railway-crossing-secured':
   category: 'danger'
   name: 'secured railway crossing'

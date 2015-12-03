@@ -677,12 +677,3 @@
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'winding-road-left', color: 'black', transform: 'scale(-1,1)' }
   ]
-
-'road-narrows-right-ahead':
-  category: 'warning'
-  name: 'road narrows right'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'narrow-road-l', color: 'black', transform: '{fit_diamond} scale(-1,1)' }
-  ]

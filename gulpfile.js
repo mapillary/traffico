@@ -4,6 +4,7 @@ var concat = require('gulp-concat')
 var cson = require('gulp-cson')
 var es = require('event-stream')
 var sass = require('gulp-sass')
+var watch = require('gulp-watch')
 var zip = require('gulp-zip')
 
 gulp.task('clean', shell.task(['rm -f .fontcustom-manifest.json', 'rm -rf ./build/']))
@@ -117,3 +118,9 @@ gulp.task(
   'default',
   ['check']
 )
+
+gulp.task('watch', function (cb) {
+  watch(['dev/*', 'icons/*'], function (events, done) {
+    gulp.start('check')
+  })
+})

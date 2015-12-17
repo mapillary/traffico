@@ -611,7 +611,7 @@
 
 'wombat-crossing_v2':
   category: 'warning'
-  name: 'Slippery motorcycles'
+  name: 'Wombat crossing'
   variation: 'victoria'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }

@@ -16,16 +16,19 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-cson": "0.3.0",
-    "gulp-sass": "2.0.3",
-    "gulp-shell": "^0.4.2",
-    "gulp-watch": "^4.2.4",
-    "phantom": "^0.8.3",
-    "phantomjs": "^1.9.0",
-    "standard": "^5.1.0"
+    "gulp-cson": "0.3.1",
+    "gulp-sass": "2.1.0",
+    "gulp-shell": "^0.5.1",
+    "gulp-watch": "^4.3.5",
+    "phantom": "^0.8.4",
+    "phantomjs": "^1.9.19",
+    "standard": "^5.4.1"
   },
   "scripts": {
-    "gulp": "gulp",
-    "clean": "gulp clean"
+    "build": "gulp build",
+    "check": "gulp check",
+    "clean": "gulp clean",
+    "lint": "gulp lint",
+    "pngs": "gulp pngs"
   }
 }

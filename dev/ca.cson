@@ -273,7 +273,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'domestic-animal', color: 'black', transform: 'scale(.45)' }
+    { type: 'domestic-animal', color: 'black', transform: 'translate(-10%,0%) scale(.35)' }
   ]
 
 'emergency-vehicles':
@@ -634,7 +634,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'reverse-turn-au', color: 'black', transform: '{fit_diamond}' }
+    { type: 'turn-reverse-left', color: 'black', transform: '{fit_diamond}' }
   ]
 
 'double-turn-first-right-ahead':
@@ -643,7 +643,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'reverse-turn-au', color: 'black', transform: 'scale(-1,1) {fit_diamond}' }
+    { type: 'turn-reverse-left', color: 'black', transform: 'scale(-1,1) {fit_diamond}' }
   ]
 
 'turn-right':

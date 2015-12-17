@@ -3,6 +3,7 @@
 
 # npm & gulp
 node_modules/
+npm-debug.log
 
 # Sass
 .sass-cache/

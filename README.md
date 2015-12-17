@@ -25,9 +25,9 @@ sudo gem install fontcustom
 ## Build
 The build process is a simple gulp task.
 
-First get the gulp dependencies: <code>npm install</code>.
+First get the gulp dependencies: `npm install`.
 
-To finally build the font run: <code>npm run gulp</code>.
+To finally build the font run: `npm run build` to build traffico, or `npm run check` for building plus additional checks.
 
 The resulting `build`-folder contains the following:
 * `build/fonts/` contains the packaged font in different formats (woff, svg, eot, ttf)

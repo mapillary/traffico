@@ -7,3 +7,24 @@ information_border_cz:
     { type: 'content-5', color: 'white', content: 'České', transform: 'translate(0,-50%)'}
     { type: 'content-5', color: 'white', content: 'republika', transform: 'translate(0,50%)' }
   ]
+
+'priority-road-end':
+  category: 'priority'
+  name: 'end of priority road'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'white', transform: '{square_to_diamond} scale(.98)' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
+    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.05,1)' }
+    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.05,1) translate(150%,0)' }
+    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.05,1) translate(-150%,0)' }
+  ]
+
+'railway-crossing-unsecured':
+  category: 'danger'
+  name: 'unsecured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(.4)' }
+  ]

@@ -6,7 +6,10 @@ const VAR_VALUES = {
   us_speed_value: [5, 10, 15, 20, 25, 30, 35, 45, 50, 55, 60, 65, 70, 75, 80, 85]
 }
 
-var fileList = fs.readdir(JSON_DIR, function (err, files) {
+require('fs').readdir(JSON_DIR, function (err, files) {
+  if (err) {
+    throw err
+  }
   for (var f in files) {
     var globalObject = {}
     if (files[f].indexOf('.json', files[f].length - 5) !== -1) {
@@ -17,11 +20,11 @@ var fileList = fs.readdir(JSON_DIR, function (err, files) {
         var elements = data[key]['elements']
         var currentSign = '<span class="t">'
         for (var i in elements) {
-          var typeOfVariableContent = undefined
+          var typeOfVariableContent
           var content = ''
 
           // If the sign can have variable content…
-          if (typeof VAR_VALUES[elements[i]['type']] != 'undefined') {
+          if (typeof VAR_VALUES[elements[i]['type']] !== 'undefined') {
             // …add the placeholders "{{{length}}}" and "{{{variable}}}", which will be replaced later
             typeOfVariableContent = elements[i]['type']
             content = '{{{variable}}}'
@@ -37,7 +40,7 @@ var fileList = fs.readdir(JSON_DIR, function (err, files) {
               ';transform:' + elements[i]['transform'] + '"'
           }
 
-          currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['color'] + '"' + transform + '>' + content + '</i>';
+          currentSign += '<i class="t-' + elements[i]['type'] + ' t-c-' + elements[i]['color'] + '"' + transform + '>' + content + '</i>'
         }
         currentSign += '</span>'
 
@@ -51,10 +54,10 @@ var fileList = fs.readdir(JSON_DIR, function (err, files) {
         }
 
         if (typeOfVariableContent) {
-          for (var i in VAR_VALUES[typeOfVariableContent]) {
-            var val = String(VAR_VALUES[typeOfVariableContent][i])
+          for (var j in VAR_VALUES[typeOfVariableContent]) {
+            var val = String(VAR_VALUES[typeOfVariableContent][j])
             var len = val.length
-            var replaced = currentSign.replace(/\{\{\{variable\}\}\}/g, val).replace(/\{\{\{length\}\}\}/g, len == 2 ? '' : '-' + len)
+            var replaced = currentSign.replace(/\{\{\{variable\}\}\}/g, val).replace(/\{\{\{length\}\}\}/g, len === 2 ? '' : '-' + len)
             outputKey = category + '--' + key.replace(/_v[0-9]$/g, '') + '-' + val + '--' + country + variation
 
             globalObject[outputKey] = replaced

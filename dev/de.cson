@@ -188,17 +188,6 @@
     { type: 'train-electric', color: 'black', transform: 'scale(.4) translate(10%,40%)'}
   ]
 
-'level-crossing':
-  category: 'danger'
-  name: 'Level crossing'
-  variation: 'other'
-  elements: [
-    { type: 'level-crossing', color: 'red' }
-    { type: 'level-crossing', color: 'red', transform: 'scale(-1,1)' }
-    { type: 'square-angular', color: 'white', transform: 'rotate(60deg) scale(.05,1)' }
-    { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
-  ]
-
 'railway-crossing-secured':
   category: 'danger'
   name: 'secured railway crossing'
@@ -206,15 +195,6 @@
     { type: 'tri-rounded', color: 'red' }
     { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
     { type: 'railway-xing-secured', color: 'black', transform: '{center2tri} translate(0,4%) scale(.35)' }
-  ]
-
-'railway-crossing-unsecured':
-  category: 'danger'
-  name: 'unsecured railway crossing'
-  elements: [
-    { type: 'tri-rounded', color: 'red' }
-    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
-    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(.4)' }
   ]
 
 'snow':
@@ -637,17 +617,6 @@
 'priority-road-end':
   category: 'priority'
   name: 'end of priority road'
-  variation: 'other'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
-    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.2,1)' }
-  ]
-
-'priority-road-end':
-  category: 'priority'
-  name: 'end of priority road'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'white', transform: '{square_to_diamond} scale(.98)' }
@@ -741,15 +710,13 @@
     { type: 'bus', color: 'black' , transform: '{fit_border_circle}'}
   ]
 
-
-'no-trucks':
+no_trucks:
   category: 'prohibitory'
   name: 'no trucks'
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
     { type: 'truck', color: 'black' }
-    { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(45deg)'}
   ]
 
 'no-trucks-and-buses':
@@ -973,15 +940,6 @@
     { type: 'circle-o', color: 'red' }
   ]
 
-'no-trucks':
-  category: 'prohibitory'
-  name: 'no trucks'
-  elements: [
-    { type: 'circle-bg', color: 'white' }
-    { type: 'circle-o', color: 'red' }
-    { type: 'truck', color: 'black' }
-  ]
-
 'no-u-turn':
   category: 'prohibitory'
   name: 'no u-turn'
@@ -1130,7 +1088,7 @@
     { type: 'pedestrians', color: 'black', transform: 'translate(25%,0) scale(.6)'}
   ]
 
-'pedestrians-use-opposite-sidewalk':
+'pedestrians-use-opposite-sidewalk_v2':
   category: 'supplementary'
   name: 'pedestrians should use opposite sidewalk'
   variation: 'right'
@@ -1178,7 +1136,7 @@
     { type: 'bending-priority', color: 'black', transform: 'scale(-.85,.85)'}
   ]
 
-'priority-road-bends-left-3way':
+'priority-road-bends-left-3way_v2':
   category: 'supplementary'
   name: 'priority road bends to the left at a 3-way intersection'
   variation: '2'
@@ -1210,7 +1168,7 @@
     { type: 'square-angular', color: 'black', transform: 'translate(0,-30%) scale(.1,.25)'}
     { type: 'bending-priority', color: 'black', transform: 'scale(.85)'}
   ]
-'priority-road-bends-right-3way':
+'priority-road-bends-right-3way_v2':
   category: 'supplementary'
   name: 'priority road bends to the right at a 3-way intersection'
   variation: '2'

@@ -25,12 +25,42 @@
     { type: 'children', color: 'black', transform: '{center2tri} scale(.75)'}
   ]
 
+'level-crossing':
+  category: 'danger'
+  name: 'Level crossing'
+  variation: 'other'
+  elements: [
+    { type: 'level-crossing', color: 'red' }
+    { type: 'level-crossing', color: 'red', transform: 'scale(-1,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(60deg) scale(.05,1)' }
+    { type: 'square-angular', color: 'white', transform: 'rotate(-60deg) scale(.05,1)' }
+  ]
+
 'pedestrians-only':
   category: 'mandatory'
   name: 'pedestrians only'
   elements: [
     { type: 'circle-bg', color: 'blue' }
     { type: 'pedestrian', color: 'white', transform: '' }
+  ]
+
+'priority-road-end':
+  category: 'priority'
+  name: 'end of priority road'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'white', transform: 'scale(.98) {square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.6) {square_to_diamond}' }
+    { type: 'square-angular', color: 'black', transform: '{square_to_diamond} scale(.2,1)' }
+  ]
+
+'railway-crossing-unsecured':
+  category: 'danger'
+  name: 'unsecured railway crossing'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'railway-xing-unsecured', color: 'black', transform: 'translate(0,13%) scale(.4)' }
   ]
 
 'turn-right-ahead':

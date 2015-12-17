@@ -200,11 +200,11 @@
 
 'double-turn-first-left-ahead':
   category: 'warning'
-  name: 'Double turn first left ahead'
+  name: 'turn reverse left'
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'reverse-turn-au', color: 'black', transform: '{fit_diamond}' }
+    { type: 'turn-reverse-left', color: 'black' }
   ]
 
 'cyclists-crossing':
@@ -337,16 +337,7 @@
     { type: 'height_value', color: 'black'}
   ]
 
-'traffic-merges-right-ahead':
-  category: 'warning'
-  name: 'merge'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'merge', color: 'black' }
-  ]
-
-'height-restriction-ahead':
+'height-restriction-ahead_v2':
   category: 'warning'
   name: 'Height restriction ahead'
   variation: 'meters'
@@ -355,6 +346,15 @@
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
     { type: 'height', color: 'black' }
     { type: 'height_value', color: 'black'}
+  ]
+
+'traffic-merges-right-ahead':
+  category: 'warning'
+  name: 'merge'
+  elements: [
+    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
+    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
+    { type: 'merge', color: 'black' }
   ]
 
 'motorcycle-crossing':
@@ -589,15 +589,6 @@
     { type: 'turn-reverse-left', color: 'black', transform: 'scale(-1,1)' }
   ]
 
-'double-turn-first-left-ahead':
-  category: 'warning'
-  name: 'turn reverse left'
-  elements: [
-    { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
-    { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'turn-reverse-left', color: 'black' }
-  ]
-
 'two-way-traffic-ahead':
   category: 'warning'
   name: 'Two way traffic ahead'
@@ -828,7 +819,7 @@
     { type: 'children', color: 'black' }
   ]
 
-'school':
+'school_v2':
   category: 'school'
   name: 'school'
   variation: 'obsolete'

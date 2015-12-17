@@ -14,6 +14,12 @@ gulp.task('pngs', function () {
     .pipe(gulp.dest('build'))
 })
 
+gulp.task('cson-mapillary-mappings', function () {
+  return gulp.src('mapillary-mappings/*.cson')
+    .pipe(cson())
+    .pipe(gulp.dest('build/mapillary-mappings'))
+})
+
 gulp.task('cson-signs', function () {
   return gulp.src('dev/*.cson')
     .pipe(cson())
@@ -64,6 +70,7 @@ gulp.task(
   'build',
   [
     'concat-traffico-css',
+    'cson-mapillary-mappings',
     'gen-overview',
     'gen-overview-scss',
     'gen-overview-css',

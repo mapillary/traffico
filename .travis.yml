@@ -1,15 +1,19 @@
+# The following two lines are currently required to build on Ubuntu trusty, which makes installing easier (e.g. woff-tools from main repository)
+sudo: required
+dist: trusty
+
 language: node_js
-node_js: "0.10"
-cache:
-  apt: true
-  directories:
-  - node_modules
+node_js:
+  - "4.1"
+  - "4.0"
+  - "0.12"
+  - "0.11"
+  - "0.10"
 before_install:
   - sudo apt-get update -qq
 install:
-  - sudo apt-get install -qq fontforge node ruby1.9.1 ruby1.9.1-dev
-  - wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
-  - unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/ && cd ..
+  - export rvmsudo_secure_path=1
+  - sudo apt-get install -qq fontforge woff-tools zlib1g-dev
   - rvmsudo gem install fontcustom
   - npm install
 script:
@@ -20,6 +24,8 @@ script:
 after_success: |
   if [ "$TRAVIS_TAG" == "" ]; then
     echo "Not a tagged release, so GitHub pages are not updated!"
+  elif [ "$TRAVIS_NODE_VERSION" != "4.1" ]; then
+    echo "This is Node $TRAVIS_NODE_VERSION, releases are only produced by Node 4.1"
   else
     # Config
     masterCommit=`git rev-parse HEAD`

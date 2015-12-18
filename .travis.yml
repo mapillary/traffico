@@ -21,23 +21,26 @@ after_success: |
   if [ "$TRAVIS_TAG" == "" ]; then
     echo "Not a tagged release, so GitHub pages are not updated!"
   else
+    # Config
+    masterCommit=`git rev-parse HEAD`
     git config --global user.email "deploy@travis"
     git config --global user.name "Travis CI"
-    git remote add deploy "https://knikel:${GH_TOKEN}@github.com/mapillary/traffico.git"
-    git fetch --depth=1 origin gh-pages:gh-pages
-    git checkout gh-pages
-    git rm examples.html _sass/pages/_examples.scss
-    cp build/gh-pages/examples.html ./
-    cp build/gh-pages/_config.yml ./
-    cp -T build/gh-pages/examples.scss _sass/pages/_examples.scss
-    git stage examples.html _config.yml _sass/pages/_examples.scss
-    masterCommit=`git rev-parse "$TRAVIS_TAG"`
-    git commit -m "Bump gh-pages to latest version
+    # This avoids printout of the token when pushing
+    git config --global credential.helper store
+    echo "https://${GH_USERNAME}:${GH_TOKEN}@github.com" > $HOME/.git-credentials
+
+    printf "\nCloning the gh-pages branch...\n"
+    git clone --depth=1 --branch=gh-pages https://github.com/floscher/traffico.git ../traffico-pages
+
+    printf "\nCopy website resources into gh-pages branch...\n"
+    cp build/gh-pages/examples.html build/gh-pages/_config.yml ../traffico-pages/
+    cp -T build/gh-pages/examples.scss ../traffico-pages/_sass/pages/_examples.scss
+
+    printf "\nCommitting and pushing to gh-pages branch...\n"
+    cd ../traffico-pages
+    git commit -a -m "Bump gh-pages to $TRAVIS_TAG
 
   This commit has automatically been crafted by Travis CI based on $masterCommit."
-    git push deploy gh-pages
+    git push origin gh-pages
+    cd ../traffico
   fi
-
-env:
-  global:
-  - secure: IBJj46hu33+pjEXgj/25NotmkPm3emyccJABi8XNkOuKoyvxDfHebS0V5vb4WbqtBq1tXHrDh6h8BQ32cH0AzdkB7bCrMZlHDs9IEd1feKWToORsDBZGmAkwk5awKdYlMvMXiAIOLi5ljdc5nd79TsV94dG2X2pwcirRNSi+OAA=

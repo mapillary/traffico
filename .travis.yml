@@ -19,6 +19,14 @@ install:
 script:
   - npm run check
   - scripts/check_build
+deploy:
+  provider: releases
+  api_key: "${GH_TOKEN}"
+  file: "build/dist/traffico.zip"
+  skip_cleanup: true
+  on:
+    tags: true
+    node: "4.1"
 
 # Automatically deploys a tagged release to GitHub pages if the Travis build succeeds
 after_success: |

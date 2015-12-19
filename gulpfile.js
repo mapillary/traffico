@@ -16,6 +16,20 @@ gulp.task('pngs', function () {
     .pipe(gulp.dest('build'))
 })
 
+gulp.task('buildReleaseResources', function () {
+  return es.merge(
+    gulp.src('releaseResources/bower.cson')
+    .pipe(cson())
+    .pipe(es.map(function (file, cb) {
+      var bowerInfo = JSON.parse(file.contents.toString('utf8'))
+      bowerInfo.version = require('./package.json').version
+      file.contents = new Buffer(JSON.stringify(bowerInfo), 'utf8')
+      cb(null, file)
+    })),
+    gulp.src(['LICENSE', 'releaseResources/*.md'])
+  ).pipe(gulp.dest('build/releaseResources'))
+})
+
 gulp.task('cson-mapillary-mappings', function () {
   return gulp.src('mapillary-mappings/*.cson')
     .pipe(cson())
@@ -67,6 +81,7 @@ gulp.task('patch-names', ['gen-overview'], function () {
 gulp.task(
   'build',
   [
+    'buildReleaseResources',
     'concat-traffico-css',
     'cson-mapillary-mappings',
     'gen-overview',
@@ -76,7 +91,7 @@ gulp.task(
   ],
   function () {
     return es.merge(
-      gulp.src('LICENSE'),
+      gulp.src('build/releaseResources/*'),
       gulp.src(['fonts/*', 'mapillary-mappings/*', 'signs/*', 'signs-simple/*', 'string-maps/*', 'stylesheets/*', '*.json'], {base: 'build', cwd: 'build'})
     )
     .pipe(zip('traffico.zip'))

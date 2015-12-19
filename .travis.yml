@@ -43,12 +43,22 @@ after_success: |
     git config --global credential.helper store
     echo "https://${GH_USERNAME}:${GH_TOKEN}@github.com" > $HOME/.git-credentials
 
-    printf "\nCloning the gh-pages branch...\n"
-    git clone --depth=1 --branch=gh-pages https://github.com/floscher/traffico.git ../traffico-pages
+    printf "\nCloning the release-repo and the gh-pages branch...\n"
+    git clone --depth=1 --branch=master https://github.com/mapillary/traffico-release.git ../traffico-release
+    git clone --depth=1 --branch=gh-pages https://github.com/mapillary/traffico.git ../traffico-pages
+
+    printf "\nUnzipping release into release repo..."
+    unzip -o build/dist/traffico.zip -d ../traffico-release
 
     printf "\nCopy website resources into gh-pages branch...\n"
     cp build/gh-pages/examples.html build/gh-pages/_config.yml ../traffico-pages/
     cp -T build/gh-pages/examples.scss ../traffico-pages/_sass/pages/_examples.scss
+
+    printf "\nCommitting and pushing to release repo..."
+    cd ../traffico-release
+    git commit -a -m "Drop in $TRAVIS_TAG"
+    git tag "$TRAVIS_TAG"
+    git push origin master "$TRAVIS_TAG"
 
     printf "\nCommitting and pushing to gh-pages branch...\n"
     cd ../traffico-pages
@@ -56,5 +66,6 @@ after_success: |
 
   This commit has automatically been crafted by Travis CI based on $masterCommit."
     git push origin gh-pages
+
     cd ../traffico
   fi

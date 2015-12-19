@@ -2,7 +2,9 @@ var gulp = require('gulp')
 var shell = require('gulp-shell')
 var concat = require('gulp-concat')
 var cson = require('gulp-cson')
+var es = require('event-stream')
 var sass = require('gulp-sass')
+var zip = require('gulp-zip')
 
 gulp.task('clean', shell.task(['rm -f .fontcustom-manifest.json', 'rm -rf ./build/']))
 
@@ -71,7 +73,15 @@ gulp.task(
     'gen-overview-css',
     'generate_gh-pages_config',
     'gen-html-map'
-  ]
+  ],
+  function () {
+    return es.merge(
+      gulp.src('LICENSE'),
+      gulp.src(['fonts/*', 'mapillary-mappings/*', 'signs/*', 'signs-simple/*', 'string-maps/*', 'stylesheets/*', '*.json'], {base: 'build', cwd: 'build'})
+    )
+    .pipe(zip('traffico.zip'))
+    .pipe(gulp.dest('build/dist'))
+  }
 )
 
 gulp.task('lint', shell.task('node node_modules/standard/bin/cmd.js gulpfile.js scripts/*.js'))

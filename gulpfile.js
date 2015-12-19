@@ -39,11 +39,7 @@ gulp.task('concat-traffico-css', ['compile-font'], function () {
 })
 
 gulp.task('gen-overview-css', function () {
-  return gulp.src('stylesheets/examples.scss').pipe(sass()).pipe(gulp.dest('build/stylesheets'))
-})
-
-gulp.task('gen-overview-scss', function () {
-  return gulp.src('stylesheets/examples.scss').pipe(gulp.dest('build/gh-pages'))
+  return gulp.src('stylesheets/examples.scss').pipe(gulp.dest('build/gh-pages')).pipe(sass()).pipe(gulp.dest('build/stylesheets'))
 })
 
 gulp.task('gen-overview', ['cson-signs', 'cson-transformations'], function () {
@@ -72,7 +68,6 @@ gulp.task(
     'concat-traffico-css',
     'cson-mapillary-mappings',
     'gen-overview',
-    'gen-overview-scss',
     'gen-overview-css',
     'generate_gh-pages_config',
     'gen-html-map'

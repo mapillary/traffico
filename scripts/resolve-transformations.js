@@ -1,34 +1,30 @@
-// Configuration (Input and output directory)
-const JSON_DIR = './build/signs/'
-const OUT_DIR = './build/signs-simple/'
+var es = require('event-stream')
 
-// Reading in the map containing the transformations
-const TRANSFORMATIONS = JSON.parse(require('fs').readFileSync('build/transformations.json', 'utf8'))
-
-// Iterating over the JSON files containing the signs with transformation-variables like {center2tri}
-require('fs').readdir(JSON_DIR, function (err, files) {
-  if (err) throw err
-  for (var f in files) {
-    if (files[f].indexOf('.json', files[f].length - 5) !== -1) {
-      // Reading the contents of the current JSON file
-      var data = JSON.parse(require('fs').readFileSync(JSON_DIR + files[f], 'utf8'))
+module.exports = resolveTransformations
+function resolveTransformations () {
+  var stream = es.map(function (file, cb) {
+    if (file.isStream()) {
+      this.emit('error', new Error('resolveTransformations() does not support streams!'))
+      return cb()
+    }
+    if (file.isBuffer()) {
+      var contents = JSON.parse(file.contents.toString('utf8'))
       // Iterate over the different signs
-      for (var key in data) {
+      for (var key in contents) {
         // Iterate over the "layers" of the sign
-        for (var i in data[key]['elements']) {
-          // If this sign-element has transformations, try to resolve transformation-variables
-          if (data[key]['elements'][i]['transform'] !== undefined) {
-            data[key]['elements'][i]['transform'] =
-                resolveTransformationVariables(data[key]['elements'][i]['transform'])
+        for (var i in contents[key]['elements']) {
+          // If this sign-element has transformations, resolve any transformation-variables
+          if (contents[key]['elements'][i]['transform'] !== undefined) {
+            contents[key]['elements'][i]['transform'] = resolveTransformationVariables(contents[key]['elements'][i]['transform'])
           }
         }
       }
-      require('fs').writeFile(OUT_DIR + files[f], JSON.stringify(data), function (err) {
-        if (err) throw err
-      })
+      file.contents = new Buffer(JSON.stringify(contents), 'utf8')
     }
-  }
-})
+    cb(null, file)
+  })
+  return stream
+}
 
 /**
  * Takes a transformation-string like
@@ -41,6 +37,7 @@ require('fs').readdir(JSON_DIR, function (err, files) {
  *   not defined in the transformations.json file
  */
 function resolveTransformationVariables (string) {
+  const TRANSFORMATIONS = require('../build/transformations.json')
   var matches
   while (string != null && (matches = string.match(/\{[_a-z0-9]+\}/g))) {
     for (var i in matches) {

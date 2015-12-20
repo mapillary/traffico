@@ -3,6 +3,7 @@ var shell = require('gulp-shell')
 var concat = require('gulp-concat')
 var cson = require('gulp-cson')
 var es = require('event-stream')
+var resolveTransformations = require('./scripts/resolve-transformations.js')
 var sass = require('gulp-sass')
 var watch = require('gulp-watch')
 var zip = require('gulp-zip')
@@ -37,9 +38,10 @@ gulp.task('cson-mapillary-mappings', function () {
     .pipe(gulp.dest('build/mapillary-mappings'))
 })
 
-gulp.task('cson-signs', function () {
+gulp.task('cson-signs', ['cson-transformations'], function () {
   return gulp.src('dev/*.cson')
     .pipe(cson())
+    .pipe(resolveTransformations())
     .pipe(gulp.dest('build/signs'))
 })
 
@@ -63,12 +65,8 @@ gulp.task('gen-overview', ['cson-signs', 'cson-transformations'], function () {
   return gulp.src('scripts/generate-overview.js').pipe(shell(['mkdir -p build/gh-pages && node <%= file.path %>']))
 })
 
-gulp.task('gen-html-map', ['resolve-transformations'], function () {
+gulp.task('gen-html-map', ['cson-signs'], function () {
   return gulp.src('scripts/generate-html-string-dict.js').pipe(shell(['mkdir -p build/string-maps && node <%= file.path %>']))
-})
-
-gulp.task('resolve-transformations', ['cson-signs', 'cson-transformations'], function () {
-  return gulp.src('scripts/resolve-transformations.js').pipe(shell(['mkdir -p build/signs-simple && node <%= file.path %>']))
 })
 
 gulp.task('generate_gh-pages_config', function () {
@@ -88,12 +86,13 @@ gulp.task(
     'gen-overview',
     'gen-overview-css',
     'generate_gh-pages_config',
-    'gen-html-map'
+    'gen-html-map',
+    'patch-names'
   ],
   function () {
     return es.merge(
       gulp.src('build/releaseResources/*'),
-      gulp.src(['fonts/*', 'mapillary-mappings/*', 'signs/*', 'signs-simple/*', 'string-maps/*', 'stylesheets/*', '*.json'], {base: 'build', cwd: 'build'})
+      gulp.src(['fonts/*', 'mapillary-mappings/*', 'signs/*', 'string-maps/*', 'stylesheets/*', '*.json'], {base: 'build', cwd: 'build'})
     )
     .pipe(zip('traffico.zip'))
     .pipe(gulp.dest('build/dist'))

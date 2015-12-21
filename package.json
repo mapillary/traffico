@@ -1,6 +1,6 @@
 {
   "name": "traffico",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "Traffic signs packaged in a font",
   "main": "gulpfile.js",
   "repository": {

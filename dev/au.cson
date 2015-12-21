@@ -401,7 +401,7 @@
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'roundabout', color: 'black' }
+    { type: 'roundabout', color: 'black', transform: 'scale(-1, 1)' }
   ]
 
 'junction-with-a-side-road-perpendicular-left-ahead':

@@ -1,43 +1,71 @@
+# The following two lines are currently required to build on Ubuntu trusty, which makes installing easier (e.g. woff-tools from main repository)
+sudo: required
+dist: trusty
+
 language: node_js
-node_js: "0.10"
-cache:
-  apt: true
-  directories:
-  - node_modules
+node_js:
+  - "4.1"
+  - "4.0"
+  - "0.12"
+  - "0.11"
+  - "0.10"
 before_install:
   - sudo apt-get update -qq
 install:
-  - sudo apt-get install -qq fontforge node ruby1.9.1 ruby1.9.1-dev
-  - wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
-  - unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/ && cd ..
+  - export rvmsudo_secure_path=1
+  - sudo apt-get install -qq fontforge woff-tools zlib1g-dev
   - rvmsudo gem install fontcustom
   - npm install
 script:
   - npm run check
   - scripts/check_build
+deploy:
+  provider: releases
+  api_key: "${GH_TOKEN}"
+  file: "build/dist/traffico.zip"
+  skip_cleanup: true
+  on:
+    tags: true
+    node: "4.1"
 
 # Automatically deploys a tagged release to GitHub pages if the Travis build succeeds
 after_success: |
   if [ "$TRAVIS_TAG" == "" ]; then
     echo "Not a tagged release, so GitHub pages are not updated!"
+  elif [ "$TRAVIS_NODE_VERSION" != "4.1" ]; then
+    echo "This is Node $TRAVIS_NODE_VERSION, releases are only produced by Node 4.1"
   else
+    # Config
+    masterCommit=`git rev-parse HEAD`
     git config --global user.email "deploy@travis"
     git config --global user.name "Travis CI"
-    git remote add deploy "https://knikel:${GH_TOKEN}@github.com/mapillary/traffico.git"
-    git fetch --depth=1 origin gh-pages:gh-pages
-    git checkout gh-pages
-    git rm examples.html _sass/pages/_examples.scss
-    cp build/gh-pages/examples.html ./
-    cp build/gh-pages/_config.yml ./
-    cp -T build/gh-pages/examples.scss _sass/pages/_examples.scss
-    git stage examples.html _config.yml _sass/pages/_examples.scss
-    masterCommit=`git rev-parse "$TRAVIS_TAG"`
-    git commit -m "Bump gh-pages to latest version
+    # This avoids printout of the token when pushing
+    git config --global credential.helper store
+    echo "https://${GH_USERNAME}:${GH_TOKEN}@github.com" > $HOME/.git-credentials
+
+    printf "\nCloning the release-repo and the gh-pages branch...\n"
+    git clone --depth=1 --branch=master https://github.com/mapillary/traffico-release.git ../traffico-release
+    git clone --depth=1 --branch=gh-pages https://github.com/mapillary/traffico.git ../traffico-pages
+
+    printf "\nUnzipping release into release repo..."
+    unzip -o build/dist/traffico.zip -d ../traffico-release
+
+    printf "\nCopy website resources into gh-pages branch...\n"
+    cp build/gh-pages/examples.html build/gh-pages/_config.yml ../traffico-pages/
+    cp -T build/gh-pages/examples.scss ../traffico-pages/_sass/pages/_examples.scss
+
+    printf "\nCommitting and pushing to release repo..."
+    cd ../traffico-release
+    git commit -a -m "Drop in $TRAVIS_TAG"
+    git tag "$TRAVIS_TAG"
+    git push origin master "$TRAVIS_TAG"
+
+    printf "\nCommitting and pushing to gh-pages branch...\n"
+    cd ../traffico-pages
+    git commit -a -m "Bump gh-pages to $TRAVIS_TAG
 
   This commit has automatically been crafted by Travis CI based on $masterCommit."
-    git push deploy gh-pages
-  fi
+    git push origin gh-pages
 
-env:
-  global:
-  - secure: IBJj46hu33+pjEXgj/25NotmkPm3emyccJABi8XNkOuKoyvxDfHebS0V5vb4WbqtBq1tXHrDh6h8BQ32cH0AzdkB7bCrMZlHDs9IEd1feKWToORsDBZGmAkwk5awKdYlMvMXiAIOLi5ljdc5nd79TsV94dG2X2pwcirRNSi+OAA=
+    cd ../traffico
+  fi

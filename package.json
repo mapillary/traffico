@@ -14,12 +14,14 @@
   },
   "homepage": "https://github.com/mapillary/traffico",
   "devDependencies": {
+    "event-stream": "3.3.2",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-cson": "0.3.1",
     "gulp-sass": "2.1.0",
     "gulp-shell": "^0.5.1",
     "gulp-watch": "^4.3.5",
+    "gulp-zip": "3.0.2",
     "phantom": "^0.8.4",
     "phantomjs": "^1.9.19",
     "standard": "^5.4.1"

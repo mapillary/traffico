@@ -2,7 +2,9 @@ var gulp = require('gulp')
 var shell = require('gulp-shell')
 var concat = require('gulp-concat')
 var cson = require('gulp-cson')
+var es = require('event-stream')
 var sass = require('gulp-sass')
+var zip = require('gulp-zip')
 
 gulp.task('clean', shell.task(['rm -f .fontcustom-manifest.json', 'rm -rf ./build/']))
 
@@ -12,6 +14,26 @@ gulp.task('pngs', function () {
   return gulp.src('./scripts/scrape-pngs.js')
     .pipe(shell(['phantomjs  <%= file.path %>']))
     .pipe(gulp.dest('build'))
+})
+
+gulp.task('buildReleaseResources', function () {
+  return es.merge(
+    gulp.src('releaseResources/bower.cson')
+    .pipe(cson())
+    .pipe(es.map(function (file, cb) {
+      var bowerInfo = JSON.parse(file.contents.toString('utf8'))
+      bowerInfo.version = require('./package.json').version
+      file.contents = new Buffer(JSON.stringify(bowerInfo), 'utf8')
+      cb(null, file)
+    })),
+    gulp.src(['LICENSE', 'releaseResources/*.md'])
+  ).pipe(gulp.dest('build/releaseResources'))
+})
+
+gulp.task('cson-mapillary-mappings', function () {
+  return gulp.src('mapillary-mappings/*.cson')
+    .pipe(cson())
+    .pipe(gulp.dest('build/mapillary-mappings'))
 })
 
 gulp.task('cson-signs', function () {
@@ -33,11 +55,7 @@ gulp.task('concat-traffico-css', ['compile-font'], function () {
 })
 
 gulp.task('gen-overview-css', function () {
-  return gulp.src('stylesheets/examples.scss').pipe(sass()).pipe(gulp.dest('build/stylesheets'))
-})
-
-gulp.task('gen-overview-scss', function () {
-  return gulp.src('stylesheets/examples.scss').pipe(gulp.dest('build/gh-pages'))
+  return gulp.src('stylesheets/examples.scss').pipe(gulp.dest('build/gh-pages')).pipe(sass()).pipe(gulp.dest('build/stylesheets'))
 })
 
 gulp.task('gen-overview', ['cson-signs', 'cson-transformations'], function () {
@@ -63,13 +81,22 @@ gulp.task('patch-names', ['gen-overview'], function () {
 gulp.task(
   'build',
   [
+    'buildReleaseResources',
     'concat-traffico-css',
+    'cson-mapillary-mappings',
     'gen-overview',
-    'gen-overview-scss',
     'gen-overview-css',
     'generate_gh-pages_config',
     'gen-html-map'
-  ]
+  ],
+  function () {
+    return es.merge(
+      gulp.src('build/releaseResources/*'),
+      gulp.src(['fonts/*', 'mapillary-mappings/*', 'signs/*', 'signs-simple/*', 'string-maps/*', 'stylesheets/*', '*.json'], {base: 'build', cwd: 'build'})
+    )
+    .pipe(zip('traffico.zip'))
+    .pipe(gulp.dest('build/dist'))
+  }
 )
 
 gulp.task('lint', shell.task('node node_modules/standard/bin/cmd.js gulpfile.js scripts/*.js'))

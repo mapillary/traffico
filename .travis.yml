@@ -59,7 +59,7 @@ after_success: |
 
     printf "\nCommitting and pushing to release repo..."
     cd ../traffico-release
-    git add .
+    git add --all .
     git commit -m "Drop in $TRAVIS_TAG"
     git tag "$TRAVIS_TAG"
     git push origin master "$TRAVIS_TAG"

@@ -68,6 +68,7 @@ require('fs').readdir(JSON_DIR, function (err, files) {
 
           globalObject[outputKey] = currentSign
         }
+        typeOfVariableContent = undefined
       }
       fs.writeFile('build/string-maps/' + country + '-map.json', JSON.stringify(globalObject), function (err) {
         if (err) throw err

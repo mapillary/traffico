@@ -47,6 +47,9 @@ after_success: |
     git clone --depth=1 --branch=master https://github.com/mapillary/traffico-release.git ../traffico-release
     git clone --depth=1 --branch=gh-pages https://github.com/mapillary/traffico.git ../traffico-pages
 
+    printf "\nRemoving old font assets from release repo..."
+    rm -f ../traffico-release/fonts/traffico.*
+
     printf "\nUnzipping release into release repo..."
     unzip -o build/dist/traffico.zip -d ../traffico-release
 
@@ -56,7 +59,8 @@ after_success: |
 
     printf "\nCommitting and pushing to release repo..."
     cd ../traffico-release
-    git commit -a -m "Drop in $TRAVIS_TAG"
+    git add .
+    git commit -m "Drop in $TRAVIS_TAG"
     git tag "$TRAVIS_TAG"
     git push origin master "$TRAVIS_TAG"
 

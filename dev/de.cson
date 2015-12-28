@@ -471,6 +471,16 @@
     { type: 'circle-separator', color: 'white' }
   ]
 
+'dual-path-cyclists-and-pedestrians':
+  category: 'mandatory'
+  name: 'bicycle/pedestrian dual track'
+  elements: [
+    { type: 'circle-bg', color: 'blue' }
+    { type: 'footpath', color: 'white', transform: '{right_half}' }
+    { type: 'bicycle', color: 'white', transform: '{left_half}' }
+    { type: 'circle-separator', color: 'white' }
+  ]
+
 'bicycles-only':
   category: 'mandatory'
   name: 'Bicycles only'
@@ -710,9 +720,9 @@
     { type: 'bus', color: 'black' , transform: '{fit_border_circle}'}
   ]
 
-no_trucks:
+'no-heavy-goods-vehicles':
   category: 'prohibitory'
-  name: 'no trucks'
+  name: 'no heavy goods vehicles'
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }

@@ -997,8 +997,8 @@
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'car-left', color: 'red' }
-    { type: 'car-right', color: 'black' }
+    { type: 'car', color: 'red', transform: 'scale(.6) translate(-26%,10%)' }
+    { type: 'car', color: 'black', transform: 'scale(.6) translate(26%,10%)' }
   ]
 
 'no-overtaking-by-heavy-goods-vehicles':
@@ -1008,7 +1008,7 @@
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
     { type: 'lorry-left', color: 'red' }
-    { type: 'car-right', color: 'black' }
+    { type: 'car', color: 'black', transform: 'scale(.6) translate(26%,10%)' }
   ]
 
 'maximum-speed-limit':

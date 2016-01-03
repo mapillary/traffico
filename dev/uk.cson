@@ -33,8 +33,8 @@ prohibitory_overtaking:
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'car-left', color: 'black' }
-    { type: 'car-right', color: 'red' }
+    { type: 'car', color: 'black', transform: 'scale(.6) translate(-26%,10%)' }
+    { type: 'car', color: 'red', transform: 'scale(.6) translate(26%,10%)' }
   ]
 
 'railway-crossing-unsecured':

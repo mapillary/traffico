@@ -27,6 +27,15 @@
     { type: 'domestic-animal', color: 'black', transform: '{center2tri} translate(-6%,4%) scale(.25)' }
   ]
 
+'falling-rocks':
+  category: 'danger'
+  name: 'Falling rocks'
+  elements: [
+    { type: 'tri-rounded', color: 'red' }
+    { type: 'tri-angular', color: 'white', transform: '{inner_triangle}' }
+    { type: 'falling-rocks-EU', color: 'black', transform: '{inner_triangle}' }
+  ]
+
 'level-crossing':
   category: 'danger'
   name: 'level crossing'

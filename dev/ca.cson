@@ -71,8 +71,8 @@
   elements: [
     { type: 'circle-bg', color: 'white' }
     { type: 'circle-o', color: 'red' }
-    { type: 'car-left', color: 'black' }
-    { type: 'car-right', color: 'black' }
+    { type: 'car', color: 'black', transform: 'scale(.6) translate(26%,10%)' }
+    { type: 'car', color: 'black', transform: 'scale(.6) translate(-26%,10%)' }
     { type: 'circle-bar-rounded', color: 'red', transform: 'rotate(-45deg)' }
   ]
 

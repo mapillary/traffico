@@ -29,6 +29,7 @@
     "check": "gulp check",
     "clean": "gulp clean",
     "lint": "gulp lint",
-    "pngs": "gulp pngs"
+    "pngs": "gulp pngs",
+    "watch": "gulp watch"
   }
 }

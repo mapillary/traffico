@@ -280,7 +280,7 @@ no_trucks:
   elements: [
     { type: 'square-rounded', color: 'black', transform: '{square_to_diamond}' }
     { type: 'square-rounded', color: 'yellow', transform: 'scale(.95) {square_to_diamond}' }
-    { type: 'falling-rocks', color: 'black' }
+    { type: 'falling-rocks-US', color: 'black' }
   ]
 
 'farm-vehicles':

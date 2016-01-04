@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M25,512 a 25,25 0 0 1 -25,-25 v-462 a25,25 0 0 1 25,-25 h462 a25,25 0 0 1 25,25 v462 a25,25 0 0 1 -25,25Z"></path>
+  <path d="M25,512 a 25,25 0 0 1 -25,-25 v-462 a25,25 0 0 1 25,-25 h462 a25,25 0 0 1 25,25 v462 a25,25 0 0 1 -25,25Z"/>
 </svg>

@@ -37,7 +37,7 @@ function resolveTransformations () {
  *   not defined in the transformations.json file
  */
 function resolveTransformationVariables (string) {
-  const TRANSFORMATIONS = require('../build/transformations.json')
+  const TRANSFORMATIONS = require('../../build/transformations.json')
   var matches
   while (string != null && (matches = string.match(/\{[_a-z0-9]+\}/g))) {
     for (var i in matches) {

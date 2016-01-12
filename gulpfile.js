@@ -73,10 +73,6 @@ gulp.task('generate_gh-pages_config', function () {
   return gulp.src('scripts/generate_gh-pages_config.js').pipe(shell(['mkdir -p build/gh-pages && node <%= file.path %>']))
 })
 
-gulp.task('patch-names', ['gen-overview'], function () {
-  return gulp.src('scripts/patch-names.js').pipe(shell(['node <%= file.path %>']))
-})
-
 gulp.task(
   'build',
   [
@@ -86,8 +82,7 @@ gulp.task(
     'gen-overview',
     'gen-overview-css',
     'generate_gh-pages_config',
-    'gen-html-map',
-    'patch-names'
+    'gen-html-map'
   ],
   function () {
     return es.merge(

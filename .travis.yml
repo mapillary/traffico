@@ -47,13 +47,16 @@ after_success: |
     git clone --depth=1 --branch=master https://github.com/mapillary/traffico-release.git ../traffico-release
     git clone --depth=1 --branch=gh-pages https://github.com/mapillary/traffico.git ../traffico-pages
 
-    printf "\nRemoving old font assets from release repo..."
-    rm -f ../traffico-release/fonts/traffico.*
+    printf "\nRemoving old assets from release repo..."
+    cd ../traffico-release
+    git rm -r .
 
     printf "\nUnzipping release into release repo..."
+    cd ../traffico
     unzip -o build/dist/traffico.zip -d ../traffico-release
 
     printf "\nCopy website resources into gh-pages branch...\n"
+    cd ../traffico
     cp build/gh-pages/examples.html build/gh-pages/_config.yml ../traffico-pages/
     cp -T build/gh-pages/examples.scss ../traffico-pages/_sass/pages/_examples.scss
 

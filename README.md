@@ -1,4 +1,7 @@
-# traffico [![Build Status](https://travis-ci.org/mapillary/traffico.svg?branch=master)](https://travis-ci.org/mapillary/traffico)
+> **This repository is no longer maintained**.
+> Check [mapillary_sprite_source](https://github.com/mapillary/mapillary_sprite_source) for a better alternative
+
+# traffico [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 An Open Source Traffic Sign Font. Read more on [traffico.io](http://traffico.io/)
 
 ## Getting the dependencies

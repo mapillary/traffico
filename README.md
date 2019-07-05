@@ -70,5 +70,5 @@ Traffico is under heavy development and the amount of shapes it contains will gr
 ### Next steps
 - finding a good naming convention for signs across countries
 - finding a good taxonomy for traffic sign categories to make if more future proof
-- publish binary .sketch file with predefined export settings and all current shapes to make life easier
+- publish binary `.sketch` file with predefined export settings and all current shapes to make life easier
 - more shapes!
